@@ -96,6 +96,8 @@ export const donateButtonClass = css`
   padding-bottom: 7px;
   font-weight: 700;
   font-size: 18px;
+  font-family: 'proxima-nova-condensed', sans-serif;
+}
 `
 
 export const socialMediaIconsClass = css`

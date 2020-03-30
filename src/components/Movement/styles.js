@@ -80,7 +80,6 @@ export const submitButtonClass = css`
   font-weight: 700;
   text-transform: uppercase;
   font-family: proxima-nova-condensed;
-
 `
 
 export const socialHeaderClass = css`
@@ -113,4 +112,35 @@ export const emailLinkClass = css`
 
 export const spacerClass = css`
   height: 40px;
+`;
+
+export const emailMessageClass=css`
+  color: ${theme.colors.grey};
+  margin-top: 10px;
+  background: white;
+  padding: 20px;
+  font-size: 14px;
+  letter-spacing: normal;
+
+  a {
+    color: ${theme.colors.grey};
+  }
+`
+
+export const spinClass = css`
+  color: white;
+  font-size: 18px;
+  flex-basis: 100%;
+  margin-top: 20px;
+`;
+
+export const thankyouClass = css`
+  font-size: 18px;
+  color: #FFFFFF;
+  font-family: proxima-nova-extra-condensed;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-style: italic;
+  margin: 20px 0 10px 0;
+  letter-spacing: normal;
 `;

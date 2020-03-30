@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React from 'react'
 import MailchimpSubscribe from "react-mailchimp-subscribe"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import * as styles from './styles';
@@ -17,45 +17,46 @@ const CustomForm = ({ status, message, onValidated }) => {
     });
 
   return (
-    <>
     <div
       css={styles.signupContainerClass}
     >
-      {status === "sending" && (
-        <div className="spin">
-          <FontAwesomeIcon icon={[ 'fas', 'spinner' ]} className="fa-spin"/>
-        </div>
-      )}
-      {status === "error" && (
-        <div
-          style={{ color: "red" }}
-          dangerouslySetInnerHTML={{ __html: message }}
-        />
-      )}
       {status === "success" && (
-        <div
-          style={{ color: "green" }}
-          dangerouslySetInnerHTML={{ __html: message }}
-        />
+        <div>Thank you for singing up</div>
       )}
-      <input
-        css={styles.inputItemClass}
-        ref={node => (email = node)}
-        type="email"
-        placeholder="Email Address"
-      />
-      <br />
-      <input
-        css={styles.shortInputItemClass}
-        ref={node => (zipcode = node)}
-        type="zipcode"
-        placeholder="Zipcode"
-      />
-      </div>
-      <button css={styles.submitButtonClass} onClick={submit}>
-        Sign Up
-      </button>
-    </>
+      {status !== "success" && (
+        <>
+          <input
+            css={styles.inputItemClass}
+            ref={node => (email = node)}
+            type="email"
+            placeholder="Email Address"
+          />
+          <br />
+          <input
+            css={styles.shortInputItemClass}
+            ref={node => (zipcode = node)}
+            type="zipcode"
+            placeholder="Zipcode"
+          />
+          {status !== "sending" && (
+            <button css={styles.submitButtonClass} onClick={submit}>
+              Sign Up
+            </button>
+          )}
+          {status === "sending" && (
+            <div css={styles.spinClass}>
+              <FontAwesomeIcon icon={[ 'fas', 'spinner' ]} className="fa-spin"/>
+            </div>
+          )}
+          {status === "error" && (
+            <div
+              css={styles.emailMessageClass}
+              dangerouslySetInnerHTML={{ __html: message }}
+            />
+          )}
+        </>
+      )}
+    </div>
   );
 };
 
