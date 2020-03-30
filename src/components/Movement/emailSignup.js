@@ -3,7 +3,7 @@ import MailchimpSubscribe from "react-mailchimp-subscribe"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import * as styles from './styles';
 
-const url = "//xxxx.us13.list-manage.com/subscribe/post?u=zefzefzef&id=fnfgn";
+const url = "https://andshecouldbenext.us19.list-manage.com/subscribe/post?u=6451bb053a61584a94aa81331&amp;id=fae27cfb86";
 
 const CustomForm = ({ status, message, onValidated }) => {
   let email, zipcode;

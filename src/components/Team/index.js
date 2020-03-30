@@ -12,7 +12,8 @@ import ramonaEmerson  from '../../assets/ramonaEmerson.png';
 
 import { ReactComponent as LeftArrow } from '../../assets/leftArrow.svg';
 import * as styles from './styles';
-import { SectionTitle, LeftArrowContainer } from './styles';
+import * as sharedstyles from '../shared/styles';
+import { SectionTitle, LeftArrowContainer } from '../shared/styles';
 import Page from '../shared/Page';
 
 const Person = ({ name, title, image, bio, flip = false }) => {
@@ -50,9 +51,9 @@ const Team = props => {
   return (
     <Page name="team" updateActive={props.updateActive}>
       <LeftArrowContainer isInView={props.isInView}>
-        <LeftArrow css={styles.leftArrowClass} />
+        <LeftArrow css={sharedstyles.arrowClass} />
       </LeftArrowContainer>
-      <SectionTitle isInView={props.isInView}>The Team</SectionTitle>
+      <SectionTitle left color="white" isInView={props.isInView}>The Team</SectionTitle>
       <div css={styles.peopleContainerClass}>
         <Person image={graceLee} name="Grace Lee" title="Producer/Director" bio="Grace Lee directed and produced the Peabody Award-winning AMERICAN REVOLUTIONARY: THE EVOLUTION OF GRACE LEE BOGGS about the legendary civil rights activist which The Hollywood Reporter called ”an entertainingly revealing portrait of the power of a single individual to effect change.” The film won multiple festival audience awards and was broadcast on the PBS documentary series POV. Other directing credits include the Emmy-nominated MAKERS: WOMEN IN POLITICS for PBS; the interactive online documentary K-TOWN ‘92 about the 1992 Los Angeles civil unrest, OFF THE MENU: ASIAN AMERICA; and the feature film JANEANE FROM DES MOINES, set during the 2012 presidential campaign, which premiered at the Toronto Film Festival. She has been a Sundance Institute Fellow, a 2017 Chicken & Egg Breakthrough Award winner, an envoy of the American Film Showcase (through USC and the U.S. State Department), and is co-founder of the Asian American Documentary Network."/>
         <Person image={marjanSafinia} name="Marjan Safina" title="Producer/Director" bio="Marjan Safinia is an Iranian documentary whose films examine identity, community and social justice. BUT YOU SPEAK SUCH GOOD ENGLISH explores the first-generation immigrant experience from an insider perspective. SEEDS, tells the story of ten brave teenagers from the world’s most troubled conflict zones living side-by-side for one life-changing summer. Collectively her films have played at over 100 international film festivals and been broadcast in North America, Europe and across the Arab world. Most recently she produced and directed work for Google Founder Sergey Brin, the Obama administration, and Hillary Clinton’s Next Generation. Until 2018, Marjan was the longest-serving President of the Board of Directors of the International Documentary Association (and the only woman of color to lead this organization since it was founded in 1982). She co-hosts the pre-eminent online documentary community, The D-Word, and is a regular juror, programmer, speaker and connector of all things documentary."/>
