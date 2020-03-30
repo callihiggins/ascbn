@@ -3,18 +3,19 @@ import { default as theme } from '../../theme';
 
 export const textContainerClass = css`
   width: 50%;
-  margin: 35vh auto 0 auto;
+  margin: 80px auto 0 200px;
+  display: flex;
+  height: calc(100vh - 80px);
+  justify-content: center;
+  flex-direction: column;
 `;
 
 export const textBlockClass = css`
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
-  margin: 35vh 0;
   color: white;
-  font-size: 28px;
-  text-align: center;
+  font-size: 23px;
   font-weight: 700;
-  line-height: 36px;
+  line-height: 28px;
+  margin: 20px 0;
 `;
 
 export const highlightClass = css`

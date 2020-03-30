@@ -40,11 +40,11 @@ class App extends React.Component {
               classNames="nav"
             >
               <div className="fixedNav">
-                <Nav activeLink={this.state.activeMenu} showDonate={this.state.activeMenu !== 'trailer'}/>
+                <Nav activeLink={this.state.activeMenu} fixedNav={this.state.activeMenu !== 'trailer'}/>
               </div>
             </CSSTransition>
           <IntroText updateActive={this.updateActiveCallback}/>
-          <About updateActive={this.updateActiveCallback} isInView={this.state.activeMenu === 'about' } />
+          <About updateActive={this.updateActiveCallback} isInView={this.state.activeMenu === 'about' ||  this.state.activeMenu === 'introText'} />
           <Team shallowZIndex={true} isInView={this.state.activeMenu === 'team' } updateActive={this.updateActiveCallback} />
           <Movement updateActive={this.updateActiveCallback} />      
         </ThemeProvider>

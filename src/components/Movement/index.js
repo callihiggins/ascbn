@@ -32,7 +32,7 @@ const Movement = props => {
             <div css={styles.spacerClass} />
             <div css={styles.socialHeaderClass}>Drop us a note</div>
             <a href="mailto:info@andshecouldbenext.com" css={styles.emailLinkClass}>
-              [info]@[andshecouldbenext.com]
+              info@andshecouldbenext.com
             </a>
           </div>
         </div>
