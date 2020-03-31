@@ -67,24 +67,24 @@ const Home = props => {
 						<div css={styles.laurelClass}>
 							<Laurel />
 						</div>
-						<a role="button" css={styles.trailerCTAClass} href="https://vimeo.com/367131292" target="_blank" rel="noopener noreferrer">
+						{/* <a role="button" css={styles.trailerCTAClass} href="https://vimeo.com/367131292" target="_blank" rel="noopener noreferrer">
 							<div css={styles.playerButtonClass}>
 								<PlayIcon />
 							</div>
 							Watch the full trailer
-						</a>
+						</a> */}
 					</div>
 					<div css={styles.navClass}>
 						<Nav fixedNav={false} />
 					</div>
 				</div>
 				<div css={[styles.trailerBlockClass, sharedstyles.hideMobile]}>
-					<button css={styles.trailerCTAClass} onClick={showTrailer}>
+					{/* <button css={styles.trailerCTAClass} onClick={showTrailer}>
 						<div css={styles.playerButtonClass}>
 							<PlayIcon />
 						</div>
 						Watch the full trailer
-					</button>
+					</button> */}
 					<div css={styles.laurelClass}>
 						<Laurel />
 					</div>

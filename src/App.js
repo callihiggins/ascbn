@@ -5,7 +5,7 @@ import 'normalize.css';
 import Home from './components/Home'
 import Nav from './components/Nav'
 import About from './components/About'
-import IntroText from './components/IntroText'
+// import IntroText from './components/IntroText'
 import Team from './components/Team'
 import Movement from './components/Movement'
 import './App.css';

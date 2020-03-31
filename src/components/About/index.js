@@ -1,5 +1,6 @@
 import React from 'react';
-import aboutImage from '../../assets/aboutImage.png';
+import { withTheme } from 'styled-components';
+// import aboutImage from '../../assets/aboutImage.png';
 import { ReactComponent as RightArrow } from '../../assets/rightArrow.svg';
 // import * as styles from './styles';
 import * as sharedstyles from './../shared/styles';
@@ -9,7 +10,7 @@ import Page from '../shared/Page';
 
 const About = props => {
   return (
-    <Page name="about" redOverlay={true} backgroundImage={aboutImage} updateActive={props.updateActive}>
+    <Page name="about" backgroundColor={props.theme.default.colors.red} updateActive={props.updateActive}>
       <RightArrowContainer css={sharedstyles.hideMobile} isInView={props.isInView}> 
         <RightArrow css={sharedstyles.arrowClass} />
       </RightArrowContainer>
@@ -34,4 +35,4 @@ const About = props => {
   )
 }
 
-export default About;
+export default withTheme(About);

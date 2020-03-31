@@ -17,7 +17,7 @@ export const SectionTitle = styled.div`
 
 export const peopleContainerClass = css`
   margin-left: 240px;
-  width: calc(100% - 150px);
+  width: calc(100% - 240px);
   padding-top: 60px;
 
   @media (max-width: ${theme.breakpoints.large}px) {
