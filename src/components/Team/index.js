@@ -1,7 +1,6 @@
 import React,  { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { CSSTransition } from "react-transition-group";
-import Sticky from 'react-sticky-el';
 import '../../App.css';
 import graceLee from '../../assets/graceLee.png';
 import marjanSafinia from '../../assets/marjanSafinia.png';
