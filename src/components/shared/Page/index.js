@@ -21,7 +21,7 @@ const PageComponent = styled.section`
   `};
 
   ${props => props.backgroundImage && props.redOverlay && css`
-    background-image: linear-gradient( rgba(15, 15, 40, 0.9), rgba(15, 15, 40, .9) ), url(${props => props.backgroundImage});
+    background-image: linear-gradient( rgba(211, 36, 50, 0.9), rgba(211, 36, 50, .7) ), url(${props => props.backgroundImage});
   `};
 
   
