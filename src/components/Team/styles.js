@@ -16,8 +16,8 @@ export const SectionTitle = styled.div`
 `;
 
 export const peopleContainerClass = css`
-  width: calc(100% - 300px);
-  margin-left: 300px;
+  margin-left: 240px;
+  width: calc(100% - 150px);
   padding-top: 60px;
 
   @media (max-width: ${theme.breakpoints.large}px) {
