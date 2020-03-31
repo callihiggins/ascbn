@@ -1,8 +1,10 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { css } from '@emotion/core';
 import EmailSignup from './emailSignup'
 import movementImage from '../../assets/movementImage.png';
 import * as styles from './styles';
+import * as sharedstyles from '../shared/styles';
 import Page from '../shared/Page';
 
 const Movement = props => {

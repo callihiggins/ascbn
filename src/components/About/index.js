@@ -10,10 +10,10 @@ import Page from '../shared/Page';
 const About = props => {
   return (
     <Page name="about" backgroundImage={aboutImage} updateActive={props.updateActive}>
-      <RightArrowContainer isInView={props.isInView}> 
+      <RightArrowContainer css={sharedstyles.hideMobile} isInView={props.isInView}> 
         <RightArrow css={sharedstyles.arrowClass} />
       </RightArrowContainer>
-      <SectionTitle isInView={props.isInView}>About</SectionTitle>
+      <SectionTitle css={sharedstyles.hideMobile} isInView={props.isInView}>About</SectionTitle>
       <div css={sharedstyles.textContainerClass}>
         <p css={sharedstyles.textBlockClass}>
           <em>And She Could Be Next</em>, POV’s first broadcast miniseries, asks whether democracy itself can be preserved—and made stronger—by those most marginalized.

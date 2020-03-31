@@ -14,9 +14,9 @@ import { debounce } from 'lodash';
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faSpinner } from '@fortawesome/free-solid-svg-icons'
+import { faSpinner, faPlus } from '@fortawesome/free-solid-svg-icons'
 
-library.add(fab, faSpinner);
+library.add(fab, faSpinner, faPlus);
 
 
 class App extends React.Component {

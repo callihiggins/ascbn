@@ -2,20 +2,6 @@ import { css } from '@emotion/core';
 import styled from 'styled-components';
 import { default as theme } from '../../theme';
 
-export const leftArrowClass = css`
-  height: 96vh;
-`;
-
-export const LeftArrowContainer = styled.div`
-  position: fixed;
-  left: 0;
-  height: 98vh;
-  top: 2vh;
-  opacity: ${props => props.isInView ? '1' : '0'};
-  transition: opacity 100ms;
-  pointer-events: none;
-`;
-
 export const SectionTitle = styled.div`
   position: fixed;
   left: 20px;
@@ -33,6 +19,11 @@ export const peopleContainerClass = css`
   width: calc(100% - 300px);
   margin-left: 300px;
   padding-top: 60px;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    width: calc(100% - 30px);
+    margin: 0 15px;
+  }
 `;
 
 export const personContainerClass = css`
@@ -42,6 +33,13 @@ export const personContainerClass = css`
   align-items: space-around;
   border-bottom: 1px solid ${theme.colors.red};
   padding: 40px 0;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    width: 100%;
+    flex-direction: column;
+    min-height: 0;
+
+  }
 `;
 
 export const columnClass = css`
@@ -49,12 +47,23 @@ export const columnClass = css`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    width: 100%;
+  }
 `;
 
-export const bioClass = css`
+export const Bio = styled.div`
   width: 70%;
   line-height: 22px;
   font-size: 15px;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    width: 100%;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 200ms;
+  }
 `;
 
 export const headshotClass = css`
@@ -74,4 +83,18 @@ export const titleClass = css`
   font-style: italic;
   font-size: 14px;
   text-transform: uppercase;
+`;
+
+export const plusIconClass = css`
+  color: ${theme.colors.red};
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  margin: 10px 0;
+
+  svg {
+    margin-left: 5px;
+    font-size: 12px;
+  }
 `;

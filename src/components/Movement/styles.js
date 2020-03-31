@@ -5,6 +5,12 @@ export const pageContainerClass = css`
   height: calc(100% - 125px);
   padding: 125px 40px 0 40px;
   position: relative;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    padding: 0;
+    margin: 100px 15px 60px 15px;
+    height: auto;
+  }
 `;
 
 export const ctaClass = css`
@@ -14,6 +20,11 @@ export const ctaClass = css`
   text-transform: uppercase;
   font-weight: 700;
   flex-basis: 90%;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    font-size: 28px;
+    flex-basis: 100%;
+  }
 `;
 
 export const containerClass = css`
@@ -30,10 +41,18 @@ export const aboutContainerClass = css`
   line-height: 28px;
   margin-right: 5%;
   margin-top: 20px;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    width: 100%;
+  }
 `;
 
 export const actionContainerClass = css`
  width: 30%;
+
+ @media (max-width: ${theme.breakpoints.large}px) {
+  width: 100%;
+}
 `;
 
 export const textItemClass = css`

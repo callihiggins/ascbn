@@ -11,21 +11,18 @@ export const HeaderContainer = styled.div`
   justify-content: space-between;
 `;
 
-export const navClass = css`
+export const NavUl = styled.ul`
   display: flex;
   justify-content: center;
   text-transform: uppercase;
   list-style: none;
-`;
 
-export const navItemClass = css`
-  margin: 0 20px;
-  list-decoration: none;
-  font-weight: 600;
-  font-size: 14px;
-  color: ${theme.colors.grey};
-  cursor: pointer;
-  padding-bottom: 7px;
+  @media (max-width: ${theme.breakpoints.large}px) {
+      width: ${props => props.fixedNav ? `calc(100% - 62px)` : `100%`};
+      margin-left: ${props => props.fixedNav ? `62px` : `0`};
+    };
+  }
+  
 `;
 
 export const activeItemClass = css`
@@ -49,6 +46,10 @@ export const NavItem = styled.li`
     color: ${theme.colors.grey};
     text-decoration: none;
     cursor: pointer;
+  }
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    margin:  ${props => props.fixedNav ? `0 10px` : `0 20px`};
   }
 
   &:before,
@@ -118,6 +119,27 @@ export const logoClass = css`
   top: 10px;
   left: calc(50% - 35px);
   height: 40px;
+  width: 40px;
   margin-left: 15px;
   margin-top: -7px;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 33px;
+    margin-top: -7px;
+  }
+`;
+
+export const MobileNav = styled.div`
+  width: 100%;
+  background: ${props => props.bgColor ? props.bgColor : `${theme.colors.red}`};
+  color: ${props => props.textColor ? props.textColor : `#FFFFFF`};
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: proxima-nova-extra-condensed;
+  font-weight: 700;
+  padding: 10px 15px;
+  margin-top: 15px;
 `;

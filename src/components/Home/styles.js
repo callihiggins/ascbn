@@ -9,17 +9,36 @@ export const logoBlockClass = css`
   width: 40%;
   height: calc(100vh - 60px);
   margin-top: 60px;
+  @media (max-width: ${theme.breakpoints.large}px) {
+    width: 100%;
+    margin: 40px auto 0 auto;
+  }
 `;
 
 export const trailerBlockClass = css`
   width: 60%;
   height: 100vh;
   overflow: hidden;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    display: none;
+  }
+`;
+
+export const logoContainerClass = css`
+  width: 60%;
+  margin: 0 auto;
+  @media (max-width: ${theme.breakpoints.large}px) {
+    width: 100%;
+    text-align: center;
+  }
 `;
 
 export const logoClass = css`
-  width: 60%;
-  margin: 0 auto;
+  @media (max-width: ${theme.breakpoints.large}px) {
+    width: auto;
+    height: 40vh;
+  }
 `;
 
 export const laurelClass = css`
@@ -27,6 +46,28 @@ export const laurelClass = css`
   bottom: 20px;
   right: 20px;
   width: 150px;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    bottom: 25vh;
+    width: 100%;
+    text-align: center;
+    right: initial;
+
+    svg {
+      height: 10vh;
+      stroke: ${theme.colors.grey};
+      fill: ${theme.colors.grey};
+        path {
+          stroke: ${theme.colors.grey};
+          fill: ${theme.colors.grey};
+        }
+        text {
+          stroke: ${theme.colors.grey};
+          fill: ${theme.colors.grey};
+        }
+      }
+    }
+  }    
 `;
 
 export const videoPlayerClass = css`
@@ -49,6 +90,10 @@ export const navClass = css`
   bottom: 40px;
   text-align: center;
   width: 40%;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    width: 100%;
+  }
 `;
 
 export const trailerCTAClass = css`
@@ -65,12 +110,34 @@ export const trailerCTAClass = css`
   border: 0;
   z-index: 10;
   outline: 0;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    color: #3D3838;
+    position: absolute;
+    left: initial;
+    bottom: 15vh;
+    width: 100%;
+    justify-content: center;
+}
+  } 
 `;
 
 export const playerButtonClass = css`
   width: 40px;
   display: inline-block;
   margin-right: 15px;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    svg {
+      stroke: ${theme.colors.grey};
+      fill: ${theme.colors.grey};
+
+      path {
+        stroke: ${theme.colors.grey};
+        fill: ${theme.colors.grey};
+      }
+    }
+  }
 `;
 
 export const modalClass = css`
