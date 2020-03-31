@@ -29,25 +29,30 @@ export const peopleContainerClass = css`
 export const personContainerClass = css`
   display: flex;
   min-height: calc(50vh - 140px);
-  width: 95%;
-  align-items: space-around;
+  width: 90%;
+  align-items: space-between;
   border-bottom: 1px solid ${theme.colors.red};
-  padding: 40px 0;
+  padding: 20px 0;
 
   @media (max-width: ${theme.breakpoints.large}px) {
     width: 100%;
-    flex-direction: column;
     min-height: 0;
-
+    flex-direction: column;
   }
 `;
 
 export const columnClass = css`
-  width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (max-width: ${theme.breakpoints.large}px) {
+    width: 100%;
+  }
+`;
 
+export const headshotImageContainerClass = css`
+  width: 30%;
+  text-align: center;
   @media (max-width: ${theme.breakpoints.large}px) {
     width: 100%;
   }
@@ -60,14 +65,15 @@ export const Bio = styled.div`
 
   @media (max-width: ${theme.breakpoints.large}px) {
     width: 100%;
-    overflow: hidden;
     max-height: 0;
+    overflow: hidden;
     transition: max-height 200ms;
   }
 `;
 
-export const headshotClass = css`
-  width: 150px;
+export const headshotImageClass = css`
+  width: 175px;
+  height: auto;
   margin-bottom: 20px;
 `;
 

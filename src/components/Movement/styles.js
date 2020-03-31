@@ -2,7 +2,7 @@ import { css } from '@emotion/core';
 import { default as theme } from '../../theme';
 
 export const pageContainerClass = css`
-  height: calc(100% - 125px);
+  height: calc(10vh - 125px);
   padding: 125px 40px 0 40px;
   position: relative;
 
@@ -44,6 +44,7 @@ export const aboutContainerClass = css`
 
   @media (max-width: ${theme.breakpoints.large}px) {
     width: 100%;
+    margin-bottom: 40px;
   }
 `;
 
@@ -73,7 +74,7 @@ export const signupContainerClass = css`
 export const inputItemClass = css`
   background: transparent;
   border: 1px solid white;
-  width: 40%;
+  width: 50%;
   padding: 7px 10px;
   margin-right: 10px;
   color: white;
@@ -83,19 +84,27 @@ export const inputItemClass = css`
     font-weight: 700;
     text-transform: uppercase;
   }
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    width: 60%;
+  }
 `;
 
 export const shortInputItemClass = css`
   ${inputItemClass};
   width: 20%;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    width: 20%;
+  }
 `;
 
-export const submitButtonClass = css`
+export const buttonClass = css`
   background: white;
   color: ${theme.colors.grey};
-  margin-top: 10px;
+  margin-top: 20px;
   border: 0;
-  padding: 7px 15px;
+  padding: 12px 15px 7px 15px;
   font-weight: 700;
   text-transform: uppercase;
   font-family: proxima-nova-condensed;
@@ -107,7 +116,7 @@ export const socialHeaderClass = css`
   font-family: proxima-nova-extra-condensed;
   text-transform: uppercase;
   font-weight: 700;
-  margin: 20px 0 10px 0;
+  margin: 20px 0;
 `;
 
 export const socialMediaIconsClass = css`

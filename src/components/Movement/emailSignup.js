@@ -39,7 +39,7 @@ const CustomForm = ({ status, message, onValidated }) => {
             placeholder="Zipcode"
           />
           {status !== "sending" && (
-            <button css={styles.submitButtonClass} onClick={submit}>
+            <button css={styles.buttonClass} onClick={submit}>
               Sign Up
             </button>
           )}

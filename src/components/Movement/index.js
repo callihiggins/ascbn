@@ -17,9 +17,11 @@ const Movement = props => {
             <p css={styles.textItemClass}>
               While we have seen a rise in attention surrounding the work of organizers, for many, the work itself is still shrouded in mystery. And yet, we are all organizers in our everyday lives without realizing it: from the seasoned politico who’s a longtime canvasser or running for office for the first time, to the uninitiated civic rockstar who’s in charge of the company potluck, gathering friends together for a game night, or directing the chorus in their house of worship, you are in fact an organizer. 
             </p>
-            <p css={styles.textItemClass}>
-              Connect with us to learn more!
-            </p>
+            <a href="https://www.documentary.org/project/and-she-could-be-next" target="_blank" rel="noopner roreferrer">
+              <button css={styles.buttonClass}>
+                Support the work
+            </button>
+            </a>
           </div>
           <div css={styles.actionContainerClass}>
             <div css={styles.socialHeaderClass}>Sign Up for our Newsletter</div>

@@ -35,13 +35,14 @@ const Home = props => {
 					styles={{
 						modal: { 
 							background: '#000',
-							width: '80%',
-							height: '400px'
+							width: '95vw',
+							height: '85vh',
+							'max-width': 'initial',
 						},
 						closeIcon: {
 							stroke: 'white',
 							fill: 'white'
-						}
+						},
 					}}
 					center
 				>
@@ -49,8 +50,10 @@ const Home = props => {
 						url='https://vimeo.com/367131292'
 						playing
 						controls
-						style={{'margin': '20px auto'}}
+						style={{'margin': '0 auto'}}
 						vimeoConfig={{preload: true}}
+						width={'auto'}
+						height={'85vh'}
 					/>
 				</Modal>
 				<div css={styles.logoBlockClass}>
@@ -64,12 +67,12 @@ const Home = props => {
 						<div css={styles.laurelClass}>
 							<Laurel />
 						</div>
-						<button css={styles.trailerCTAClass} href="https://vimeo.com/367131292" target="_blank" rel="noopener noreferrer">
+						<a role="button" css={styles.trailerCTAClass} href="https://vimeo.com/367131292" target="_blank" rel="noopener noreferrer">
 							<div css={styles.playerButtonClass}>
 								<PlayIcon />
 							</div>
 							Watch the full trailer
-						</button>
+						</a>
 					</div>
 					<div css={styles.navClass}>
 						<Nav fixedNav={false} />

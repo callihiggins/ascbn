@@ -15,12 +15,16 @@ const PageComponent = styled.section`
   background-size: cover;
   overflow-y: scroll;
   z-index: ${props => props.shallowZIndex ? '1' : '100'};
-  scroll-snap-points-y: repeat(100vh);
-  scroll-snap-type: y proximity;
 
   ${props => props.backgroundImage && css`
     background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 30, 0.7) ), url(${props => props.backgroundImage});
   `};
+
+  ${props => props.backgroundImage && props.redOverlay && css`
+    background-image: linear-gradient( rgba(15, 15, 40, 0.9), rgba(15, 15, 40, .9) ), url(${props => props.backgroundImage});
+  `};
+
+  
 `;
 
 const Page = props => {
@@ -31,6 +35,8 @@ const Page = props => {
   if (inView) {
    props.updateActive(props.name)
   }
+
+  console.log(props.backgroundImage && props.redOverlay)
 
   return (
     <PageComponent id={props.name} ref={ref} {...props}>{props.children}</PageComponent>

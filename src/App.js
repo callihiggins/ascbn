@@ -14,9 +14,9 @@ import { debounce } from 'lodash';
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faSpinner, faPlus } from '@fortawesome/free-solid-svg-icons'
+import { faSpinner, faPlus, faMinus } from '@fortawesome/free-solid-svg-icons'
 
-library.add(fab, faSpinner, faPlus);
+library.add(fab, faSpinner, faPlus, faMinus);
 
 
 class App extends React.Component {
@@ -45,7 +45,7 @@ class App extends React.Component {
                 <Nav activeLink={this.state.activeMenu} fixedNav={this.state.activeMenu !== 'trailer'}/>
               </div>
             </CSSTransition>
-          <IntroText updateActive={this.updateActiveCallback}/>
+          {/* <IntroText updateActive={this.updateActiveCallback}/> */}
           <About updateActive={this.updateActiveCallback} isInView={this.state.activeMenu === 'about' ||  this.state.activeMenu === 'introText'} />
           <Team shallowZIndex={true} isInView={this.state.activeMenu === 'team' } updateActive={this.updateActiveCallback} />
           <Movement updateActive={this.updateActiveCallback} />      

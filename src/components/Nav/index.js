@@ -3,6 +3,7 @@ import { withTheme } from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import MobileNav from './mobileNav';
 import { ReactComponent as Logo } from '../../assets/logo.svg';
+import { ReactComponent as HorizontalLogo } from '../../assets/logo_horizontal.svg';
 import * as styles from  './styles';
 import * as sharedstyles from  '../shared/styles';
 import { NavUl, HeaderContainer, NavItem } from './styles';
@@ -21,13 +22,13 @@ const Nav = props => {
               </NavItem>
             )}
             <NavItem fixedNav={fixedNav} active={props.activeLink=== 'about' || props.activeLink === 'introText'}>
-              <a href="#introText">About</a>
+              <a href="#about">About</a>
             </NavItem>
             <NavItem fixedNav={fixedNav} active={props.activeLink=== 'team'}>
               <a href="#team">The Team</a>
             </NavItem>
             <NavItem fixedNav={fixedNav} active={props.activeLink=== 'movement'}>
-              <a href="#movement">The Movement</a>
+              <a href="#movement">Join The Movement</a>
             </NavItem>
           </NavUl>
         </nav>
@@ -46,7 +47,8 @@ const Nav = props => {
         {fixedNav && (
           <>
             <a href="#trailer" css={styles.logoClass}>
-              <Logo />
+              <Logo css={sharedstyles.hideDesktop}/>
+              <HorizontalLogo  css={sharedstyles.hideMobile}/>
             </a>
           </>
         )}

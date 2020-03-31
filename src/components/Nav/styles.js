@@ -37,8 +37,6 @@ export const NavItem = styled.li`
   font-size: 14px;
   color: ${theme.colors.grey};
   cursor: pointer;
-  padding-bottom: 7px;
-  padding-top: 3px;
   position: relative;
   border-bottom: ${props => props.active ? `1px solid ${theme.colors.red}` : '0'};
 
@@ -49,7 +47,7 @@ export const NavItem = styled.li`
   }
 
   @media (max-width: ${theme.breakpoints.large}px) {
-    margin:  ${props => props.fixedNav ? `0 10px` : `0 20px`};
+    margin:  ${props => props.fixedNav ? `0 6px` : `0 15px`};
   }
 
   &:before,
@@ -117,11 +115,9 @@ export const iconClass = css`
 export const logoClass = css`
   position: absolute;
   top: 10px;
-  left: calc(50% - 35px);
+  left: calc(50% - 50px);
   height: 40px;
-  width: 40px;
-  margin-left: 15px;
-  margin-top: -7px;
+  width: 100px;
 
   @media (max-width: ${theme.breakpoints.large}px) {
     position: absolute;
@@ -129,6 +125,7 @@ export const logoClass = css`
     left: 0;
     width: 33px;
     margin-top: -7px;
+    margin-left: 15px;
   }
 `;
 

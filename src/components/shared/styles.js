@@ -3,48 +3,49 @@ import { default as theme } from '../../theme';
 import styled from 'styled-components';
 
 export const textContainerClass = css`
-  width: 50%;
-  margin: 80px auto 0 15%;
-  display: flex;
-  height: calc(100vh - 80px);
-  justify-content: center;
-  flex-direction: column;
+  width: 70%;
+  margin: 24vh auto 0 5%;
+  height: 72vh;
+  column-count: 2;
+  column-gap: 40px;
 
   @media (max-width: ${theme.breakpoints.large}px) {
     width: calc(100% - 30px);
-    margin: 60px 15px 20px 15px;
-    height: calc(100vh - 80px);
+    margin: 100px 15px 20px 15px;
+    height: calc(90vh - 80px);
+    column-count: auto;
   }
 `;
 
 export const textBlockClass = css`
   color: white;
-  font-size: 23px;
-  font-weight: 700;
-  line-height: 28px;
-  margin: 20px 0;
+  font-size: calc(100vh * 0.027);
+  line-height: calc(100vh * .04);
+  font-weight: 600;
+  margin-bottom: 20px;
   @media (max-width: ${theme.breakpoints.large}px) {
-    font-size: calc(100vh * .025);
-    line-height: calc((100vh * .03) * 1.25);
+    margin-top: 40px;
+    font-size: 18px;
+    line-height: 25px;
   }
     
 `;
 
 export const highlightClass = css`
   color: ${theme.colors.lightBlue};
+  font-weight: 700;
 `;
 
 export const RightArrowContainer = styled.div`
-  opacity: ${props => props.isInView ? '1' : '0'};
-  transition: opacity 100ms;
   pointer-events: none;
   top: 0;
   right: 0;
-  position: fixed;
+  position: absolute;
+  height: 100vh;
 `
 
 export const SectionTitle = styled.div`
-  position: fixed;
+  position: absolute;
   right: ${props  => !props.left ? '50px' : 'auto'};
   left: ${props  => props.left ? '50px' : 'auto'};
   top: 45vh;
@@ -53,22 +54,23 @@ export const SectionTitle = styled.div`
   font-size: 50px;
   font-family: proxima-nova-extra-condensed;
   font-weight: 700;
-  opacity: ${props => props.isInView ? '1' : '0'};
-  transition: opacity 100ms;
+`;
+
+export const stickyClass = css`
+  position: sticky;
+  top: 0;
+  height: 0;
+  overflow: visible;
 `;
 
 export const arrowClass = css`
-  height: 98vh;
+  height: 100vh;
 `;
 
 export const LeftArrowContainer = styled.div`
-  position: fixed;
-  left: 0;
+  position: sticky;
+  top: 0;
   height: 98vh;
-  top: 2vh;
-  opacity: ${props => props.isInView ? '1' : '0'};
-  transition: opacity 100ms;
-  pointer-events: none;
 `;
 
 export const hideDesktop = css`
