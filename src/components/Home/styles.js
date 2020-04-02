@@ -89,7 +89,7 @@ export const navClass = css`
   position: absolute;
   text-align: center;
   width: 40%;
-  bottom: 40px;
+  bottom: 20vh;
 
   @media (max-width: ${theme.breakpoints.large}px) {
     width: 100%;
