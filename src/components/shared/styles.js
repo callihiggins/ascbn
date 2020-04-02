@@ -61,6 +61,7 @@ export const stickyClass = css`
   top: 0;
   height: 0;
   overflow: visible;
+  width: 300px;
 `;
 
 export const arrowClass = css`

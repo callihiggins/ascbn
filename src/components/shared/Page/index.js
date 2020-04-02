@@ -7,6 +7,7 @@ const PageComponent = styled.section`
   width: 100%;
   scroll-snap-align: start;
   scroll-snap-stop: always;
+  scroll-snap-coordinate: 50% 50%;
   padding: 0;
   height: 100vh;
   margin: 0 auto;
@@ -35,8 +36,6 @@ const Page = props => {
   if (inView) {
    props.updateActive(props.name)
   }
-
-  console.log(props.backgroundImage && props.redOverlay)
 
   return (
     <PageComponent id={props.name} ref={ref} {...props}>{props.children}</PageComponent>

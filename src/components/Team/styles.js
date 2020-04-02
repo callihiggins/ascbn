@@ -16,83 +16,114 @@ export const SectionTitle = styled.div`
 `;
 
 export const peopleContainerClass = css`
-  margin-left: 240px;
-  width: calc(100% - 240px);
-  padding-top: 60px;
+  width: calc(60% - 305px);
+  display: inline-flex;
+  justify-content: space-around;
+  margin: 95px 40px 40px 305px;
+  flex-wrap: wrap;
+  height: calc(100vh - 140px);
+  vertical-align: top;
 
   @media (max-width: ${theme.breakpoints.large}px) {
     width: calc(100% - 30px);
     margin: 0 15px;
+    display: block;
+    padding-top: 60px;
   }
 `;
 
-export const personContainerClass = css`
-  display: flex;
-  min-height: calc(50vh - 140px);
-  width: 90%;
-  align-items: space-between;
-  border-bottom: 1px solid ${theme.colors.red};
-  padding: 20px 0;
 
-  @media (max-width: ${theme.breakpoints.large}px) {
-    width: 100%;
-    min-height: 0;
-    flex-direction: column;
-  }
-`;
 
-export const columnClass = css`
-  display: flex;
+export const PersonContainer = styled.div`
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  align-items: start;
+  height: calc(25vh - 55px);
+  cursor: pointer;
+  background-color: #FFFFFF;
+  color: ${theme.colors.red};
+  font-size: 18px;
+  width: 75%;
+  display: flex;
+
+  ${({ dimMe }) => dimMe && `
+    color: #ccc;
+  `};
+
   @media (max-width: ${theme.breakpoints.large}px) {
     width: 100%;
+    height: auto;
+    min-height: 0;
+    border-bottom: 1px solid ${theme.colors.red};
+    align-items: center;
+    padding: 20px 0;
+    ${({ dimMe }) => dimMe && `
+      color: ${theme.colors.red};
+    `};
   }
 `;
 
-export const headshotImageContainerClass = css`
+export const bioContainerClass = css`
   width: 30%;
-  text-align: center;
-  @media (max-width: ${theme.breakpoints.large}px) {
-    width: 100%;
-  }
+  display: inline-flex;
+  flex-direction: column;
+  margin-top: 95px;
+  max-height: calc(100vh - 95px);
+  overflow: hidden;
 `;
 
 export const Bio = styled.div`
-  width: 70%;
   line-height: 22px;
   font-size: 15px;
+  height: auto;
+  text-align: left;
+  max-height: calc(100vh - 325px);
+  overflow-y: scroll;
+  padding-right: 17px;
+  box-sizing: content-box;
+  width: 100%;
 
   @media (max-width: ${theme.breakpoints.large}px) {
     width: 100%;
     max-height: 0;
     overflow: hidden;
     transition: max-height 200ms;
+    color: ${theme.colors.grey};
   }
 `;
 
 export const headshotImageClass = css`
-  width: 175px;
+  width: 150px;
   height: auto;
-  margin-bottom: 20px;
+  margin: 0 auto 40px auto;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    margin-bottom: 20px;
+  }
+
 `;
 
-export const nameClass = css`
-  color: ${theme.colors.grey};
-  font-size: 14px;
+export const PersonName = styled.div`
+  font-size: 6vh;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 5px;
+  margin-bottom: 1vh;
+  @media (max-width: ${theme.breakpoints.large}px) {
+    font-size: 16px;
+  }
 `;
 
-export const titleClass = css`
+export const PersonTitle = styled.div`
   font-style: italic;
-  font-size: 14px;
+  font-size: 3vh;
   text-transform: uppercase;
+  @media (max-width: ${theme.breakpoints.large}px) {
+    font-size: 16px;
+  }
 `;
 
 export const plusIconClass = css`
-  color: ${theme.colors.red};
+  color: ${theme.colors.grey};
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 700;
