@@ -87,7 +87,7 @@ export const taglineClass = css`
 
 export const navClass = css`
   position: absolute;
-  bottom: 75px;
+  bottom: 100px;
   text-align: center;
   width: 40%;
 

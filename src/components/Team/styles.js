@@ -94,6 +94,7 @@ export const Bio = styled.div`
     overflow: hidden;
     transition: max-height 200ms;
     color: ${theme.colors.grey};
+    padding-right: 0;
   }
 `;
 
