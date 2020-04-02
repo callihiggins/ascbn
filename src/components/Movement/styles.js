@@ -109,6 +109,7 @@ export const buttonClass = css`
   font-weight: 700;
   text-transform: uppercase;
   font-family: proxima-nova-condensed;
+  cursor: pointer;
 `
 
 export const socialHeaderClass = css`
