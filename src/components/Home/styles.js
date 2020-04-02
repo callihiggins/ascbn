@@ -43,12 +43,12 @@ export const logoClass = css`
 
 export const laurelClass = css`
   position: absolute;
-  bottom: 20px;
+  bottom: 20vh;
   right: 20px;
   width: 150px;
 
   @media (max-width: ${theme.breakpoints.large}px) {
-    bottom: 25vh;
+    bottom: 30vh;
     width: 100%;
     text-align: center;
     right: initial;
@@ -87,12 +87,13 @@ export const taglineClass = css`
 
 export const navClass = css`
   position: absolute;
-  bottom: 100px;
   text-align: center;
   width: 40%;
+  bottom: 40px;
 
   @media (max-width: ${theme.breakpoints.large}px) {
     width: 100%;
+    bottom: 15vh;
   }
 `;
 
