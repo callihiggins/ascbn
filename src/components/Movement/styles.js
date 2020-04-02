@@ -7,8 +7,8 @@ export const pageContainerClass = css`
   position: relative;
 
   @media (max-width: ${theme.breakpoints.large}px) {
-    padding: 0;
-    margin: 100px 15px 60px 15px;
+    padding: 100px 0 60px 0;
+    margin: 0 15px 0 15px;
     height: auto;
   }
 `;
@@ -45,6 +45,7 @@ export const aboutContainerClass = css`
   @media (max-width: ${theme.breakpoints.large}px) {
     width: 100%;
     margin-bottom: 40px;
+    margin-right: 0;
   }
 `;
 

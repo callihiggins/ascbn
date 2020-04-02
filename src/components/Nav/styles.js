@@ -16,10 +16,12 @@ export const NavUl = styled.ul`
   justify-content: center;
   text-transform: uppercase;
   list-style: none;
+  align-items: center;
 
   @media (max-width: ${theme.breakpoints.large}px) {
       width: ${props => props.fixedNav ? `calc(100% - 62px)` : `100%`};
       margin-left: ${props => props.fixedNav ? `62px` : `0`};
+      justify-content: space-around;
     };
   }
   
@@ -48,6 +50,17 @@ export const NavItem = styled.li`
 
   @media (max-width: ${theme.breakpoints.large}px) {
     margin:  ${props => props.fixedNav ? `0 6px` : `0 15px`};
+    text-align: center;
+    width: 30%;
+    border-bottom: none;
+    a {
+      color: ${props => props.active ? `${theme.colors.red}` : `${theme.colors.grey}`};
+    }
+
+    &:before,
+    &:after {
+      display: none;
+    }
   }
 
   &:before,

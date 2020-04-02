@@ -1,4 +1,5 @@
 import React from 'react';
+import { default as theme } from '../../../theme';
 import styled, { css } from 'styled-components';
 import { useInView } from 'react-intersection-observer'
 
@@ -23,6 +24,13 @@ const PageComponent = styled.section`
   ${props => props.backgroundImage && props.redOverlay && css`
     background-image: linear-gradient( rgba(211, 36, 50, 0.9), rgba(211, 36, 50, .7) ), url(${props => props.backgroundImage});
   `};
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    height: auto;
+  } 
+
+
+
 `;
 
 const Page = props => {

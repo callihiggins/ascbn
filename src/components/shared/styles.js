@@ -11,8 +11,8 @@ export const textContainerClass = css`
 
   @media (max-width: ${theme.breakpoints.large}px) {
     width: calc(100% - 30px);
-    margin: 100px 15px 20px 15px;
-    height: calc(90vh - 80px);
+    margin: 20px 15px;
+    padding: 20px 0;
     column-count: auto;
   }
 `;

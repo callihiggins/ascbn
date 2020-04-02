@@ -29,6 +29,7 @@ export const peopleContainerClass = css`
     margin: 0 15px;
     display: block;
     padding-top: 60px;
+    height: auto;
   }
 `;
 
@@ -70,6 +71,10 @@ export const bioContainerClass = css`
   margin-top: 95px;
   max-height: calc(100vh - 95px);
   overflow: hidden;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    display: none;
+  }
 `;
 
 export const Bio = styled.div`

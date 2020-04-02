@@ -21,6 +21,15 @@ html {
   font-family: 'proxima-nova', sans-serif;
 }
 
+
+@media (max-width: 1024px) {
+  .app {
+    scroll-snap-points-y: none;
+    scroll-snap-type: none;
+  }
+  
+}
+
 .fixedNav {
   position: fixed;
   top: 0;
