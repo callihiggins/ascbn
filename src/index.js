@@ -3,6 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import smoothscrollPolyfill from 'smoothscroll-polyfill';
+import 'smoothscroll-anchor-polyfill';
+
+
+if (typeof window !== 'undefined') {
+  smoothscrollPolyfill.polyfill();
+}
 
 ReactDOM.render(
   <React.StrictMode>

@@ -29,7 +29,7 @@ class App extends React.Component {
     if (this.state.activeMenu !== active) {
       this.setState({activeMenu: active});
     }
-  }, 10);
+  }, 100);
 
   render() {
     return (

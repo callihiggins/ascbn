@@ -17,14 +17,22 @@ export const NavUl = styled.ul`
   text-transform: uppercase;
   list-style: none;
   align-items: center;
+  height: 30px;
 
   @media (max-width: ${theme.breakpoints.large}px) {
       width: ${props => props.fixedNav ? `calc(100% - 62px)` : `100%`};
       margin-left: ${props => props.fixedNav ? `62px` : `0`};
       justify-content: space-around;
+      align-items: center;
     };
   }
   
+`;
+
+export const NavEl = styled.nav`
+  @media (max-width: ${theme.breakpoints.large}px) {
+    width: ${props => props.fixedNav ? `calc(100% - 62px)` : `100%`};
+  }
 `;
 
 export const activeItemClass = css`

@@ -6,7 +6,7 @@ import { ReactComponent as Logo } from '../../assets/logo.svg';
 import { ReactComponent as HorizontalLogo } from '../../assets/logo_horizontal.svg';
 import * as styles from  './styles';
 import * as sharedstyles from  '../shared/styles';
-import { NavUl, HeaderContainer, NavItem } from './styles';
+import { NavUl, HeaderContainer, NavItem, NavEl } from './styles';
 
 
 const Nav = props => {
@@ -14,7 +14,7 @@ const Nav = props => {
 	return (
     <>
       <HeaderContainer show={props.activeLink !== 'trailer'}>
-        <nav>
+        <NavEl fixedNav={fixedNav}>
           <NavUl fixedNav={fixedNav}v>
             {fixedNav && (
               <NavItem css={sharedstyles.hideMobile} fixedNav={fixedNav} active={props.activeLink=== 'trailer'}>
@@ -31,7 +31,7 @@ const Nav = props => {
               <a href="#movement">Join The Movement</a>
             </NavItem>
           </NavUl>
-        </nav>
+        </NavEl>
         {fixedNav && (
           <div css={sharedstyles.hideMobile}>
             <div css={styles.socialMediaIconsClass}>

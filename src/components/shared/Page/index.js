@@ -27,6 +27,7 @@ const PageComponent = styled.section`
 
   @media (max-width: ${theme.breakpoints.large}px) {
     height: auto;
+    min-height: 100vh;
   } 
 
 
