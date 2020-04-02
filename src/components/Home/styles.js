@@ -43,7 +43,7 @@ export const logoClass = css`
 
 export const laurelClass = css`
   position: absolute;
-  bottom: 20vh;
+  bottom: 20px;
   right: 20px;
   width: 150px;
 
