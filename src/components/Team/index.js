@@ -76,12 +76,10 @@ const Team = props => {
   const [currentlyOpenIndex, setCurrentlyOpenIndex] = useState(null);
   return (
     <Page name="team" updateActive={props.updateActive}>
-      <div css={sharedstyles.stickyClass}>
-        <LeftArrowContainer css={sharedstyles.hideMobile} isInView={props.isInView}>
-          <LeftArrow css={sharedstyles.arrowClass} />
-        </LeftArrowContainer>
-        <SectionTitle css={sharedstyles.hideMobile} left color="white" isInView={props.isInView}>The Team</SectionTitle>
-      </div>
+      <LeftArrowContainer css={sharedstyles.hideMobile} isInView={props.isInView}>
+        <LeftArrow css={sharedstyles.arrowClass} />
+      </LeftArrowContainer>
+      <SectionTitle css={sharedstyles.hideMobile} left color="white" isInView={props.isInView}>The Team</SectionTitle>
       <div onMouseLeave={() => setisActive(false)}>
         <div css={styles.peopleContainerClass}>
           {teamMembers.map((person, index) =>

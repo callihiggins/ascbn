@@ -69,7 +69,7 @@ export const arrowClass = css`
 `;
 
 export const LeftArrowContainer = styled.div`
-  position: sticky;
+  position: absolute;
   top: 0;
   height: 98vh;
 `;
