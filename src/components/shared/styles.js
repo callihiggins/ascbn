@@ -4,10 +4,10 @@ import styled from 'styled-components';
 
 export const textContainerClass = css`
   width: 70%;
-  margin: 24vh auto 0 5%;
-  height: 72vh;
   column-count: 2;
   column-gap: 40px;
+  margin-left: 50px;
+  padding-top: 150px;
 
   @media (max-width: ${theme.breakpoints.large}px) {
     width: calc(100% - 30px);

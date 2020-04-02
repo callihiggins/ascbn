@@ -14,7 +14,6 @@ const PageComponent = styled.section`
   background: ${props => props.backgroundColor ? props.backgroundColor : '#FFFFFF'};
   background-repeat: no-repeat;
   background-size: cover;
-  overflow-y: scroll;
   z-index: ${props => props.shallowZIndex ? '1' : '100'};
 
   ${props => props.backgroundImage && css`
@@ -24,8 +23,6 @@ const PageComponent = styled.section`
   ${props => props.backgroundImage && props.redOverlay && css`
     background-image: linear-gradient( rgba(211, 36, 50, 0.9), rgba(211, 36, 50, .7) ), url(${props => props.backgroundImage});
   `};
-
-  
 `;
 
 const Page = props => {

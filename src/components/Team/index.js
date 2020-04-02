@@ -24,7 +24,7 @@ const Person = ({ name, title, bio, setisActive, currentlyOpenIndex, setCurrentl
   return (
     <PersonContainer
       dimMe={dimMe}
-      onClick={() => {
+      onMouseEnter={() => {
         setisActive(true);
         setCurrentlyOpenIndex(index);
       }}
@@ -82,28 +82,28 @@ const Team = props => {
         </LeftArrowContainer>
         <SectionTitle css={sharedstyles.hideMobile} left color="white" isInView={props.isInView}>The Team</SectionTitle>
       </div>
-      {/* <div css={styles.peopleContainerClass} onMouseLeave={() => setisActive(false)}> */}
-      <div css={styles.peopleContainerClass} >
-
-        {teamMembers.map((person, index) =>
-          <Person 
-            setCurrentlyOpenIndex={setCurrentlyOpenIndex}
-            currentlyOpenIndex={currentlyOpenIndex}
-            isActive={isActive}
-            setisActive={setisActive}
-            index={index}
-            { ...person}
-          />
+      <div onMouseLeave={() => setisActive(false)}>
+        <div css={styles.peopleContainerClass}>
+          {teamMembers.map((person, index) =>
+            <Person 
+              setCurrentlyOpenIndex={setCurrentlyOpenIndex}
+              currentlyOpenIndex={currentlyOpenIndex}
+              isActive={isActive}
+              setisActive={setisActive}
+              index={index}
+              { ...person}
+            />
+          )}
+        </div>
+        {!!isActive && currentlyOpenIndex > -1 && (
+          <div css={styles.bioContainerClass}>
+            <img src={teamMembers[currentlyOpenIndex].image} css={styles.headshotImageClass}/>
+            <Bio>
+              {teamMembers[currentlyOpenIndex].bio}
+            </Bio>
+          </div>
         )}
       </div>
-      {!!isActive && currentlyOpenIndex > -1 && (
-        <div css={styles.bioContainerClass}>
-          <img src={teamMembers[currentlyOpenIndex].image} css={styles.headshotImageClass}/>
-          <Bio>
-            {teamMembers[currentlyOpenIndex].bio}
-          </Bio>
-        </div>
-      )}
     </Page>
   )
 }
