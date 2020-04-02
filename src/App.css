@@ -24,8 +24,8 @@ html {
 
 @media (max-width: 1024px) {
   .app {
-    scroll-snap-points-y: none;
-    scroll-snap-type: none;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y proximity;
   }
   
 }
