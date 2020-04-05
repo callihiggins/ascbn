@@ -77,6 +77,9 @@ html {
   max-height: 0;
 }
 
+.bio-desktop  {
+  max-height: 0;
+}
 .bio-enter {
   max-height: 0vh !important;
   transition: max-height 200ms;
@@ -102,5 +105,19 @@ html {
 
 .bio-exit-done {
   max-height: 0;
-  transition: max-height 200ms;
+}
+
+.bio-desktop-enter {
+  max-height: calc(50vh - 115px) !important;
+}
+
+.bio-desktop-enter-done {
+  max-height: calc(50vh - 115px) !important;
+} 
+
+.bio-desktop-exit {
+  max-height: calc(50vh - 115px) !important;
+}
+.bio-desktop-exit-active {
+  max-height: 0vh !important;
 }
