@@ -12,7 +12,7 @@ export const teamMembers = [
     image: graceLee,
   },
   {
-    name: 'Marjan Safina',
+    name: 'Marjan Safinia',
     title: 'Producer/Director',
     bio: 'Marjan Safinia is an Iranian documentary filmmaker whose films examine identity, community and social justice. BUT YOU SPEAK SUCH GOOD ENGLISH explores the first-generation immigrant experience from an insider perspective. SEEDS, tells the story of ten brave teenagers from the world’s most troubled conflict zones living side-by-side for one life-changing summer. Collectively her films have played at over 100 international film festivals and been broadcast in North America, Europe and across the Arab world. Most recently she produced and directed work for Google Founder Sergey Brin, the Obama administration, and Hillary Clinton’s Next Generation. Until 2018, Marjan was the longest-serving President of the Board of Directors of the International Documentary Association (and the only woman of color to lead this organization since it was founded in 1982). She co-hosts the pre-eminent online documentary community, The D-Word, and is a regular juror, programmer, speaker and connector of all things documentary.',
     image: marjanSafinia,
