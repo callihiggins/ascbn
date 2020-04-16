@@ -119,8 +119,7 @@ export const trailerCTAClass = css`
     bottom: 15vh;
     width: 100%;
     justify-content: center;
-}
-  } 
+  }
 `;
 
 export const playerButtonClass = css`
