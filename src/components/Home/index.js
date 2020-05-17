@@ -47,7 +47,7 @@ const Home = props => {
 					center
 				>
 					<ReactPlayer
-						url='https://www.youtube.com/watch?v=MZ7QNdZ7jCY'
+						url='https://www.youtube.com/watch?v=YC3xiv1CbYM'
 						playing
 						controls
 						style={{'margin': '0 auto'}}
