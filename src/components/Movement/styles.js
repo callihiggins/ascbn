@@ -14,7 +14,7 @@ export const pageContainerClass = css`
 `;
 
 export const ctaClass = css`
-  font-size: 60px;
+  font-size: 40px;
   color: #FFFFFF;
   font-family: "proxima-nova-extra-condensed";
   text-transform: uppercase;
@@ -37,10 +37,10 @@ export const aboutContainerClass = css`
   color: white;
   font-size: 18px;
   font-weight: 600;
-  line-height: 28px;
+  line-height: 24px;
   margin-right: 5%;
   margin-top: 20px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 
   @media (max-width: ${theme.breakpoints.large}px) {
     width: 100%;
@@ -58,7 +58,7 @@ export const actionContainerClass = css`
 `;
 
 export const textItemClass = css`
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 `;
 
 export const signupContainerClass = css`
