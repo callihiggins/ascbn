@@ -116,7 +116,7 @@ export const trailerCTAClass = css`
     color: #3D3838;
     position: absolute;
     left: initial;
-    bottom: 15vh;
+    bottom: 22vh;
     width: 100%;
     justify-content: center;
   }

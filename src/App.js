@@ -8,6 +8,7 @@ import About from './components/About'
 // import IntroText from './components/IntroText'
 import Team from './components/Team'
 import Movement from './components/Movement'
+import Screenings from './components/Screenings';
 import './App.css';
 import * as theme from './theme'
 import { debounce } from 'lodash';
@@ -48,6 +49,7 @@ class App extends React.Component {
           {/* <IntroText updateActive={this.updateActiveCallback}/> */}
           <About updateActive={this.updateActiveCallback} isInView={this.state.activeMenu === 'about' ||  this.state.activeMenu === 'introText'} />
           <Team shallowZIndex={true} isInView={this.state.activeMenu === 'team' } updateActive={this.updateActiveCallback} />
+          <Screenings updateActive={this.updateActiveCallback} isInView={this.state.activeMenu === 'festivals' ||  this.state.activeMenu === 'introText'} />
           <Movement updateActive={this.updateActiveCallback} />      
         </ThemeProvider>
       </div>

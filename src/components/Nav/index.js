@@ -27,6 +27,9 @@ const Nav = props => {
             <NavItem fixedNav={fixedNav} active={props.activeLink=== 'team'}>
               <a href="#team">The Team</a>
             </NavItem>
+            <NavItem fixedNav={fixedNav} active={props.activeLink=== 'festivals'}>
+              <a href="#festivals">Festivals</a>
+            </NavItem>
             <NavItem fixedNav={fixedNav} active={props.activeLink=== 'movement'}>
               <a href="#movement">Join The Movement</a>
             </NavItem>

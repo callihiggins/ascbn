@@ -34,17 +34,17 @@ export const containerClass = css`
 `;
 
 export const aboutContainerClass = css`
-  width: 45%;
   color: white;
   font-size: 18px;
   font-weight: 600;
   line-height: 28px;
   margin-right: 5%;
   margin-top: 20px;
+  margin-bottom: 60px;
 
   @media (max-width: ${theme.breakpoints.large}px) {
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     margin-right: 0;
   }
 `;
@@ -174,3 +174,11 @@ export const thankyouClass = css`
   margin: 20px 0 10px 0;
   letter-spacing: normal;
 `;
+
+export const leftSideClass = css`
+  width: 50%;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    width: 100%;
+  }
+`
