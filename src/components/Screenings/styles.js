@@ -1,5 +1,7 @@
 import { css } from '@emotion/core';
 import { default as theme } from '../../theme';
+import styled from 'styled-components';
+
 
 export const rightArrowClass = css`
   position: absolute;
@@ -25,6 +27,7 @@ export const containerClass = css`
     margin: 20px 15px;
     padding: 20px 0;
     column-count: auto;
+    height: auto;
   }
 `;
 
@@ -35,7 +38,7 @@ export const festivalBlockClass = css`
 
   @media (max-width: ${theme.breakpoints.large}px) {
     flex-direction: column;
-
+    margin-bottom: 40px;
     img {
       margin-bottom: 15px;
     }
@@ -54,9 +57,9 @@ export const festivalBlockClass = css`
 
 export const festivalDetailsClass = css`
   color: white;
-  font-size: 22px;
+  font-size: 18px;
   text-align: left;
-  width: 45%;
+  width: 60%;
 
   @media (max-width: ${theme.breakpoints.large}px) {
     width: 100%;
@@ -67,19 +70,31 @@ export const festivalDetailsClass = css`
 
 export const titleClass = css`
   color: white;
-  font-size: 36px;
-  padding-bottom: 5px;
-
-  @media (max-width: ${theme.breakpoints.large}px) {
-    font-size: 28px;
-  }
-`;
-
-export const dateClass = css`
   font-size: 26px;
   padding-bottom: 5px;
 
   @media (max-width: ${theme.breakpoints.large}px) {
     font-size: 22px;
   }
+`;
+
+export const dateClass = css`
+  font-size: 22px;
+  padding-bottom: 5px;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    font-size: 18px;
+  }
+`;
+
+export const SectionTitle = styled.div`
+  position: absolute;
+  right: 20px;
+  left: auto;
+  top: 45vh;
+  color: ${props  => props.color ? props.color : `${theme.colors.red}`};
+  text-transform: uppercase;
+  font-size: 50px;
+  font-family: proxima-nova-extra-condensed;
+  font-weight: 700;
 `;
