@@ -61,7 +61,7 @@ const Home = props => {
 						<Logo css={styles.logoClass}/>
 					</div>
 					<div css={styles.taglineClass}>
-						A new docuseries from POV
+						A new documentary from POV
 					</div>
 					<div css={sharedstyles.hideDesktop}>
 						<div css={styles.laurelClass}>
