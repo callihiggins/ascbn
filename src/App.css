@@ -38,7 +38,6 @@ html {
 }
 
 .app {
-  overflow-y: scroll;
   scroll-behavior: smooth;
   --scroll-behavior: smooth;
   scroll-snap-points-y: repeat(100vh);
