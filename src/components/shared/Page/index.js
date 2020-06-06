@@ -4,7 +4,7 @@ import styled, { css } from 'styled-components';
 import { useInView } from 'react-intersection-observer'
 
 const PageComponent = styled.section`
-  position: relative;
+  // position: relative;
   width: 100%;
   overflow-x: hidden;
   scroll-snap-align: start;

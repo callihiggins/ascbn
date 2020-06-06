@@ -101,9 +101,10 @@ export const videoOverlayClass = css`
 `;
 
 export const videoPlayerClass = css`
-  position: absolute;
+  position: fixed;
+  transform: translateZ(0);
   top: 0;
-  z-index: 2;
+  z-index: -1;
 
   @media (min-aspect-ratio: 16/9) {
     width:100%;
