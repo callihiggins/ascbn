@@ -4,7 +4,6 @@ import styled, { css } from 'styled-components';
 import { useInView } from 'react-intersection-observer'
 
 const PageComponent = styled.section`
-  // position: relative;
   width: 100%;
   overflow-x: hidden;
   scroll-snap-align: start;
@@ -22,22 +21,19 @@ const PageComponent = styled.section`
     height: auto;
     min-height: 100vh;
   } 
-
-
-
 `;
 
 const Page = props => {
-  // const [ref, inView] = useInView({
-  //   threshold: .5,
-  // })
+  const [ref, inView] = useInView({
+    threshold: 1,
+  })
 
-  // if (inView) {
-  //  props.updateActive(props.name)
-  // }
+  if (inView) {
+   props.updateActive(props.name)
+  }
 
   return (
-    <PageComponent id={props.name} {...props}>{props.children}</PageComponent>
+    <PageComponent id={props.name} ref={ref} {...props}>{props.children}</PageComponent>
   )
 };
   

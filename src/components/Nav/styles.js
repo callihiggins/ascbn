@@ -12,7 +12,6 @@ export const HeaderContainer = styled.div`
   z-index: 120;
   position: fixed;
   width: 100%;
-  margin-top: 20px;
   justify-content: center;
 `;
 
@@ -50,13 +49,13 @@ export const NavItem = styled.li`
   list-decoration: none;
   font-weight: ${props => props.active ? '700' : '600'};
   font-size: 12px;
-  color: ${theme.colors.grey};
+  color: ${theme.colors.navy};
   cursor: pointer;
   position: relative;
-  border-bottom: ${props => props.active ? `1px solid ${theme.colors.red}` : '0'};
+  border-bottom: ${props => props.active ? `1px solid ${theme.colors.navy}` : '0'};
 
   a {
-    color: ${theme.colors.cream};
+    color: ${theme.colors.navy};
     text-decoration: none;
     cursor: pointer;
   }

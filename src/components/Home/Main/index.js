@@ -29,7 +29,7 @@ class Main extends React.Component {
 
 	render() {
 		return (
-			<Page>
+			<Page updateActive={this.props.updateActive} name="home">
         <NavLite />
 				<div css={styles.containerClass}>
 					<Modal
