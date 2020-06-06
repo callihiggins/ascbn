@@ -1,9 +1,11 @@
 export default {
   colors: {
-    red: '#D32432',
-    grey: '#3D3838',
-    navy: '#2C2F6C',
-    lightBlue: `#9ECFEE`,
+    cream: '#FFF0D7',
+    pink: '#F26D65',
+    navy: '#004564',
+    teal: '#009E9B',
+    aqua: '#8DD1C3',
+
   },
   breakpoints: {
     large: '1024',

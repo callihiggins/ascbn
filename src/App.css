@@ -1,6 +1,30 @@
 @import url("https://use.typekit.net/hpa8gop.css");
 @import-normalize;
 
+@font-face {
+  font-family: 'Avenir';
+  font-weight: 900;
+  src: local('Avenir'), url(./assets/fonts/AvenirLTStd-Heavy.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'Avenir';
+  font-style: italic;
+  src: local('Avenir'), url(./assets/fonts/AvenirLTStd-Heavy-Oblique.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'ChangaOne';
+  font-weight: 500;
+  src: local('Avenir'), url(./assets/fonts/ChangaOne-Regular.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'ChangaOne';
+  font-style: italic;
+  src: local('Avenir'), url(./assets/fonts/ChangaOne-Italic.ttf) format('ttf');
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -17,10 +41,9 @@ html {
   overflow-y: scroll;
   scroll-behavior: smooth;
   --scroll-behavior: smooth;
-  max-height: 100vh;
   scroll-snap-points-y: repeat(100vh);
   scroll-snap-type: y mandatory;
-  font-family: 'proxima-nova', sans-serif;
+  font-family: 'Avenir';
 }
 
 
@@ -73,51 +96,3 @@ html {
   transition: opacity 200ms;
 }
 
-.bio {
-  max-height: 0;
-}
-
-.bio-desktop  {
-  max-height: 0;
-}
-.bio-enter {
-  max-height: 0vh !important;
-  transition: max-height 200ms;
-}
-
-.bio-enter-done {
-  max-height: 100vh !important;
-  transition: max-height 200ms;
-} 
-
-.bio-enter-active {
-  max-height: 50vh !important;
-  transition: max-height 200ms;
-}
-.bio-exit {
-  max-height: 100vh !important;
-  transition: max-height 200ms;
-}
-.bio-exit-active {
-  max-height: 0vh !important;
-  transition: max-height 200ms;
-}
-
-.bio-exit-done {
-  max-height: 0;
-}
-
-.bio-desktop-enter {
-  max-height: calc(50vh - 115px) !important;
-}
-
-.bio-desktop-enter-done {
-  max-height: calc(50vh - 115px) !important;
-} 
-
-.bio-desktop-exit {
-  max-height: calc(50vh - 115px) !important;
-}
-.bio-desktop-exit-active {
-  max-height: 0vh !important;
-}

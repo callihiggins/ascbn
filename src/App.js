@@ -1,14 +1,16 @@
 import React from 'react';
+import { ContentfulClient, ContentfulProvider } from 'react-contentful';
 import { ThemeProvider } from 'styled-components';
 import { CSSTransition } from "react-transition-group";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 import 'normalize.css';
 import Home from './components/Home'
 import Nav from './components/Nav'
-import About from './components/About'
-// import IntroText from './components/IntroText'
-import Team from './components/Team'
-import Movement from './components/Movement'
-import Screenings from './components/Screenings';
 import './App.css';
 import * as theme from './theme'
 import { debounce } from 'lodash';
@@ -18,6 +20,11 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faSpinner, faPlus, faMinus } from '@fortawesome/free-solid-svg-icons'
 
 library.add(fab, faSpinner, faPlus, faMinus);
+
+const contentfulClient = new ContentfulClient({
+  accessToken: process.env.REACT_APP_CONTENTFUL_TOKEN,
+  space: process.env.REACT_APP_SPACE_ID,
+});
 
 
 class App extends React.Component {
@@ -35,27 +42,36 @@ class App extends React.Component {
   render() {
     return (
       <div className="app">
-        <ThemeProvider theme={theme}>
-          <Home updateActive={this.updateActiveCallback}/>
-            <CSSTransition
-              in={this.state.activeMenu !== 'trailer'}
-              timeout={1000}
-              classNames="nav"
-            >
-              <div className="fixedNav">
-                <Nav activeLink={this.state.activeMenu} fixedNav={this.state.activeMenu !== 'trailer'}/>
-              </div>
-            </CSSTransition>
-          {/* <IntroText updateActive={this.updateActiveCallback}/> */}
-          <About updateActive={this.updateActiveCallback} isInView={this.state.activeMenu === 'about' ||  this.state.activeMenu === 'introText'} />
-          <Team shallowZIndex={true} isInView={this.state.activeMenu === 'team' } updateActive={this.updateActiveCallback} />
-          <Screenings updateActive={this.updateActiveCallback} isInView={this.state.activeMenu === 'festivals' ||  this.state.activeMenu === 'introText'} />
-          <Movement updateActive={this.updateActiveCallback} />      
-        </ThemeProvider>
+        <ContentfulProvider client={contentfulClient}>
+          <ThemeProvider theme={theme}>
+            <Router>
+            <Switch>
+              <Route exact path="/">
+                <Home />
+              </Route>
+              {/* <Route path="/about">
+              </Route>
+              <Route path="/jointhemovement">
+              </Route> */}
+            </Switch>
+            </Router>
+          </ThemeProvider>
+        </ContentfulProvider>
       </div>
     );
   }
-  
 }
 
 export default App;
+
+
+ /* <CSSTransition
+  in={this.state.activeMenu !== 'trailer'}
+  timeout={1000}
+  classNames="nav"
+>
+  <div className="fixedNav">
+    <Nav activeLink={this.state.activeMenu} fixedNav={this.state.activeMenu !== 'trailer'}/>
+  </div>
+</CSSTransition> */
+

@@ -2,14 +2,14 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { css } from '@emotion/core';
 import EmailSignup from './emailSignup'
-import movementImage from '../../assets/movementImage.png';
+// import movementImage from '../../assets/movementImage.png';
 import * as styles from './styles';
 import * as sharedstyles from '../shared/styles';
 import Page from '../shared/Page';
 
 const Movement = props => {
   return (
-    <Page name="movement" backgroundImage={movementImage} updateActive={props.updateActive}>
+    <Page name="movement" updateActive={props.updateActive}>
       <div css={styles.pageContainerClass}>
         <div css={styles.containerClass}>
           <div css={styles.leftSideClass}>

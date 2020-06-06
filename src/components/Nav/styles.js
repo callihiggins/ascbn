@@ -7,17 +7,23 @@ const distance = '8px';
 const easeOutBack = 'cubic-bezier(0.175, 0.885, 0.320, 1.275)';
 
 export const HeaderContainer = styled.div`
-  display:  ${props => props.show ? 'flex' : 'block'};
-  justify-content: space-between;
+  display: flex;
+  background:  ${props => props.backgroundColor || 'transparent'};
+  z-index: 120;
+  position: fixed;
+  width: 100%;
+  margin-top: 20px;
+  justify-content: center;
 `;
 
 export const NavUl = styled.ul`
   display: flex;
-  justify-content: center;
   text-transform: uppercase;
   list-style: none;
   align-items: center;
   height: 30px;
+  text-align: center;
+  justify-content: center;
 
   @media (max-width: ${theme.breakpoints.large}px) {
       width: ${props => props.fixedNav ? `calc(100% - 62px)` : `100%`};
@@ -30,9 +36,7 @@ export const NavUl = styled.ul`
 `;
 
 export const NavEl = styled.nav`
-  @media (max-width: ${theme.breakpoints.large}px) {
-    width: ${props => props.fixedNav ? `calc(100% - 62px)` : `100%`};
-  }
+  width: 50%;
 `;
 
 export const activeItemClass = css`
@@ -41,17 +45,18 @@ export const activeItemClass = css`
 `;
 
 export const NavItem = styled.li`
+  width: 135px;
   margin: 0 20px;
   list-decoration: none;
   font-weight: ${props => props.active ? '700' : '600'};
-  font-size: 14px;
+  font-size: 12px;
   color: ${theme.colors.grey};
   cursor: pointer;
   position: relative;
   border-bottom: ${props => props.active ? `1px solid ${theme.colors.red}` : '0'};
 
   a {
-    color: ${theme.colors.grey};
+    color: ${theme.colors.cream};
     text-decoration: none;
     cursor: pointer;
   }
