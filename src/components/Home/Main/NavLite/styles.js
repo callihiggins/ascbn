@@ -1,5 +1,5 @@
 import { css } from '@emotion/core';
-import { default as theme } from '../../theme';
+import { default as theme } from '../../../../theme';
 import styled from 'styled-components';
 
 const duration = '.2s';
@@ -8,12 +8,12 @@ const easeOutBack = 'cubic-bezier(0.175, 0.885, 0.320, 1.275)';
 
 export const HeaderContainer = styled.div`
   display: flex;
-  background:  ${theme.colors.cream};
+  background:  ${props => props.backgroundColor || 'transparent'};
   z-index: 120;
-  position: fixed;
   width: 100%;
   margin-top: 20px;
   justify-content: center;
+  position: relative;
 `;
 
 export const NavUl = styled.ul`
@@ -133,7 +133,7 @@ export const socialMediaIconsClass = css`
 `;
 
 export const iconClass = css`
-  color: ${theme.colors.navy};
+  color: ${theme.colors.cream};
   font-size: 20px;
   font-weight: 700;
 `;

@@ -21,7 +21,7 @@ export const trailerBlockClass = css`
 
 export const logoContainerClass = css`
   text-align: center;
-  margin-top: 25vh;
+  margin-top: 20vh;
   position: relative;
 `;
 

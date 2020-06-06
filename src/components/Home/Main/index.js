@@ -1,5 +1,6 @@
 import React from 'react';
 import Modal from 'react-responsive-modal';
+import NavLite from './NavLite';
 import * as styles from  './styles';
 import * as sharedstyles from  '../../shared/styles';
 import Page from '../../shared/Page';
@@ -29,6 +30,7 @@ class Main extends React.Component {
 	render() {
 		return (
 			<Page>
+        <NavLite />
 				<div css={styles.containerClass}>
 					<Modal
 						open={this.state.modalIsOpen}
