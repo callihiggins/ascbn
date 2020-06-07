@@ -19,7 +19,7 @@ const About = props => (
         <div css={styles.textContainerClass}>
           { documentToReactComponents(props.text)}
           <div css={styles.buttonGroupClass}>
-            <button css={styles.buttonClass}>Learn More</button>
+            <a href="/about"><button css={styles.buttonClass}>Learn More</button></a>
             <button css={styles.buttonClass}>Meet the Filmmakers</button>
           </div>
         </div>

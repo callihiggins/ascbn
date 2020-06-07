@@ -82,7 +82,7 @@ export const buttonClass = css`
   text-transform: uppercase;
   border-style: none;
   font-weight: 900;
-
+  cursor: pointer;
   @media (max-width: ${theme.breakpoints.large}px) {
     margin-left: 20px;
   }

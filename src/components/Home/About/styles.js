@@ -61,4 +61,5 @@ export const buttonClass = css`
   border-style: none;
   font-weight: 900;
   margin-top: 30px;
+  cursor: pointer;
 `;
