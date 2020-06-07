@@ -25,7 +25,7 @@ const PageComponent = styled.section`
 
 const Page = props => {
   const [ref, inView] = useInView({
-    threshold: 1,
+    threshold: .5,
   })
 
   if (inView) {

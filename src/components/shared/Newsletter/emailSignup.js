@@ -23,8 +23,9 @@ const CustomForm = ({ status, message, onValidated }) => {
       {status === "success" && (
         <div>Thank you for singing up</div>
       )}
-      {status !== "success" && (
+      {status !== "success" && status !== 'error' && (
         <>
+          <div css={styles.titleClass}>Sign up for our newsletter</div>
           <input
             css={styles.inputItemClass}
             ref={node => (email = node)}
@@ -48,13 +49,13 @@ const CustomForm = ({ status, message, onValidated }) => {
               <FontAwesomeIcon icon={[ 'fas', 'spinner' ]} className="fa-spin"/>
             </div>
           )}
-          {status === "error" && (
-            <div
-              css={styles.emailMessageClass}
-              dangerouslySetInnerHTML={{ __html: message }}
-            />
-          )}
         </>
+      )}
+      {status === "error" && (
+        <div
+          css={styles.emailMessageClass}
+          dangerouslySetInnerHTML={{ __html: message }}
+        />
       )}
     </div>
   );

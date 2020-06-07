@@ -20,6 +20,7 @@ export const HalfSection = styled.div`
 
   @media (max-width: ${theme.breakpoints.large}px) {
     width: 100%;
+    text-align: center;
   }
 
 `;
@@ -41,12 +42,12 @@ export const textContainerClass = css`
 
 export const buttonGroupClass = css`
   display: flex;
-  justify-content: space-between;
   margin-top: 20px;
   width: 350px;
   @media (max-width: ${theme.breakpoints.large}px) {
     width: 100%;
-    max-width: 400px;
+    justify-content: center;
+
   }
 `;
 
@@ -61,4 +62,8 @@ export const buttonClass = css`
   border-style: none;
   font-weight: 900;
   margin-top: 30px;
+`;
+
+export const mobileImageContainerClass = css`
+  text-align: center;
 `;

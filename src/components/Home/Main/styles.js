@@ -3,10 +3,19 @@ import { default as theme } from '../../../theme';
 
 export const containerClass = css`
   display: flex;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    background: ${theme.colors.navy};
+    height: calc(100vh - 50px);
+  }
 `;
 
 export const logoBlockClass = css`
   z-index: 5;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    padding: 0 15px;
+  }
 `;
 
 export const trailerBlockClass = css`
@@ -27,6 +36,9 @@ export const logoContainerClass = css`
 
 export const logoClass = css`
  width: 60%;
+ @media (max-width: ${theme.breakpoints.large}px) {
+  width: 90%;
+ }
 `;
 
 export const taglineClass = css`
@@ -37,6 +49,10 @@ export const taglineClass = css`
   margin-top: 7vh;
   color: ${theme.colors.cream};
   line-height: 26px;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    font-size: 17px;
+  }
 `;
 
 export const navClass = css`
@@ -98,6 +114,10 @@ export const videoOverlayClass = css`
   position: absolute;
   top: 0;
   z-index: 3;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    display: none;
+  }
 `;
 
 export const videoPlayerClass = css`

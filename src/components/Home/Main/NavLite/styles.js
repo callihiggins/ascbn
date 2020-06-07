@@ -12,8 +12,14 @@ export const HeaderContainer = styled.div`
   z-index: 120;
   width: 100%;
   margin-top: 20px;
-  justify-content: center;
+  justify-content: space-around;
   position: relative;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    background: ${theme.colors.navy};
+    padding-top: 20px;
+    margin-top: 0;
+  }
 `;
 
 export const NavUl = styled.ul`
@@ -26,7 +32,7 @@ export const NavUl = styled.ul`
   justify-content: center;
 
   @media (max-width: ${theme.breakpoints.large}px) {
-      width: ${props => props.fixedNav ? `calc(100% - 62px)` : `100%`};
+      width: 100%;
       margin-left: ${props => props.fixedNav ? `62px` : `0`};
       justify-content: space-around;
       align-items: center;
@@ -37,11 +43,9 @@ export const NavUl = styled.ul`
 
 export const NavEl = styled.nav`
   width: 50%;
-`;
-
-export const activeItemClass = css`
-  font-weight: 700;
-  border-bottom: 1px solid ${theme.colors.red};
+  @media (max-width: ${theme.breakpoints.large}px) {
+    width: 100%;
+  }
 `;
 
 export const NavItem = styled.li`
@@ -50,10 +54,11 @@ export const NavItem = styled.li`
   list-decoration: none;
   font-weight: ${props => props.active ? '700' : '600'};
   font-size: 12px;
-  color: ${theme.colors.grey};
+  font-weight: 900;
+  color: ${theme.colors.cream};
   cursor: pointer;
   position: relative;
-  border-bottom: ${props => props.active ? `1px solid ${theme.colors.red}` : '0'};
+  border-bottom: ${props => props.active ? `1px solid ${theme.colors.cream}` : '0'};
 
   a {
     color: ${theme.colors.cream};
@@ -64,10 +69,9 @@ export const NavItem = styled.li`
   @media (max-width: ${theme.breakpoints.large}px) {
     margin:  ${props => props.fixedNav ? `0 6px` : `0 15px`};
     text-align: center;
-    width: 30%;
     border-bottom: none;
     a {
-      color: ${props => props.active ? `${theme.colors.red}` : `${theme.colors.grey}`};
+      color: ${theme.colors.cream};
     }
 
     &:before,
@@ -83,7 +87,7 @@ export const NavItem = styled.li`
     bottom: -3px;
     left: 0; right: 0;
     height: 2px;
-    background-color: ${theme.colors.red};
+    background-color: ${theme.colors.cream};
   }
   &:before {
     opacity: 0;
@@ -111,25 +115,14 @@ export const NavItem = styled.li`
   }
 `;
 
-export const donateButtonClass = css`
-  display: inline-block;
-  position: absolute;
-  right: 40px;
-  text-decoration: none;
-  color: ${theme.colors.navy};
-  text-transform: uppercase;
-  padding-bottom: 7px;
-  font-weight: 700;
-  font-size: 18px;
-  font-family: 'proxima-nova-condensed', sans-serif;
-}
-`
-
 export const socialMediaIconsClass = css`
   display: inline-flex;
   justify-content: space-between;
-  width: 100px;
-  margin-right: 140px;
+  width: 25%;
+  text-align: right;
+  padding-left: 15%;
+  width: calc(10% - 20px);
+  padding-right: 20px;
 `;
 
 export const iconClass = css`
@@ -155,14 +148,10 @@ export const logoClass = css`
   }
 `;
 
-export const MobileNav = styled.div`
-  width: 100%;
-  background: ${props => props.bgColor ? props.bgColor : `${theme.colors.red}`};
-  color: ${props => props.textColor ? props.textColor : `#FFFFFF`};
-  text-transform: uppercase;
-  font-size: 18px;
-  font-family: proxima-nova-extra-condensed;
-  font-weight: 700;
-  padding: 10px 15px;
-  margin-top: 15px;
+export const emptySpacerClass = css`
+  width: 25%;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    display: none;
+  }
 `;

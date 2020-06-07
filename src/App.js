@@ -11,6 +11,7 @@ import {
 import 'normalize.css';
 import Home from './components/Home'
 import Nav from './components/Nav'
+import Footer from './components/shared/Footer';
 import './App.css';
 import * as theme from './theme'
 import { debounce } from 'lodash';
@@ -55,6 +56,7 @@ class App extends React.Component {
               </Route> */}
             </Switch>
             </Router>
+            <Footer />
           </ThemeProvider>
         </ContentfulProvider>
       </div>

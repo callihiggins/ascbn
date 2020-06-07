@@ -30,6 +30,7 @@
   margin: 0;
   list-style-type: none;
   outline: 0;
+  border-style: none;
 }
 
 html {
@@ -43,6 +44,7 @@ html {
   scroll-snap-points-y: repeat(100vh);
   scroll-snap-type: y mandatory;
   font-family: 'Avenir';
+  font-weight: 800;
 }
 
 

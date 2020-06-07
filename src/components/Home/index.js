@@ -1,18 +1,15 @@
 import React from 'react';
 import { CSSTransition } from "react-transition-group";
 import { withTheme } from 'styled-components';
-import { withContentful } from 'react-contentful';
+import { Query } from 'react-contentful';
 import { debounce } from 'lodash';
 import Nav from '../Nav';
 import Main from './Main';
 import About from './About';
+import Watch from './Watch';
+import Newsletter from '../shared/Newsletter';
 
 class Home extends React.Component {
-
-	componentDidMount() {
-		const { client } = this.props.contentful;
-		client.getEntries('homeAboutText').then(data => this.data = data);
-	}
 
 	state = {
     activeMenu: 'home',
@@ -26,22 +23,32 @@ class Home extends React.Component {
 
 	render() {
 		return (
-			<>
-				<CSSTransition
-					in={this.state.activeMenu !== 'home'}
-					timeout={1000}
-					classNames="nav"
-				>
-					<div className="fadedNav">
-						<Nav />
-					</div>
-				</CSSTransition>
-				<Main updateActive={this.updateActiveCallback} />
-				<About updateActive={this.updateActiveCallback}/>
-			</>
+			<Query contentType="homeAboutText">
+				{({data, error, fetched, loading}) => {
+					const aboutText = data?.items[0]?.fields?.about;
+					const watchText = data?.items[0]?.fields?.viewingInformation;
+					return (
+						<>
+							<CSSTransition
+								in={this.state.activeMenu !== 'home'}
+								timeout={1000}
+								classNames="nav"
+							>
+								<div className="fadedNav">
+									<Nav />
+								</div>
+							</CSSTransition>
+							<Main updateActive={this.updateActiveCallback} />
+							<About updateActive={this.updateActiveCallback} text={aboutText}/>
+							<Watch updateActive={this.updateActiveCallback} text={watchText}/>
+							<Newsletter />
+						</>
+					)
+				}}
+			</Query>
 		)
 	}
 	
 }
 
-export default withContentful(withTheme(Home));
+export default withTheme(Home);
