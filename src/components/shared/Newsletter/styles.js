@@ -27,7 +27,7 @@ export const titleClass = css`
 
 export const containerClass = css`
   width: 100%;
-  height: 150px;
+  height: 100px;
   background: ${theme.colors.pink};
   color: ${theme.colors.cream};
   display: flex;

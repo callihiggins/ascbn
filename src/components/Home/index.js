@@ -41,7 +41,6 @@ class Home extends React.Component {
 							<Main updateActive={this.updateActiveCallback} />
 							<About updateActive={this.updateActiveCallback} text={aboutText}/>
 							<Watch updateActive={this.updateActiveCallback} text={watchText}/>
-							<Newsletter />
 						</>
 					)
 				}}

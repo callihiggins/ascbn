@@ -10,7 +10,7 @@ import {
 } from "react-router-dom";
 import 'normalize.css';
 import Home from './components/Home'
-import Nav from './components/Nav'
+import Newsletter from './components/shared/Newsletter';
 import Footer from './components/shared/Footer';
 import './App.css';
 import * as theme from './theme'
@@ -56,6 +56,7 @@ class App extends React.Component {
               </Route> */}
             </Switch>
             </Router>
+            <Newsletter />
             <Footer />
           </ThemeProvider>
         </ContentfulProvider>
