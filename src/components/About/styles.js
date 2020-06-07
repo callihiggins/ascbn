@@ -18,3 +18,17 @@ export const playerClass = css`
     height: 50vh
   }
 `;
+
+export const aboutTextClass = css`
+  column-count: 2;
+  color: ${theme.colors.cream};
+  column-count: 2;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 25px;
+
+  p {
+
+    margin-bottom: 20px;
+  }
+`;
