@@ -33,6 +33,10 @@ export const containerClass = css`
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    height: 150px;
+  }
 `;
 
 export const signupContainerClass = css`
@@ -44,7 +48,6 @@ export const signupContainerClass = css`
   @media (max-width: ${theme.breakpoints.large}px) {
     flex-wrap: wrap;
     justify-content: center;
-    margin-left: 20px;
   }
 `;
 

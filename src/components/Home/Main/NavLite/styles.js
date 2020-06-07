@@ -64,6 +64,8 @@ export const NavItem = styled.li`
     color: ${theme.colors.cream};
     text-decoration: none;
     cursor: pointer;
+    position: relative;
+    width: auto;
   }
 
   @media (max-width: ${theme.breakpoints.large}px) {
@@ -72,47 +74,48 @@ export const NavItem = styled.li`
     border-bottom: none;
     a {
       color: ${theme.colors.cream};
+      &:before,
+      &:after {
+        display: none;
+      }
     }
-
+  }
+  a {
     &:before,
     &:after {
-      display: none;
-    }
-  }
-
-  &:before,
-  &:after {
-    content: '';
-    position: absolute;
-    bottom: -3px;
-    left: 0; right: 0;
-    height: 2px;
-    background-color: ${theme.colors.cream};
-  }
-  &:before {
-    opacity: 0;
-    transform: translateY(- ${distance});
-    transition: transform 0s ${easeOutBack}, opacity 0s;
-  }
-  &:after {
-    opacity: 0;
-    transform: translateY($distance/2);
-    transition: transform ${duration} ${easeOutBack}, opacity ${duration};
-  }
-  &.active,
-  &:hover {
-    &:before,
-    &:after {
-      opacity: 1;
-      transform: translateY(0);
+      content: '';
+      position: absolute;
+      bottom: -3px;
+      left: 0; right: 0;
+      height: 2px;
+      background-color: ${theme.colors.cream};
     }
     &:before {
-      transition: transform ${duration} ${easeOutBack}, opacity ${duration};
+      opacity: 0;
+      transform: translateY(- ${distance});
+      transition: transform 0s ${easeOutBack}, opacity 0s;
     }
     &:after {
-      transition: transform 0s ${duration} ${easeOutBack}, opacity 0s ${duration};
+      opacity: 0;
+      transform: translateY($distance/2);
+      transition: transform ${duration} ${easeOutBack}, opacity ${duration};
+    }
+    &.active,
+    &:hover {
+      &:before,
+      &:after {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      &:before {
+        transition: transform ${duration} ${easeOutBack}, opacity ${duration};
+      }
+      &:after {
+        transition: transform 0s ${duration} ${easeOutBack}, opacity 0s ${duration};
+      }
     }
   }
+ 
 `;
 
 export const socialMediaIconsClass = css`

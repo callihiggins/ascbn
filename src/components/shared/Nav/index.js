@@ -1,10 +1,9 @@
 import React from 'react';
 import { withTheme } from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import logo from '../../assets/images/ASCBN-TITLE-HORIZONTAL-LIGHT-TRANSPARENT.png';
-// import { ReactComponent as HorizontalLogo } from '../../assets/logo_horizontal.svg';
+import logo from '../../../assets/images/ASCBN-TITLE-HORIZONTAL-LIGHT-TRANSPARENT.png';
 import * as styles from  './styles';
-import * as sharedstyles from  '../shared/styles';
+import * as sharedstyles from  '../../shared/styles';
 import { NavUl, NavItem, NavEl, HeaderContainer } from './styles';
 
 
@@ -12,7 +11,9 @@ const Nav = props => {
 	return (
     <HeaderContainer>
       <div css={styles.logoContainerClass}>
-        <img src={logo} alt="and she could be next" css={styles.logoClass}/>
+        <a href="/">
+          <img src={logo} alt="and she could be next" css={styles.logoClass}/>
+        </a>
       </div>
       <NavEl>
         <NavUl >

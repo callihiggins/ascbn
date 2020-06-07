@@ -3,7 +3,7 @@ import { CSSTransition } from "react-transition-group";
 import { withTheme } from 'styled-components';
 import { Query } from 'react-contentful';
 import { debounce } from 'lodash';
-import Nav from '../Nav';
+import Nav from '../shared/Nav';
 import Main from './Main';
 import About from './About';
 import Watch from './Watch';

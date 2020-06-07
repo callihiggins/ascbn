@@ -1,7 +1,6 @@
 import React from 'react';
 import { ContentfulClient, ContentfulProvider } from 'react-contentful';
 import { ThemeProvider } from 'styled-components';
-import { CSSTransition } from "react-transition-group";
 import {
   BrowserRouter as Router,
   Switch,
@@ -9,7 +8,8 @@ import {
   Link
 } from "react-router-dom";
 import 'normalize.css';
-import Home from './components/Home'
+import Home from './components/Home';
+import About from './components/About';
 import Newsletter from './components/shared/Newsletter';
 import Footer from './components/shared/Footer';
 import './App.css';
@@ -50,10 +50,10 @@ class App extends React.Component {
               <Route exact path="/">
                 <Home />
               </Route>
-              {/* <Route path="/about">
+              <Route path="/about">
+                <About />
               </Route>
-              <Route path="/jointhemovement">
-              </Route> */}
+              
             </Switch>
             </Router>
             <Newsletter />

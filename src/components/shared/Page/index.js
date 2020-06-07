@@ -36,6 +36,10 @@ const Page = props => {
     <PageComponent id={props.name} ref={ref} {...props}>{props.children}</PageComponent>
   )
 };
+
+Page.defaultProps = {
+  updateActive: () => {},
+};
   
 
 export default Page;
