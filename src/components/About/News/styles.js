@@ -33,12 +33,17 @@ export const leftSideClass = css`
   min-height: 400px;
   padding 0 40px;
   justify-content: space-evenly;
-  line-height: 18px;
+  line-height: 24px;
+  font-size: 18px;
 
   a {
     color: ${theme.colors.cream};
     text-decoration: none;
     line-height: 24px;
+  }
+
+  a:hover {
+    font-style: italic;
   }
 `;
 

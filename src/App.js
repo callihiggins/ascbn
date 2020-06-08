@@ -10,6 +10,7 @@ import {
 import 'normalize.css';
 import Home from './components/Home';
 import About from './components/About';
+import Movement from './components/Movement';
 import Newsletter from './components/shared/Newsletter';
 import Footer from './components/shared/Footer';
 import './App.css';
@@ -53,7 +54,9 @@ class App extends React.Component {
               <Route path="/about">
                 <About />
               </Route>
-              
+              <Route path="/movement">
+                <Movement />
+              </Route>
             </Switch>
             </Router>
             <Newsletter />

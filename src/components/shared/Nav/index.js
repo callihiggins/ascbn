@@ -21,10 +21,10 @@ const Nav = props => {
             <a href="/about">About</a>
           </NavItem>
           <NavItem>
-            <a href="/team">How to Watch</a>
+            <a href="/watch">How to Watch</a>
           </NavItem>
           <NavItem>
-            <a href="/festivals">Join the Movement</a>
+            <a href="/movement">Join the Movement</a>
           </NavItem>
         </NavUl>
       </NavEl>
