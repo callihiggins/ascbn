@@ -5,8 +5,8 @@ import YouTube from 'react-youtube';
 import { Query } from 'react-contentful';
 import Nav from '../shared/Nav';
 import Team from './Team'
+import News from './News'
 import * as styles from './styles';
-import theme from '../../theme';
 
 class About extends React.Component {
 	render() {
@@ -27,6 +27,7 @@ class About extends React.Component {
 								</div>
 							</div>
 							<Team/>
+							<News />
 						</>
 					)
 				}}

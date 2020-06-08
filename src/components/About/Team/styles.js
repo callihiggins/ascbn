@@ -14,6 +14,10 @@ export const peopleContainerClass = css`
   width: 80%;
   margin: 0 auto;
   background: ${theme.colors.cream};
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    justify-content: center;
+  }
 `;
 
 export const teamBannerClass = css`

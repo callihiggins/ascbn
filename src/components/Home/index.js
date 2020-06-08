@@ -19,7 +19,7 @@ class Home extends React.Component {
     if (this.state.activeMenu !== active) {
       this.setState({activeMenu: active});
     }
-  }, 100);
+  }, 100); 
 
 	render() {
 		return (
