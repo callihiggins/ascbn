@@ -11,6 +11,7 @@ export const HeaderContainer = styled.div`
   background:  ${theme.colors.cream};
   z-index: 120;
   position: fixed;
+  top: 0;
   width: 100%;
   justify-content: center;
   align-items: top;
