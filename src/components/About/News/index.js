@@ -18,7 +18,7 @@ const News = () => {
                 {links}
               </div>
               <div css={styles.rightSideClass}>
-                <a href="../../../assets/AndSheCouldBeNextPressKitFinal.pdf" taget="_blank">
+                <a href="static/media/AndSheCouldBeNextPressKitFinal.pdf" taget="_blank">
                   <img src={pressImage} alt="Download our Press Kit" />
                 </a>
               </div>
