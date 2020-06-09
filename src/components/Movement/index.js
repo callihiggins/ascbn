@@ -3,16 +3,18 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import { Query } from 'react-contentful';
 import Form from './Form';
 import organizerImage from '../../assets/images/OrganizerinAllofUs.png';
+import voteImage from '../../assets/images/vote.jpg';
 import Nav from '../shared/Nav';
 import * as styles from './styles';
 
 const Movement = () => {
   return (
     <Query contentType="organizerText">
-      {({data, error, fetched, loading}) => {
+      {({data}) => {
         
         const text = data?.items[0]?.fields?.description;
         const virtualScreeningText = data?.items[0]?.fields?.screeningText;
+        const voteText = data?.items[0]?.fields?.voteText;
         return (
           <div css={styles.containerClass}>
             <Nav></Nav>
@@ -27,6 +29,18 @@ const Movement = () => {
             <div css={styles.hostingBannerClass}>Host a Virtual Screening</div>
             <div css={styles.screeningTextClass}>{documentToReactComponents(virtualScreeningText)}</div>
             < Form />
+            <div css={styles.votingBannerClass}>VOTE</div>
+            <div css={styles.voteBlockClass}>
+              <div css={styles.halfClass}>
+                <img src={voteImage} alt="Vote" css={styles.voteImageClass} />
+              </div>
+              <div css={[styles.halfClass, styles.voteTextBlockClass]}>
+                {documentToReactComponents(voteText)}
+                <a href="https://www.usa.gov/register-to-vote" target="_blank">
+                  <button css={styles.voteButtonClass}>Register to Vote</button>
+                </a>
+              </div>
+            </div>
           </div>
         )
       }}

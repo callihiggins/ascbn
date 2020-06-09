@@ -11,6 +11,10 @@ export const inputsClass = css`
 export const formClass = css`
   width: 600px;
   margin: 40px auto 0 auto;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    width: 90%;
+  }
 `;
 
 export const InputGroup = styled.div`
@@ -44,7 +48,7 @@ export const inputItemClass = css`
   padding: 5px 10px;
 
   @media (max-width: ${theme.breakpoints.large}px) {
-    width: 95%;
+    width: calc(100%  - 50px);
   }
 `;
 
