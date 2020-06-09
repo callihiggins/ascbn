@@ -63,7 +63,7 @@ export const episodeSummaryClass = css`
 
 export const festivalBannerClass = css`
   height: 50px;
-  background: ${theme.colors.aqua};
+  background: ${theme.colors.teal};
   text-align: center;
   font-family: 'ChangaOne';
   text-transform: uppercase;

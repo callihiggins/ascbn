@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 export const pressBannerClass = css`
   height: 50px;
-  background: ${theme.colors.aqua};
+  background: ${theme.colors.teal};
   text-align: center;
   font-family: 'ChangaOne';
   text-transform: uppercase;
@@ -32,8 +32,8 @@ export const pressContainerClass = css`
 
 export const leftSideClass = css`
   width: 50%;
-  color: ${theme.colors.cream};
-  background: ${theme.colors.teal};
+  color: ${theme.colors.navy};
+  background: ${theme.colors.cream};
   display: flex;
   flex-direction: column;
   min-height: 400px;
@@ -86,5 +86,11 @@ export const bottomPosterClass = css`
   img {
     width: 40%;
     cursor: pointer;
+  }
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    img {
+      width: 70%;
+    }
   }
 `;

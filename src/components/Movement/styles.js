@@ -46,7 +46,7 @@ export const centerClass = css`
 
 export const hostingBannerClass = css`
   height: 50px;
-  background: ${theme.colors.pink};
+  background: ${theme.colors.teal};
   text-align: center;
   font-family: 'ChangaOne';
   text-transform: uppercase;
@@ -78,7 +78,7 @@ export const screeningTextClass = css`
 
 export const votingBannerClass = css`
   height: 50px;
-  background: ${theme.colors.aqua};
+  background: ${theme.colors.teal};
   text-align: center;
   font-family: 'ChangaOne';
   text-transform: uppercase;

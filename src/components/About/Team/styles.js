@@ -22,7 +22,7 @@ export const peopleContainerClass = css`
 
 export const teamBannerClass = css`
   height: 50px;
-  background: ${theme.colors.aqua};
+  background: ${theme.colors.teal};
   text-align: center;
   font-family: 'ChangaOne';
   text-transform: uppercase;
