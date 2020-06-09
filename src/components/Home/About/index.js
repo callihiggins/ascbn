@@ -21,7 +21,7 @@ const About = props => (
           { documentToReactComponents(props.text)}
           <div css={styles.buttonGroupClass}>
             <NavLink smooth to="/about#trailer"><button css={styles.buttonClass}>Learn More</button></NavLink>
-            <NavLink smooth to="/about#filmmakers"><button css={styles.buttonClass}>Meet the Filmmakers</button></NavLink> 
+            <NavLink smooth to="/about#filmmakers"><button css={styles.buttonClass}>Meet the Team</button></NavLink> 
           </div>
         </div>
         

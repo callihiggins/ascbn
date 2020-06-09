@@ -33,24 +33,28 @@ export const titleClass = css`
   text-align: right;
 `;
 
-export const nameClass = css`
+
+export const Name = styled.div`
   font-size: 14px;
   padding-top: 10px;
   color: ${theme.colors.cream};
-  text-transform: uppercase;
+  text-transform: ${props => 
+    props.name === 'AVA DuVERNAY' ? 'none' : 'uppercase'
+  };
   margin-bottom: 20px;
   text-align: right;
 `;
 
-export const modalNameClass = css`
+export const ModalName = styled.div`
   padding-top: 10px;
   padding-bottom: 5px;
   font-size: 14px;
   color: ${theme.colors.cream};
   border-bottom: 1px solid ${theme.colors.cream};
   width: 300px;
-  text-transform: uppercase;
-  
+  text-transform: ${props => 
+    props.name === 'AVA DuVERNAY' ? 'none' : 'uppercase'
+  }
 `;
 
 export const modalTitleClass = css`

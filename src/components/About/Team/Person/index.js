@@ -2,12 +2,11 @@ import React from 'react';
 import Modal from 'react-responsive-modal';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import * as styles from './styles';
-import { PersonContainer } from './styles';
+import { PersonContainer, Name, ModalName } from './styles';
 import theme from '../../../../theme';
 
 const Person = ({ data }) => {
-  const {name, bio, order, title, photo } = data;
-
+  const { name, bio, order, title, photo } = data;
   const url = photo?.fields?.file?.url
   const photoTitle  = photo?.fields?.title;
 
@@ -45,9 +44,9 @@ const Person = ({ data }) => {
       >
         <div css={styles.modalContainerClass}>
           <div css={styles.leftSideClass}>
-            <div css={styles.modalNameClass}>
+            <ModalName name={name}>
               {name}
-            </div>
+            </ModalName>
             <div css={styles.modalTitleClass}>
               {title}
             </div>
@@ -67,9 +66,9 @@ const Person = ({ data }) => {
         <div css={styles.titleClass}>
           {title}
         </div>
-        <div css={styles.nameClass}>
+        <Name name={name}>
           {name}
-        </div>
+        </Name>
       </div>
     </PersonContainer>
   )

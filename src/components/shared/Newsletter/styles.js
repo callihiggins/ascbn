@@ -12,10 +12,10 @@ export const titleClass = css`
   text-transform: uppercase;
   color: ${theme.colors.cream};
   letter-spacing: normal;
-  font-size: 22px;
+  font-size: 28px;
   margin-right: 20px;
   letter-spacing: 1.5px;
-  font-weight: 400;
+  font-weight: 500;
 
 
   @media (max-width: ${theme.breakpoints.large}px) {

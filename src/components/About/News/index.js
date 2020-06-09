@@ -19,7 +19,7 @@ const News = () => {
                 {links}
               </div>
               <div css={styles.rightSideClass}>
-                <a href='https://drive.google.com/file/d/1fUe0AG55MiwhrwNAjB1-VK8VWgQtWZJN/view' download taget="_blank">
+                <a href='https://drive.google.com/file/d/1fUe0AG55MiwhrwNAjB1-VK8VWgQtWZJN/view' download target="_blank">
                   <img src={pressImage} alt="Download our Press Kit" />
                 </a>
               </div>
