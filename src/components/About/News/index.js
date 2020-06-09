@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Query } from 'react-contentful';
 import pressImage from '../../../assets/images/presskit.png'
 import pressPdf from '../../../assets/AndSheCouldBeNextPressKit.pdf'
@@ -20,9 +19,9 @@ const News = () => {
                 {links}
               </div>
               <div css={styles.rightSideClass}>
-                <Link to={pressPdf} download taget="_blank">
+                <a href='https://drive.google.com/file/d/1fUe0AG55MiwhrwNAjB1-VK8VWgQtWZJN/view' download taget="_blank">
                   <img src={pressImage} alt="Download our Press Kit" />
-                </Link>
+                </a>
               </div>
             </div>
           </>
