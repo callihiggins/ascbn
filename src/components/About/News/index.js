@@ -1,8 +1,9 @@
 import React from 'react';
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import { Link } from 'react-router-dom';
 import { Query } from 'react-contentful';
 import pressImage from '../../../assets/images/presskit.png'
-import pressPdf from '../../../assets/AndSheCouldBeNextPressKitFinal.pdf';
+import pressPdf from '../../../../public/AndSheCouldBeNextPressKit.pdf'
+
 import * as styles from './styles';
 
 const News = () => {
@@ -19,9 +20,9 @@ const News = () => {
                 {links}
               </div>
               <div css={styles.rightSideClass}>
-                <a href={pressPdf} taget="_blank">
+                <Link to={pressPdf} download taget="_blank">
                   <img src={pressImage} alt="Download our Press Kit" />
-                </a>
+                </Link>
               </div>
             </div>
           </>
