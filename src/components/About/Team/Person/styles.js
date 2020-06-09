@@ -11,6 +11,10 @@ export const PersonContainer = styled.div`
   flex-basis: 21%;
   width: 200px;
   text-align: center;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    flex-basis: 100%;
+  }
 `;
 
 export const photoClass = css`

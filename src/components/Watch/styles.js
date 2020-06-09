@@ -11,7 +11,7 @@ export const watchContainerClass = css`
 export const dateImageClass = css`
   text-align: center;
   img {
-    width: 60%;
+    width: 50%;
   }
 `;
 
@@ -19,7 +19,7 @@ export const taglineClass = css`
   font-weight: 700;
   font-size: 18px;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   color: ${theme.colors.cream};
   line-height: 26px;
 
@@ -31,7 +31,7 @@ export const taglineClass = css`
 export const linkClass = css`
   text-transform: uppercase;
   color: ${theme.colors.cream};
-  margin-top: 20px;
+  margin-top: 40px;
   position: relative;
   display: block;
 `;

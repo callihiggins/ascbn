@@ -9,5 +9,6 @@ export default {
   },
   breakpoints: {
     large: '1024',
+    extraLarge: '1600px'
   }
 }

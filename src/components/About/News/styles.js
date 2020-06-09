@@ -24,6 +24,10 @@ export const pressBannerClass = css`
 
 export const pressContainerClass = css`
   display: flex;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    flex-wrap: wrap;
+  }
 `;
 
 export const leftSideClass = css`
@@ -43,6 +47,10 @@ export const leftSideClass = css`
     text-decoration: none;
     line-height: 24px;
   }
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    width: 100%;
+  }
 `;
 
 export const pressLinkClass = css`
@@ -60,5 +68,13 @@ export const rightSideClass = css`
   img {
     cursor: pointer;
     width: 50%;
+  }
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    width: 100%;
+    img {
+      width: 40%;
+    padding: 40px 0;
+    }
   }
 `;

@@ -120,11 +120,11 @@ export const voteTextBlockClass = css`
 `;
 
 export const voteButtonClass = css`
-  background-color: ${theme.colors.aqua};
+  background-color: ${theme.colors.cream};
   border-radius: 3px;
-  color: ${theme.colors.cream};
+  color: ${theme.colors.navy};
   padding: 10px 15px;
-  border-color: ${theme.colors.navy};
+  border-color: ${theme.colors.cream};
   font-size: 18px;
   text-transform: uppercase;
   border-style: none;
@@ -134,6 +134,7 @@ export const voteButtonClass = css`
   margin: 20px 0 40px 0;
   @media (max-width: ${theme.breakpoints.large}px) {
     background-color: ${theme.colors.navy};
+    color: ${theme.colors.cream};
   }
 `;
 

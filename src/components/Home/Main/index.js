@@ -76,7 +76,7 @@ class Main extends React.Component {
 					<div css={styles.arrowUpClass} />
 					<div css={styles.bottomBarClass} />
 					<div css={styles.videoOverlayClass} />
-					<video width="640" height="320" autoplay="autoplay" muted loop css={[styles.videoPlayerClass, sharedstyles.hideMobile]}>
+					<video width="640" height="320" autoPlay muted loop css={[styles.videoPlayerClass, sharedstyles.hideMobile]}>
 						<source src={introVideo}/>
 					</video>
 				</div>

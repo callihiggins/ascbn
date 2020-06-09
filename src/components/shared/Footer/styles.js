@@ -35,7 +35,7 @@ export const bottomContainerClass = css`
 
 export const logoClass = css`
   width: 75px;
-  height: auto;
+  height: 70px;
 `;
 
 export const rightSideClass = css`

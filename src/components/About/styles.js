@@ -4,9 +4,12 @@ import styled from 'styled-components';
 
 export const aboutContainerClass = css`
   width: 100%;
-  max-height: calc(100vh - 135px);
   background: ${theme.colors.teal};
   padding-top: 80px;
+
+  @media (min-width: ${theme.breakpoints.extraLarge}px) {
+    max-height: calc(100vh - 135px);
+  }
 
   @media (max-width: ${theme.breakpoints.large}px) {
     height: auto;
@@ -35,7 +38,8 @@ export const aboutTextClass = css`
   color: ${theme.colors.cream};
   width: 60%;
   margin: 0 auto;
-  margin-top: 25px;
+  padding: 25px 0 40px;
+  max-width: 1000px;
 
   @media (max-width: ${theme.breakpoints.large}px) {
     column-count: 1;
