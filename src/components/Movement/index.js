@@ -3,7 +3,7 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import { Query } from 'react-contentful';
 import Form from './Form';
 import organizerImage from '../../assets/images/OrganizerinAllofUs.png';
-import voteImage from '../../assets/images/vote.jpg';
+import voteImage from '../../assets/images/vote.png';
 import Nav from '../shared/Nav';
 import * as styles from './styles';
 
@@ -31,7 +31,7 @@ const Movement = () => {
             < Form />
             <div css={styles.votingBannerClass}>VOTE</div>
             <div css={styles.voteBlockClass}>
-              <div css={styles.halfClass}>
+              <div css={styles.voteImageBlockClass}>
                 <img src={voteImage} alt="Vote" css={styles.voteImageClass} />
               </div>
               <div css={[styles.halfClass, styles.voteTextBlockClass]}>

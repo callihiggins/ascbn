@@ -97,8 +97,8 @@ export const votingBannerClass = css`
 `;
 
 export const voteImageClass = css`
-  width: 60vh;
-  height: auto;
+  height: 75vh;
+  width: auto;
 
 
 
@@ -149,4 +149,15 @@ export const voteButtonClass = css`
 export const voteBlockClass = css`
   display: flex;
   flex-wrap: wrap;
+`;
+
+export const voteImageBlockClass = css`
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    width: 100%;
+    padding: 0 15px;
+  }
 `;
