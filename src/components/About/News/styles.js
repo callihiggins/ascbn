@@ -43,7 +43,7 @@ export const leftSideClass = css`
   font-size: 18px;
 
   a {
-    color: ${theme.colors.cream};
+    color: ${theme.colors.navy};
     text-decoration: none;
     line-height: 24px;
   }
@@ -65,16 +65,26 @@ export const rightSideClass = css`
   align-items: center;
   text-align: center;
 
+
   img {
-    cursor: pointer;
     width: 50%;
+    margin: 0 auto;
   }
 
   @media (max-width: ${theme.breakpoints.large}px) {
     width: 100%;
     img {
       width: 40%;
-    padding: 40px 0;
     }
+  }
+`;
+
+export const bottomPosterClass = css`
+  background: ${theme.colors.aqua};
+  text-align: center;
+  padding: 40px 0;
+  img {
+    width: 40%;
+    cursor: pointer;
   }
 `;
