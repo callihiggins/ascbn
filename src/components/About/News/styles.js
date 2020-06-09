@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 export const pressBannerClass = css`
   height: 50px;
-  background: ${theme.colors.navy};
+  background: ${theme.colors.aqua};
   text-align: center;
   font-family: 'ChangaOne';
   text-transform: uppercase;
