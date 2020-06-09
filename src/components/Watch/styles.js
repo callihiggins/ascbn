@@ -19,7 +19,7 @@ export const taglineClass = css`
   font-weight: 700;
   font-size: 18px;
   text-transform: uppercase;
-  margin-top: 50px;
+  margin-bottom: 20px;
   color: ${theme.colors.cream};
   line-height: 26px;
 
@@ -31,7 +31,7 @@ export const taglineClass = css`
 export const linkClass = css`
   text-transform: uppercase;
   color: ${theme.colors.cream};
-  margin-top: 50px;
+  margin-top: 20px;
   position: relative;
   display: block;
 `;
@@ -63,11 +63,11 @@ export const episodeSummaryClass = css`
 
 export const festivalBannerClass = css`
   height: 50px;
-  background: ${theme.colors.teal};
+  background: ${theme.colors.cream};
   text-align: center;
   font-family: 'ChangaOne';
   text-transform: uppercase;
-  color: ${theme.colors.cream};
+  color: ${theme.colors.navy};
   letter-spacing: normal;
   font-size: 22px;
   letter-spacing: 1.5px;
@@ -75,6 +75,8 @@ export const festivalBannerClass = css`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: sticky;
+  top: 40px;
 `;
 
 export const festivalsContainerClass = css`
@@ -82,12 +84,17 @@ export const festivalsContainerClass = css`
   padding: 40px;
   justify-content: center;
   width: calc(100% - 80px);
+  background: ${theme.colors.aqua};
 `;
 
 export const festivalContainerClass = css`
   display: flex;
   flex-direction: column;
   width: 300px;
+
+  a {
+    text-decoration: none;
+  }
 
 `;
 
@@ -114,5 +121,6 @@ export const bottomBlockClass = css`
   height: 60px;
   padding-left: 10px;
   width: 290px;
-  margin: 0 auto
+  margin: 0 auto;
+
 `;

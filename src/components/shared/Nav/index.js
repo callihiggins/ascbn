@@ -17,13 +17,13 @@ const Nav = props => {
       </div>
       <NavEl>
         <NavUl >
-          <NavItem>
+          <NavItem active={props.active === 'about'}>
             <a href="/about">About</a>
           </NavItem>
-          <NavItem>
+          <NavItem active={props.active === 'watch'}>
             <a href="/watch">How to Watch</a>
           </NavItem>
-          <NavItem>
+          <NavItem active={props.active === 'movement'}>
             <a href="/movement">Join the Movement</a>
           </NavItem>
         </NavUl>

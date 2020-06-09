@@ -55,6 +55,8 @@ export const hostingBannerClass = css`
   flex-direction: column;
   justify-content: center;
   margin: 40px 0 0 0;
+  position: sticky;
+  top: 40px;
 `;
 
 export const screeningTextClass = css`
@@ -85,6 +87,8 @@ export const votingBannerClass = css`
   flex-direction: column;
   justify-content: center;
   margin: 40px 0 0 0;
+  position: sticky;
+  top: 40px;
 `;
 
 export const voteImageClass = css`

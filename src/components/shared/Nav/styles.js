@@ -58,7 +58,6 @@ export const NavItem = styled.li`
   color: ${theme.colors.navy};
   cursor: pointer;
   position: relative;
-  border-bottom: ${props => props.active ? `1px solid ${theme.colors.navy}` : '0'};
 
   a {
     color: ${theme.colors.navy};
@@ -115,6 +114,21 @@ export const NavItem = styled.li`
       }
     }
   }
+
+  ${props => props.active && `
+    a {
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: -3px;
+        left: 0; right: 0;
+        height: 2px;
+        background-color: ${theme.colors.navy};
+        opacity: 1;
+      }
+    }
+  `}
 `;
 
 export const socialMediaIconsClass = css`

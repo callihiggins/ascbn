@@ -17,7 +17,7 @@ class About extends React.Component {
 					const text = data?.items[0]?.fields?.description;
 					return (
 						<>
-							<Nav></Nav>
+							<Nav active="about"></Nav>
 							<div css={styles.aboutContainerClass}>
 								<div css={styles.youtubeContainerClass}>
 									<YouTube css={styles.playerClass} videoId="YC3xiv1CbYM" />

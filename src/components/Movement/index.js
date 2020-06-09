@@ -17,7 +17,7 @@ const Movement = () => {
         const voteText = data?.items[0]?.fields?.voteText;
         return (
           <div css={styles.containerClass}>
-            <Nav></Nav>
+            <Nav active="movement"></Nav>
             <div css={styles.organizerContainerClass} >
               <div css={[styles.centerClass, styles.halfClass]}>
                 <img src={organizerImage} alt="There's an organizer in all of us" css={styles.organizerImageClass}/>

@@ -21,13 +21,13 @@ export const Watch = () => {
           ));
           return (
             <>
-              <Nav />
+              <Nav active='watch'/>
               <div css={styles.watchContainerClass}>
+                <div css={styles.taglineClass}>
+                  Tune in for the two night permiere on PBS
+                </div>
                 <div css={styles.dateImageClass}>
                   <img src={dates} alt="June 29 and 30" />
-                </div>
-                <div css={styles.taglineClass}>
-                This two part documentary will premiere<br /> on PBS over two nights
                 </div>
                 <a href="https://www.pbs.org/stations/" css={styles.linkClass} target="_blank">Find your Local PBS station</a>
                 <div css={styles.episodeSummaryClass}>

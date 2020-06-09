@@ -36,4 +36,6 @@ export const teamBannerClass = css`
   flex-direction: column;
   justify-content: center;
   margin: 0;
+  position: sticky;
+  top: 40px;
 `;
