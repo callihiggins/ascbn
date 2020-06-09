@@ -28,6 +28,11 @@ export const halfClass = css`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+
+  p {
+    margin-bottom: 20px;
+  }
 
   @media (max-width: ${theme.breakpoints.large}px) {
     width: 100%;
