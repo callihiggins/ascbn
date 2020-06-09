@@ -41,10 +41,6 @@ export const leftSideClass = css`
     text-decoration: none;
     line-height: 24px;
   }
-
-  a:hover {
-    font-style: italic;
-  }
 `;
 
 export const pressLinkClass = css`

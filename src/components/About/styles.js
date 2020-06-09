@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 export const aboutContainerClass = css`
   width: 100%;
-  height: calc(100vh - 135px);
+  max-height: calc(100vh - 135px);
   background: ${theme.colors.teal};
   padding-top: 80px;
 
