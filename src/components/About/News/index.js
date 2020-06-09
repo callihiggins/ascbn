@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Query } from 'react-contentful';
 import pressImage from '../../../assets/images/presskit.png'
-import pressPdf from '../../../../public/AndSheCouldBeNextPressKit.pdf'
 
 import * as styles from './styles';
 
@@ -20,7 +19,7 @@ const News = () => {
                 {links}
               </div>
               <div css={styles.rightSideClass}>
-                <Link to={pressPdf} download taget="_blank">
+                <Link to='../../../../public/AndSheCouldBeNextPressKit.pdf' download taget="_blank">
                   <img src={pressImage} alt="Download our Press Kit" />
                 </Link>
               </div>
