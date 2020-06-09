@@ -63,11 +63,11 @@ export const episodeSummaryClass = css`
 
 export const festivalBannerClass = css`
   height: 50px;
-  background: ${theme.colors.cream};
+  background: ${theme.colors.aqua};
   text-align: center;
   font-family: 'ChangaOne';
   text-transform: uppercase;
-  color: ${theme.colors.navy};
+  color: ${theme.colors.cream};
   letter-spacing: normal;
   font-size: 22px;
   letter-spacing: 1.5px;
@@ -84,7 +84,7 @@ export const festivalsContainerClass = css`
   padding: 40px;
   justify-content: center;
   width: calc(100% - 80px);
-  background: ${theme.colors.aqua};
+  background: ${theme.colors.cream};
 `;
 
 export const festivalContainerClass = css`

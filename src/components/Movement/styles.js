@@ -92,7 +92,10 @@ export const votingBannerClass = css`
 `;
 
 export const voteImageClass = css`
-  width: 80%;
+  width: 60vh;
+  height: auto;
+
+
 
   @media (max-width: ${theme.breakpoints.large}px) {
     width: 40%;
