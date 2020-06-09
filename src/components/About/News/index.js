@@ -2,6 +2,7 @@ import React from 'react';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import { Query } from 'react-contentful';
 import pressImage from '../../../assets/images/presskit.png'
+import pressPdf from '../../../assets/AndSheCouldBeNextPressKitFinal.pdf';
 import * as styles from './styles';
 
 const News = () => {
@@ -18,7 +19,7 @@ const News = () => {
                 {links}
               </div>
               <div css={styles.rightSideClass}>
-                <a href="static/media/AndSheCouldBeNextPressKitFinal.pdf" taget="_blank">
+                <a href={pressPdf} taget="_blank">
                   <img src={pressImage} alt="Download our Press Kit" />
                 </a>
               </div>
