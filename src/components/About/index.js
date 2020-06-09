@@ -19,7 +19,7 @@ class About extends React.Component {
 						<>
 							<Nav active="about"></Nav>
 							<div css={styles.aboutContainerClass}>
-								<div css={styles.youtubeContainerClass}>
+								<div css={styles.youtubeContainerClass} id="trailer">
 									<YouTube css={styles.playerClass} videoId="YC3xiv1CbYM" />
 								</div>
 								<div css={styles.aboutTextClass}>

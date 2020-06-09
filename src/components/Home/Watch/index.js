@@ -1,5 +1,6 @@
 import React from 'react';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import { NavHashLink as NavLink } from 'react-router-hash-link';
 import * as styles from  './styles';
 import * as sharedstyles from  '../../shared/styles';
 import Page from '../../shared/Page';
@@ -19,7 +20,7 @@ const Watch = props => (
         </div>
           { documentToReactComponents(props.text)}
           <div css={styles.buttonGroupClass}>
-            <button css={styles.buttonClass}>Host a virtual screening</button>
+            <NavLink smooth to="/movement#screening"><button css={styles.buttonClass}>Host a virtual screening</button></NavLink>
           </div>
         </div>
       </HalfSection>      

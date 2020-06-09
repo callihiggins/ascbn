@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavHashLink as NavLink } from 'react-router-hash-link';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import * as styles from  './styles';
 import * as sharedstyles from  '../../shared/styles';
@@ -19,8 +20,8 @@ const About = props => (
         <div css={styles.textContainerClass}>
           { documentToReactComponents(props.text)}
           <div css={styles.buttonGroupClass}>
-            <a href="/about"><button css={styles.buttonClass}>Learn More</button></a>
-            <button css={styles.buttonClass}>Meet the Filmmakers</button>
+            <NavLink smooth to="/about#trailer"><button css={styles.buttonClass}>Learn More</button></NavLink>
+            <NavLink smooth to="/about#filmmakers"><button css={styles.buttonClass}>Meet the Filmmakers</button></NavLink> 
           </div>
         </div>
         

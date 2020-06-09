@@ -10,14 +10,14 @@ const Team = () => (
     {({data, error, fetched, loading}) => {
       const teamData = data?.items?.map(data => <Person data={data.fields} />)
       return (
-        <>
+        <div id="filmmakers">
           <div css={styles.teamBannerClass}>Meet the team</div>
           <div css={styles.teamContainerClass}>
             <div css={styles.peopleContainerClass}>
               {teamData}
             </div>
           </div>
-        </>
+        </div>
       )
     }}
   </Query>

@@ -26,7 +26,7 @@ const Movement = () => {
                 {documentToReactComponents(text)}
               </div>
             </div>
-            <div css={styles.hostingBannerClass}>Host a Virtual Screening</div>
+            <div css={styles.hostingBannerClass} id="screening">Host a Virtual Screening</div>
             <div css={styles.screeningTextClass}>{documentToReactComponents(virtualScreeningText)}</div>
             < Form />
             <div css={styles.votingBannerClass}>VOTE</div>

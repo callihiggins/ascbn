@@ -127,7 +127,7 @@ export const videoPlayerClass = css`
   z-index: -1;
 
   @media (min-aspect-ratio: 16/9) {
-    width:100%;
+    width: 100vw;
     height: auto;
   }
 

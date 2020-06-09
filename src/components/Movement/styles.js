@@ -73,7 +73,7 @@ export const screeningTextClass = css`
 
 export const votingBannerClass = css`
   height: 50px;
-  background: ${theme.colors.teal};
+  background: ${theme.colors.aqua};
   text-align: center;
   font-family: 'ChangaOne';
   text-transform: uppercase;
