@@ -24,7 +24,7 @@ export const Watch = () => {
               <Nav active='watch'/>
               <div css={styles.watchContainerClass}>
                 <div css={styles.taglineClass}>
-                  Tune in for the two night permiere on PBS
+                  Tune in for the two night premiere on PBS
                 </div>
                 <div css={styles.dateImageClass}>
                   <img src={dates} alt="June 29 and 30" />
