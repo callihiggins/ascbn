@@ -6,6 +6,7 @@ import { Query } from 'react-contentful';
 import Nav from '../shared/Nav';
 import Team from './Team'
 import News from './News'
+import Thanks from './Thanks'
 import * as styles from './styles';
 
 class About extends React.Component {
@@ -28,6 +29,7 @@ class About extends React.Component {
 							</div>
 							<Team/>
 							<News />
+							<Thanks />
 						</>
 					)
 				}}
