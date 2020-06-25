@@ -20,6 +20,7 @@ export const pressBannerClass = css`
   margin: 0;
   position: sticky;
   top: 40px;
+  z-index: 5;
 `;
 
 export const pressContainerClass = css`

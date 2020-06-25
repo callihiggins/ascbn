@@ -18,6 +18,12 @@ export const peopleContainerClass = css`
   @media (max-width: ${theme.breakpoints.large}px) {
     justify-content: center;
   }
+
+  i {
+    flex-basis: 21%;
+    width: 200px;
+    order: 17;
+  }
 `;
 
 export const teamBannerClass = css`
@@ -38,4 +44,5 @@ export const teamBannerClass = css`
   margin: 0;
   position: sticky;
   top: 40px;
+  z-index: 5;
 `;

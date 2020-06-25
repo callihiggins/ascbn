@@ -42,6 +42,12 @@ export const EpisodeContainer = styled.div`
   width: calc(45% - 40px);
   text-align: left;
   color: ${theme.colors.cream};
+  
+  img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
 
   @media (max-width: ${theme.breakpoints.large}px) {
     width: 90%;
@@ -49,12 +55,14 @@ export const EpisodeContainer = styled.div`
   }
 `;
 
+
 export const episodeSummaryClass = css`
   display: flex;
   justify-content: space-around;
   width: 90%;
   margin: 50px auto 0 auto;
   padding-bottom: 40px;
+  line-height: 22px;
 
   @media (max-width: ${theme.breakpoints.large}px) {
     flex-wrap: wrap;
@@ -77,13 +85,14 @@ export const festivalBannerClass = css`
   justify-content: center;
   position: sticky;
   top: 40px;
+  z-index: 5;
 `;
 
 export const festivalsContainerClass = css`
   display: flex;
   padding: 40px;
-  justify-content: center;
-  width: calc(100% - 80px);
+  justify-content: space-around;
+  width: calc(100% - 150px);
   background: ${theme.colors.cream};
 `;
 
@@ -101,6 +110,7 @@ export const festivalContainerClass = css`
 export const imageClass = css`
   width: 300px;
   height: auto;
+  filter: grayscale(1);
 `;
 
 export const nameClass = css`
@@ -123,4 +133,30 @@ export const bottomBlockClass = css`
   width: 290px;
   margin: 0 auto;
 
+`;
+
+export const headerClass = css`
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 900;
+`;
+
+export const watchInfoClass = css`
+  width: 50%;
+  color: ${theme.colors.cream};
+  margin: 20px auto;
+  line-height: 18px;
+
+  a {
+    text-decoration: none;
+    color: ${theme.colors.cream};
+  }
+
+  p {
+    margin: 25px 0;
+  }
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    width: 80%;
+  }
 `;

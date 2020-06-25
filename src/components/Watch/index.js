@@ -16,6 +16,8 @@ export const Watch = () => {
         {({data, error, fetched, loading}) => {
           const episodes = data?.items.map(episode => (
             <EpisodeContainer order={episode.fields.order}>
+              <div css={styles.headerClass}>{episode.fields.header}</div>
+              <img src={`https:${episode.fields.photo.fields.file.url}`} alt={episode.fields.title}/>
               {documentToReactComponents(episode.fields.description)}
             </EpisodeContainer>
           ));
@@ -29,7 +31,12 @@ export const Watch = () => {
                 <div css={styles.dateImageClass}>
                   <img src={dates} alt="June 29 and 30" />
                 </div>
-                <a href="https://www.pbs.org/stations/" css={styles.linkClass} target="_blank">Find your Local PBS station</a>
+                <div css={styles.watchInfoClass}>
+                  <p><i>And She Could Be Next</i> will air on PBS’s POV program—visit <a href="https://www/pbs.org" taget="_blank">pbs.org</a> to find your local station and broadcast time.</p>
+                  <p>Not airing on your local station? Episodes are available for streaming at 9pm ET / 8pm CT / 7pm MT / 6pm PT each night on <a href="https://www/pbs.org/pov" taget="_blank">pbs.org/pov</a>.</p>
+                </div>
+
+
                 <div css={styles.episodeSummaryClass}>
                   {episodes}
                 </div>
@@ -57,7 +64,7 @@ export const Watch = () => {
           ));
           return (
             <>
-              <div css={styles.festivalBannerClass}>Upcoming Festival Appearances</div>
+              <div css={styles.festivalBannerClass}>Events</div>
               <div css={styles.festivalsContainerClass}>
                 {festivals}
               </div>
