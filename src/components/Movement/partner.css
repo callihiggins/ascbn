@@ -108,8 +108,23 @@ a {
   color: #F26D65 !important;
 }
 
-#footer, #sticky_footer {
+#footer p {
   display: none;
+}
+
+body #sticky_footer {
+  background: #004564 !important;
+  border-top: 0;
+}
+
+body #footer .powered-by-logo {
+  float: none;
+}
+
+body #footer .powered-by-logo .powered-by-text {
+  font-family: 'Avenir' !important;
+  color: #FFF0D7;
+  font-style: normal;
 }
 
 p,
