@@ -62,6 +62,7 @@ export const hostingBannerClass = css`
   margin: 40px 0 0 0;
   position: sticky;
   top: 40px;
+  z-index: 5;
 `;
 
 export const screeningTextClass = css`
@@ -94,6 +95,7 @@ export const votingBannerClass = css`
   margin: 40px 0 0 0;
   position: sticky;
   top: 40px;
+  z-index: 5;
 `;
 
 export const voteImageClass = css`
@@ -103,7 +105,6 @@ export const voteImageClass = css`
 
 
   @media (max-width: ${theme.breakpoints.large}px) {
-    width: 40%;
     padding-top: 20px;
   }
 `;
@@ -114,16 +115,14 @@ export const voteTextBlockClass = css`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 40px;
-  width: calc(50% - 80px);
+  width: 60%;
   font-size: 18px;
   line-height: 22px;
   marg-bottom: 20px;
 
   @media (max-width: ${theme.breakpoints.large}px) {
-    background: ${theme.colors.cream};
-    color: ${theme.colors.navy};
-    padding: 40px;
+    width: 100%;
+    height: calc(100vh - 50px);
   }
 `;
 
@@ -152,12 +151,11 @@ export const voteBlockClass = css`
 `;
 
 export const voteImageBlockClass = css`
-  width: 50%;
+  width: 40%;
   display: flex;
   justify-content: flex-end;
 
   @media (max-width: ${theme.breakpoints.large}px) {
-    width: 100%;
-    padding: 0 15px;
+    display: none;
   }
 `;

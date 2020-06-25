@@ -1,0 +1,168 @@
+/* export default {
+  colors: {
+    cream: '#FFF0D7',
+    pink: '#F26D65',
+    navy: '#004564',
+    teal: '#009E9B',
+    aqua: '#8DD1C3',
+
+  },
+  breakpoints: {
+    large: '1024',
+    extraLarge: '1600px'
+  }
+} */
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('https://rocky-partner-assets.s3.amazonaws.com/partners/38527/preview/AvenirLTStd-Heavy.ttf');
+}
+
+html {
+  background-color: #004564;
+}
+
+body {
+  background-color: #004564;
+  color: #FFF0D7;
+  font-family: 'Avenir' !important;
+  font-weight: 900;
+}
+
+#container {
+  padding: 40px 20px 0 20px;
+}
+
+#main p.already-registered,
+#main {
+  padding-bottom: 0;
+}
+
+#main p.already-registered {
+  display: none;
+}
+
+#main p {
+  margin-top: 10px;
+}
+
+body.new-mobile-ui #main .dynamic-navigation {
+  background: #FFF0D7 !important;
+}
+
+#container {
+  background-color: #004564 !important;
+}
+
+.has_error input, .has_error select {
+  background-color: inherit !important;
+  border-color: #F26D65 !important;
+}
+
+body.new-mobile-ui #main #dynamic-progress-bar {
+  background-color: #FFF0D7;
+}
+
+body.new-mobile-ui #main #dynamic-progress-bar .filler {
+  background: #F26D65 !important;
+}
+.error {
+  color: #F26D65 !important;
+}
+
+#header {
+  background-color: #004564;
+  background-image: none !important;
+}
+
+#header .header-text {
+  color: #FFF0D7;
+  font-family: 'Avenir';
+}
+
+input {
+  border-color: #FFF0D7 !important;
+  background-color: #004564;
+  color: #FFF0D7;
+  font-family: 'Avenir' !important;
+}
+
+#main form ul li div select
+#main form ul li.width_f div select,
+#main form ul.flat li div select,
+#main form ul.flat li.width_f div select
+#main #other_language_link select,
+select {
+  background: #004564 !important;
+  color: #FFF0D7;
+  border: 1px solid #FFF0D7 !important;
+  -webkit-appearance: auto !important;
+  font-family: 'Avenir';
+}
+
+#main form ul .has_license .checkbox-explanation p, #main form ul.flat .has_license .checkbox-explanation p {
+  border: 1px solid #FFF0D7 !important;
+}
+
+a {
+  color: #F26D65 !important;
+}
+
+#footer, #sticky_footer {
+  display: none;
+}
+
+p,
+h3,
+label,
+#main form span.compliance {
+  font-family: 'Avenir' !important;
+  color: #FFF0D7 !important;
+}
+
+#main form .rollover_button button,
+#main form .rollover_button span.button-style, 
+button {
+  border-color: #FFF0D7 !important;
+  background-color: #FFF0D7 !important;
+  color: #004564 !important;
+}
+
+#main form .rollover_button button:hover,
+#main form .rollover_button span.button-style:hover,
+button:hover {
+  border-color: #F26D65 !important;
+  background-color: #F26D65 !important;
+  color: #FFF0D7 !important;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #004564 !important;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #FFF0D7;
+  border-radius: 10px;
+}
+
+#main form ul li.registrant-form__us-citizen__line,
+#main form ul li.registrant-form__has-state-license__line,
+#main form ul li.registrant-form__has-no-state-license__line {
+  margin: 15px 0;
+}
+
+#main #other_language_link {
+  text-align: left;
+  margin: 0 0 20px 0;
+}
+
+#main form {
+  padding-bottom: 0;
+}
+
+.overseas-instructions {
+  margin-bottom: 0;
+  margin-top: 20px;
+}

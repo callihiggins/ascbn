@@ -22,6 +22,7 @@ export const titleClass = css`
     flex-basis: 100%;
     margin-right: 0;
     text-align: center;
+    font-size: 22px;
   }
 `;
 
@@ -35,7 +36,8 @@ export const containerClass = css`
   justify-content: center;
 
   @media (max-width: ${theme.breakpoints.large}px) {
-    height: 150px;
+    height: 180px;
+
   }
 `;
 
