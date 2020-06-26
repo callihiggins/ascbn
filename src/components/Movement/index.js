@@ -1,10 +1,11 @@
 import React from 'react';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import { Query } from 'react-contentful';
-import Iframe from 'react-iframe'
 import Form from './Form';
+import Vote from './Vote';
+import Voice from './Voice';
+import Political from './Political';
 import organizerImage from '../../assets/images/OrganizerinAllofUs.png';
-import voteImage from '../../assets/images/vote.png';
 import Nav from '../shared/Nav';
 import * as styles from './styles';
 
@@ -28,24 +29,10 @@ export const Movement = () =>
           <div css={styles.hostingBannerClass} id="screening">Join the Action Squad</div>
           <div css={styles.screeningTextClass}>{documentToReactComponents(virtualScreeningText)}</div>
           < Form />
-          <div css={styles.votingBannerClass}>VOTE</div>
-          <div css={styles.voteBlockClass}>
-            <div css={styles.voteImageBlockClass}>
-              <img src={voteImage} alt="Vote" css={styles.voteImageClass} />
-            </div>
-            <div css={styles.voteTextBlockClass}>
-              {/* {voteText} */}
-              <Iframe url="https://register.rockthevote.com/registrants/new?partner=38527&preview_custom_assets="
-                width="100%"
-                height="100%"
-                id="myId"
-                className="myClassname"
-                display="initial"
-                position="relative"
-              />
-            </div>
-          </div>
-        </div>
+          <Vote voteText={voteText}/>
+          <Political />
+          <Voice />
+      </div>
       )
     }}
   </Query>

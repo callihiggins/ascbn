@@ -17,6 +17,7 @@
     "customize-cra": "^0.9.1",
     "dangerously-set-html-content": "^1.0.5",
     "html-loader": "^1.1.0",
+    "iframe-resizer-react": "^1.0.4",
     "intersection-observer": "^0.7.0",
     "lodash": "^4.17.15",
     "node-sass": "^4.13.1",
