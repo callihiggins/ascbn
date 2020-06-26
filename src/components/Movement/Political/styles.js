@@ -2,6 +2,10 @@ import { css } from '@emotion/core';
 import { default as theme } from '../../../theme';
 import styled from 'styled-components';
 
+export const highZClass = css`
+  z-index: 100;
+  position: relative;
+`;
 
 export const bannerClass = css`
   height: 50px;
