@@ -7,6 +7,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import GA from './utils/GoogleAnalytics'
 import 'normalize.css';
 import Home from './components/Home';
 import About from './components/About';
@@ -63,6 +64,7 @@ class App extends React.Component {
         <ContentfulProvider client={contentfulClient}>
           <ThemeProvider theme={theme}>
             <Router onUpdate={this.hashLinkScroll}>
+            { GA.init() && <GA.RouteTracker /> }
             <Switch>
               <Route exact path="/">
                 <Home />
