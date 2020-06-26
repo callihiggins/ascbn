@@ -43,6 +43,8 @@ export const aboutTextClass = css`
 
   @media (max-width: ${theme.breakpoints.large}px) {
     column-count: 1;
+    width: calc(100% - 40px);
+    margin 0 20px;
   }
 
   p {

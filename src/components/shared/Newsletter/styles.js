@@ -91,6 +91,10 @@ export const buttonClass = css`
   @media (max-width: ${theme.breakpoints.large}px) {
     margin-left: 20px;
   }
+
+  @media (max-width: 375px) {
+    margin-left: 0px;
+  }
 `;
 
 export const emailMessageClass = css`
