@@ -34,6 +34,8 @@ export const containerClass = css`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
+  z-index: 100;
 
   @media (max-width: ${theme.breakpoints.large}px) {
     height: 180px;
@@ -46,6 +48,7 @@ export const signupContainerClass = css`
   justify-content: center;
   text-transform: uppercase;
   align-items: center;
+
 
   @media (max-width: ${theme.breakpoints.large}px) {
     flex-wrap: wrap;

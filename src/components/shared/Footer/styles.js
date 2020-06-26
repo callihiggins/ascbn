@@ -7,6 +7,8 @@ export const containerClass = css`
   height: 300px;
   color: ${theme.colors.navy};
   font-size: 14px;
+  position: relative;
+  z-index: 100;
 
   a {
     text-decoration: none;

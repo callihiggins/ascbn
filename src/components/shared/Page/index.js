@@ -12,6 +12,7 @@ const PageComponent = styled.section`
   padding: 0;
   height: 100vh;
   margin: 0 auto;
+  position: relative;
   background: ${props => props.backgroundColor};
   background-repeat: no-repeat;
   background-size: cover;
