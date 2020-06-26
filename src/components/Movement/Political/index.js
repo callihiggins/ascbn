@@ -1,4 +1,5 @@
 import React from 'react';
+import Partners from './Partners';
 import mapImage from '../../../assets/images/map.png';
 import * as styles from './styles';
 
@@ -11,6 +12,8 @@ export const Political = () =>
       </a>
     </div>
     <div css={styles.textBlockClass}>From the Movement Voter Project, click through the map to find local movement groups that focus on youth and communities of color.</div>
+    <div css={styles.textBlockClass}>Or, engage with one of our partners below.</div>
+    <Partners />    
   </div>
      
 
