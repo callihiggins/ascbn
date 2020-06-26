@@ -94,12 +94,21 @@ export const festivalsContainerClass = css`
   justify-content: space-around;
   width: calc(100% - 150px);
   background: ${theme.colors.cream};
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    flex-wrap: wrap;
+  }
 `;
 
 export const festivalContainerClass = css`
   display: flex;
   flex-direction: column;
   width: 300px;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    width: 80%;
+    margin: 20px auto;
+  }
 
   a {
     text-decoration: none;
