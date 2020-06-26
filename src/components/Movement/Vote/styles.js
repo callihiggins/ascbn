@@ -84,7 +84,7 @@ export const voteReigstrationBlockClass = css`
 
   @media (max-width: ${theme.breakpoints.large}px) {
     width: 100%;
-    height: calc(100vh - 50px);
+    min-height: calc(100vh - 50px);
   }
 `;
 
