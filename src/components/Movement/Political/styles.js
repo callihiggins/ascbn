@@ -29,6 +29,7 @@ export const bannerClass = css`
 
 export const imageBlockClass = css`
   text-align: center;
+  z-index: 5;
 `;
 
 export const imageClass = css`
