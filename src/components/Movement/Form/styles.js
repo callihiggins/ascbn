@@ -70,9 +70,8 @@ export const formButtonClass = css`
   text-transform: uppercase;
   border-style: none;
   font-weight: 900;
-  margin-top: 30px;
   cursor: pointer;
-  margin: 20px 0 40px 0;
+  margin-bottom: 20px;
 `;
 
 export const requiredErrorClass = css`
@@ -82,9 +81,9 @@ export const requiredErrorClass = css`
   margin-bottom: 20px;
 `;
 export const checkBoxLabelClass = css`
-  font-size: 12px;
+  font-size: 14px;
   color: ${theme.colors.navy};
-  margin-right: 10px;
+  margin: 20px 0;
   display: block;
 `;
 

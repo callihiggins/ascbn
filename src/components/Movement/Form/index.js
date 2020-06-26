@@ -22,21 +22,22 @@ class Form extends React.Component {
     lastName: '',
     organization: '',
     role: '',
-    socialMedia: true
+    socialMedia: true,
+    educator: false,
   }
 
   buildRequestBody = () => {
-    const { email, firstName, lastName, organization, role, socialMedia } = this.state;
+    const { email, firstName, lastName, organization, role, socialMedia, educator } = this.state;
     var timestamp = new Date().toLocaleString('en-US', {timeZone: 'America/New_York'});
-    return { data: [{ email, firstName, lastName, organization, role, socialMedia, timestamp }]};
+    return { data: [{ email, firstName, lastName, organization, role, socialMedia, educator, timestamp }]};
   }
 
   doSubmit = async (e) => {
     e.preventDefault();
     let hasError = false;
-    const fields = ['email', 'firstName', 'lastName', 'organization', 'role', 'socialMedia'];
+    const requiredFiends = ['email', 'firstName', 'lastName'];
 
-    fields.forEach(field => {
+    requiredFiends.forEach(field => {
       if (!this.state[field]) {
         hasError = true;
         const stateName = `${field}Error`;
@@ -45,11 +46,11 @@ class Form extends React.Component {
         })
       }
     })
+
     if (hasError) return;
 
-
     const requestBody = this.buildRequestBody();
-    
+    debugger;
     this.setState({
       loading: true,
       error: false,
@@ -89,9 +90,10 @@ class Form extends React.Component {
   }
 
   handleCheckboxChange = e => {
+    const { checked, name } = e.target;
     this.setState({
-      'socialMedia' : e.target.checked
-    })
+      [name]: checked
+    });
   }
 
   render() {
@@ -99,14 +101,18 @@ class Form extends React.Component {
     return (
       <form name="contact-form" onSubmit={this.doSubmit} css={styles.formClass}>
         <div css={styles.inputsClass}>
-          <Input hasError={this.state.emailError} name="email" label="Email Address" type="email" doChange={this.handleChange} />
-          <Input hasError={this.state.firstNameError} name="firstName" label="First Name" doChange={this.handleChange} />
-          <Input hasError={this.state.lastNameError} name="lastName" label="Last Name" doChange={this.handleChange} />
+          <Input hasError={this.state.emailError} name="email" label="Email Address *" type="email" doChange={this.handleChange} />
+          <Input hasError={this.state.firstNameError} name="firstName" label="First Name *" doChange={this.handleChange} />
+          <Input hasError={this.state.lastNameError} name="lastName" label="Last Name *" doChange={this.handleChange} />
           <Input hasError={this.state.organizationError} name="organization" label="Organization/Group/Affiliation" doChange={this.handleChange} />
           <Input hasError={this.state.roleError} name="role" label="Role/Title" doChange={this.handleChange} />
         </div>
+        <label htmlFor="educator" css={styles.checkBoxLabelClass}>
+          <input type="checkbox" css={styles.checkBoxClass} name="educator" onChange={this.handleCheckboxChange}/>
+            I am an educator and/or interested in receiving lesson plans and other educational materials.
+        </label>
         <label htmlFor="socialMedia" css={styles.checkBoxLabelClass}>
-          <input type="checkbox" value={true} css={styles.checkBoxClass} name="socialMedia" checked onChange={this.handleCheckboxChange}/>
+          <input type="checkbox" css={styles.checkBoxClass} name="socialMedia" checked={this.state.socialMedia} onChange={this.handleCheckboxChange}/>
             I'd like to receive social media toolkits on a bi-weekly basis.
         </label>
         {!loading && !success &&
@@ -124,7 +130,7 @@ class Form extends React.Component {
         }
         {success && 
           <div css={styles.successClass}>
-            Success!
+            Thanks for signing up. Welcome to the Action Squad!
           </div>
         }
       </form>

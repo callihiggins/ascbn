@@ -30,6 +30,7 @@ export const imageBlockClass = css`
 export const imageClass = css`
   height: 75vh;
   width: auto;
+  pointer: cursor;
 
   @media (max-width: ${theme.breakpoints.large}px) {
     padding-top: 20px;
