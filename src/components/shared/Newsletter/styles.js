@@ -8,7 +8,7 @@ export const textItemClass = css`
 `;
 
 export const titleClass = css`
-  font-family: 'ChangaOne';
+  font-family: 'Changa One';
   text-transform: uppercase;
   color: ${theme.colors.cream};
   letter-spacing: normal;

@@ -11,7 +11,7 @@ export const bannerClass = css`
   height: 50px;
   background: ${theme.colors.teal};
   text-align: center;
-  font-family: 'ChangaOne';
+  font-family: 'Changa One';
   text-transform: uppercase;
   color: ${theme.colors.cream};
   letter-spacing: normal;
