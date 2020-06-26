@@ -17,13 +17,13 @@
 @font-face {
   font-family: 'ChangaOne';
   font-weight: 500;
-  src: local('Avenir'), url(./assets/fonts/ChangaOne-Regular.ttf) format('ttf');
+  src: local('Avenir'), url(./assets/fonts/ChangaOne.woff) format('woff');
 }
 
 @font-face {
   font-family: 'ChangaOne';
   font-style: italic;
-  src: local('Avenir'), url(./assets/fonts/ChangaOne-Italic.ttf) format('ttf');
+  src: local('Avenir'), url(./assets/fonts/ChangaOne-Italic.woff) format('woff');
 }
 
 * {
