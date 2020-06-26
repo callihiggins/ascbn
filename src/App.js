@@ -13,6 +13,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Movement from './components/Movement';
 import Watch from './components/Watch';
+import Events from './components/Events';
 import Store from './components/Store';
 import Newsletter from './components/shared/Newsletter';
 import Footer from './components/shared/Footer';
@@ -71,6 +72,9 @@ class App extends React.Component {
               </Route>
               <Route path="/about">
                 <About />
+              </Route>
+              <Route path="/events">
+                <Events />
               </Route>
               <Route path="/movement">
                 <Movement />

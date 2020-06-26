@@ -69,81 +69,6 @@ export const episodeSummaryClass = css`
   }
 `;
 
-export const festivalBannerClass = css`
-  height: 50px;
-  background: ${theme.colors.teal};
-  text-align: center;
-  font-family: 'Changa One';
-  text-transform: uppercase;
-  color: ${theme.colors.cream};
-  letter-spacing: normal;
-  font-size: 22px;
-  letter-spacing: 1.5px;
-  font-weight: 400;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: sticky;
-  top: 40px;
-  z-index: 5;
-`;
-
-export const festivalsContainerClass = css`
-  display: flex;
-  padding: 40px;
-  justify-content: space-around;
-  width: calc(100% - 150px);
-  background: ${theme.colors.cream};
-
-  @media (max-width: ${theme.breakpoints.large}px) {
-    flex-wrap: wrap;
-  }
-`;
-
-export const festivalContainerClass = css`
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-
-  @media (max-width: ${theme.breakpoints.large}px) {
-    width: 80%;
-    margin: 20px auto;
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-`;
-
-export const imageClass = css`
-  width: 300px;
-  height: auto;
-  filter: grayscale(1);
-`;
-
-export const nameClass = css`
-  color: ${theme.colors.cream};
-  margin: 7px 0;
-  font-weight: 900;
-`;
-
-export const datesClass = css`
-  color: ${theme.colors.cream};
-  font-weight: 900;
-`;
-
-export const bottomBlockClass = css`
-  display: flex;
-  flex-direction: column;
-  background: ${theme.colors.navy};
-  height: 60px;
-  padding-left: 10px;
-  width: 290px;
-  margin: 0 auto;
-
-`;
-
 export const headerClass = css`
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -168,4 +93,14 @@ export const watchInfoClass = css`
   @media (max-width: ${theme.breakpoints.large}px) {
     width: 80%;
   }
+`;
+
+export const bottomBlockClass = css`
+  display: flex;
+  flex-direction: column;
+  background: ${theme.colors.navy};
+  height: 60px;
+  padding-left: 10px;
+  width: 290px;
+  margin: 0 auto;
 `;
