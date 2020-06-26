@@ -2,18 +2,12 @@
 @import-normalize;
 
 
-@font-face {
-  font-family: 'Avenir';
-  font-weight: 900;
-  src: local('Avenir'), url(./assets/fonts/AvenirLTStd-Heavy.ttf) format('ttf');
-}
 
-@font-face {
-  font-family: 'Avenir';
-  font-style: italic;
-  src: local('Avenir'), url(./assets/fonts/AvenirLTStd-Heavy-Oblique.ttf) format('ttf');
+@import url("https://fast.fonts.net/lt/1.css?apiType=css&c=a9a61ec3-d1d7-4285-9568-c7a34396bc7c&fontids=1475544,1475550");
+@font-face{
+    font-family:"Avenir";
+    src:url("assets/fonts/1475544/d513e15e-8f35-4129-ad05-481815e52625.woff2") format("woff2"),url("assets/fonts/1475544/61bd362e-7162-46bd-b67e-28f366c4afbe.woff") format("woff");
 }
-
 * {
   padding: 0;
   margin: 0;
