@@ -27,7 +27,7 @@ export const festivalsContainerClass = css`
   justify-content: space-between;
   max-width: 900px;
   margin: 0 auto;
-  background: ${theme.colors.cream};
+  background: ${theme.colors.navy};
 
   @media (max-width: ${theme.breakpoints.large}px) {
     flex-wrap: wrap;
@@ -130,7 +130,8 @@ export const datesClass = css`
 export const bottomBlockClass = css`
   display: flex;
   flex-direction: column;
-  background: ${theme.colors.navy};
+  background: ${theme.colors.teal};
+  color: ${theme.colors.cream};
   height: 60px;
   padding-left: 10px;
   width: 290px;
@@ -149,4 +150,8 @@ export const buttonClass = css`
   cursor: pointer;
   margin-top: 20px;
 
+`;
+
+export const blueContainerClass = css`
+  background: ${theme.colors.navy};
 `;

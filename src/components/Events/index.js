@@ -36,9 +36,11 @@ export const Events = () => {
                   <a href="https://airtable.com/shrPwxSFaSKYrKPq5" target="_blank"><button css={styles.buttonClass}>Sign Up</button></a>
                 </div>                
               </div>
-              <div css={styles.festivalBannerClass}>Find an Event</div>
-              <div css={styles.festivalsContainerClass}>
-                {festivals}
+              <div css={styles.blueContainerClass}>
+                <div css={styles.festivalBannerClass}>Find an Event</div>
+                <div css={styles.festivalsContainerClass}>
+                  {festivals}
+                </div>
               </div>
             </>
           )
