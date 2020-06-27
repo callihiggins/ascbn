@@ -123,7 +123,7 @@ export const iFrameInnerClass = css`
   height: 0;
   position: relative;
   padding-bottom: 56.25%;
-  padding-top: 43px;"
+  padding-top: 43px;
 `;
 
 export const iFrameStyleClass = css`
@@ -159,3 +159,8 @@ export const episodesContainerClass = css`
   display: flex;
   flex-wrap: wrap;
 `;
+
+export const placeholderImageClass = css`
+  margin-top: -43px;
+`;
+

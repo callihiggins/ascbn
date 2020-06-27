@@ -1,5 +1,6 @@
 import React from 'react';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import Countdown from "react-countdown";
 import { Query } from 'react-contentful';
 import Nav from '../shared/Nav';
 import * as styles from  './styles';
@@ -29,19 +30,31 @@ export const Watch = () => {
           <Query contentType="episode">
             {({data, error, fetched, loading}) => (
               <>
-                {data?.items.map(episode => (
+                {data?.items.map((episode, int) => (
                   <EpisodeContainer order={episode.fields.order}>
                     <div css={styles.videoContainerClass}>
                       <div css={styles.iFrameWrapperClass}>
                         <div css={styles.iFrameInnerClass}>
-                          <iframe
-                            src={episode.fields.testEmbedUrl} 
-                            css={styles.iFrameStyleClass}
-                            allowFullScreen
-                            title={episode.fields.title}
-                            scrolling="no"
-                            allow="encrypted-media"
-                          />
+                        <Countdown date={new Date(episode.fields.airDateTest)} renderer={({ days, hours, minutes, seconds, completed }) => {
+                          if (completed) {
+                            return (
+                              <iframe
+                                src={episode.fields.testEmbedUrl} 
+                                css={styles.iFrameStyleClass}
+                                allowFullScreen
+                                title={episode.fields.title}
+                                scrolling="no"
+                                allow="encrypted-media"
+                            />
+                            )
+                          } else {
+                            return(
+                              <div css={styles.placeholderImageClass}>
+                                <img src={`https:${episode.fields.photo.fields.file.url}`} alt={episode.fields.title} />
+                              </div>
+                            )
+                          }
+                        }}/>
                         </div>
                       </div>
                     </div>
