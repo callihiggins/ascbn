@@ -159,22 +159,6 @@ export const episodesContainerClass = css`
   flex-wrap: wrap;
 `;
 
-export const countDownClass = css`
-  background: ${theme.colors.cream};
-  font-family: 'Changa One';
-  font-size: 24px;
-  color: ${theme.colors.pink};
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
+export const placeholderImageClass = css`
+  margin-top: -43px;
 `;
-
-export const countDownDescriptionClass = css`
-  color: ${theme.colors.teal};
-  font-sze: 18px;
-  text-transform: uppercase;
-`;
-

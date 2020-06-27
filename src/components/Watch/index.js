@@ -52,11 +52,8 @@ export const Watch = () => {
                             )
                           } else {
                             return(
-                              <div css={styles.countDownClass}>
-                                <div css={styles.countDownDescriptionClass}>
-                                  Stream Episode {episode.fields.order} right here in
-                                </div>
-                                  {days}:{hours}:{minutes}:{seconds}
+                              <div css={styles.placeholderImageClass}>
+                                <img src={`https:${episode.fields.photo.fields.file.url}`} alt={episode.fields.title} />
                               </div>
                             )
                           }
