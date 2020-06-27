@@ -11,7 +11,7 @@ export const watchContainerClass = css`
 export const dateImageClass = css`
   text-align: center;
   img {
-    width: 50%;
+    width: 30%;
   }
 `;
 
@@ -39,9 +39,13 @@ export const linkClass = css`
 export const EpisodeContainer = styled.div`
   order: ${props => props.order};
   padding: 0 20px;
-  width: calc(45% - 40px);
+  width: calc(100% - 40px);
   text-align: left;
   color: ${theme.colors.cream};
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   
   img {
     width: 100%;
@@ -50,6 +54,7 @@ export const EpisodeContainer = styled.div`
   }
 
   @media (max-width: ${theme.breakpoints.large}px) {
+    flex-wrap: wrap;
     width: 90%;
     padding-bottom: 40px;
   }
@@ -63,6 +68,8 @@ export const episodeSummaryClass = css`
   margin: 50px auto 0 auto;
   padding-bottom: 40px;
   line-height: 22px;
+  flex-wrap: wrap;
+  
 
   @media (max-width: ${theme.breakpoints.large}px) {
     flex-wrap: wrap;
@@ -103,4 +110,49 @@ export const bottomBlockClass = css`
   padding-left: 10px;
   width: 290px;
   margin: 0 auto;
+`;
+
+export const iFrameWrapperClass = css`
+  max-width: 953px;
+`;
+
+export const iFrameInnerClass = css`
+  left: 0;
+  width: 100%;
+  height: 0;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 43px;"
+`;
+
+export const iFrameStyleClass = css`
+  border: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+`;
+
+export const videoContainerClass = css`
+  width: 50%;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    margin-bottom: 40px;
+    width: 100%;
+  } 
+`;
+
+export const descriptionClass = css`
+  width: 40%;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    width: 100%;
+  } 
+`;
+
+export const episodesContainerClass = css`
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;
 `;
