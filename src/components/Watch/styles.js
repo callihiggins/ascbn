@@ -80,6 +80,7 @@ export const headerClass = css`
   margin-bottom: 20px;
   text-transform: uppercase;
   font-weight: 900;
+  font-size: 24px;
 `;
 
 export const watchInfoClass = css`
