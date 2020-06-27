@@ -48,4 +48,9 @@ export const navClass = css`
   flex-direction: column;
   justify-content: center;
   width: 100%;
+  display: none;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    display: block;
+  }
 `;
