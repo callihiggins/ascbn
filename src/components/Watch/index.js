@@ -62,6 +62,7 @@ export const Watch = () => {
                       </div>
                     </div>
                     <div css={styles.descriptionClass}>
+                      <div css={styles.headerClass}>{episode.fields.title}</div>
                       {documentToReactComponents(episode.fields.description)}
                     </div>
                   </EpisodeContainer>
