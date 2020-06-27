@@ -13,6 +13,12 @@ export const dateImageClass = css`
   img {
     width: 30%;
   }
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    img {
+      width: 70%;
+    }
+  }
 `;
 
 export const taglineClass = css`
