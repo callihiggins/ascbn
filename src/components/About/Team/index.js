@@ -15,7 +15,6 @@ const Team = () => (
           <div css={styles.teamContainerClass}>
             <div css={styles.peopleContainerClass}>
               {teamData}
-              <i aria-hidden="true" />
             </div>
           </div>
         </div>
