@@ -88,6 +88,10 @@ export const bioClass = css`
   padding-top: 70px;
   max-width: 600px;
   line-height: 20px;
+
+  a {
+    color: ${theme.colors.cream};
+  }
 `;
 
 export const modalPhotoClass = css`
