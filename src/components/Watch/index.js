@@ -4,7 +4,7 @@ import { Query } from 'react-contentful';
 import Nav from '../shared/Nav';
 import * as styles from  './styles';
 import * as sharedstyles from  '../shared/styles';
-import dates from '../../assets/images/dates_wide.png';
+import watch from '../../assets/images/watch.png';
 import { HalfSection } from './styles';
 import { EpisodeContainer } from './styles';
 import { default as theme } from '../../theme';
@@ -14,16 +14,13 @@ export const Watch = () => {
     <>
       <Nav active='watch'/>
       <div css={styles.watchContainerClass}>
-        <div css={styles.taglineClass}>
-          Tune in for the two night premiere on PBS
-        </div>
         <div css={styles.dateImageClass}>
-          <img src={dates} alt="June 29 and 30" />
+          <img src={watch} alt="watch" />
         </div>
         <Query contentType="watchText">
           {({data, error, fetched, loading}) =>  (
             <div css={styles.watchInfoClass}>
-              {documentToReactComponents(data?.items[0]?.fields?.description)}
+              {documentToReactComponents(data?.items[0]?.fields?.postAirDescription)}
             </div>
             )
           }
@@ -35,7 +32,6 @@ export const Watch = () => {
                 {data?.items.map(episode => (
                   <EpisodeContainer order={episode.fields.order}>
                     <div css={styles.videoContainerClass}>
-                      <div css={styles.headerClass}>{episode.fields.header} | {episode.fields.title}</div>
                       <div css={styles.iFrameWrapperClass}>
                         <div css={styles.iFrameInnerClass}>
                           <iframe

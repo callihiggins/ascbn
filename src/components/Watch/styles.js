@@ -156,4 +156,6 @@ export const episodesContainerClass = css`
   max-width: 1200px;
   margin: 0 auto;
   padding: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
 `;

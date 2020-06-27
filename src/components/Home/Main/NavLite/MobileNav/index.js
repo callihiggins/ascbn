@@ -25,7 +25,7 @@ const Nav = props => {
               <a href="/about">About</a>
             </NavItem>
             <NavItem onClick={closeMenu} active={props.active === 'watch'}>
-              <a href="/watch">How to Watch</a>
+              <a href="/watch">watch</a>
             </NavItem>
             <NavItem onClick={closeMenu} active={props.active === 'movement'}>
               <a href="/movement">Join the Movement</a>
