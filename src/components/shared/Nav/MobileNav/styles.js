@@ -8,7 +8,7 @@ export const NavItem = styled.li`
   a {
     color: ${theme.colors.cream};
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   ${props => props.active && `
