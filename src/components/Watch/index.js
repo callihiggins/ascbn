@@ -1,11 +1,11 @@
 import React from 'react';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import Countdown from "react-countdown";
 import { Query } from 'react-contentful';
 import Nav from '../shared/Nav';
 import * as styles from  './styles';
 import * as sharedstyles from  '../shared/styles';
 import dates from '../../assets/images/dates_wide.png';
-import { HalfSection } from './styles';
 import { EpisodeContainer } from './styles';
 import { default as theme } from '../../theme';
 
@@ -32,20 +32,35 @@ export const Watch = () => {
           <Query contentType="episode">
             {({data, error, fetched, loading}) => (
               <>
-                {data?.items.map(episode => (
+                {data?.items.map((episode, int) => (
                   <EpisodeContainer order={episode.fields.order}>
                     <div css={styles.videoContainerClass}>
                       <div css={styles.headerClass}>{episode.fields.header} | {episode.fields.title}</div>
                       <div css={styles.iFrameWrapperClass}>
                         <div css={styles.iFrameInnerClass}>
-                          <iframe
-                            src={episode.fields.testEmbedUrl} 
-                            css={styles.iFrameStyleClass}
-                            allowFullScreen
-                            title={episode.fields.title}
-                            scrolling="no"
-                            allow="encrypted-media"
-                          />
+                        <Countdown date={new Date(episode.fields.airDate)} renderer={({ days, hours, minutes, seconds, completed }) => {
+                          if (completed) {
+                            return (
+                              <iframe
+                                src={episode.fields.embedUrl} 
+                                css={styles.iFrameStyleClass}
+                                allowFullScreen
+                                title={episode.fields.title}
+                                scrolling="no"
+                                allow="encrypted-media"
+                            />
+                            )
+                          } else {
+                            return(
+                              <div css={styles.countDownClass}>
+                                <div css={styles.countDownDescriptionClass}>
+                                  Stream Episode {episode.fields.order} right here in
+                                </div>
+                                  {days}:{hours}:{minutes}:{seconds}
+                              </div>
+                            )
+                          }
+                        }}/>
                         </div>
                       </div>
                     </div>

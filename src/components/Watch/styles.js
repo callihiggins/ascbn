@@ -122,7 +122,7 @@ export const iFrameInnerClass = css`
   height: 0;
   position: relative;
   padding-bottom: 56.25%;
-  padding-top: 43px;"
+  padding-top: 43px;
 `;
 
 export const iFrameStyleClass = css`
@@ -155,4 +155,26 @@ export const episodesContainerClass = css`
   max-width: 1200px;
   margin: 0 auto;
   padding: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
 `;
+
+export const countDownClass = css`
+  background: ${theme.colors.cream};
+  font-family: 'Changa One';
+  font-size: 24px;
+  color: ${theme.colors.pink};
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+`;
+
+export const countDownDescriptionClass = css`
+  color: ${theme.colors.teal};
+  font-sze: 18px;
+  text-transform: uppercase;
+`;
+
