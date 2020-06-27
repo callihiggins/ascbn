@@ -39,7 +39,7 @@ const Nav = props => {
           <a href="https://www.instagram.com/andshecouldbenext/" target="_blank" rel="noopener noreferrer" css={styles.iconClass}><FontAwesomeIcon icon={['fab', 'instagram']} /></a>
         </div>
       </HeaderContainer>
-      {/* <MobileNav /> */}
+      <MobileNav />
     </>
   )}
 

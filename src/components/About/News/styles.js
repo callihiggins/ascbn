@@ -35,10 +35,9 @@ export const leftSideClass = css`
   width: 50%;
   color: ${theme.colors.navy};
   background: ${theme.colors.cream};
-  display: flex;
   flex-direction: column;
   min-height: 400px;
-  padding 0 40px;
+  padding 40px;
   justify-content: space-evenly;
   line-height: 24px;
   font-size: 18px;
@@ -47,6 +46,7 @@ export const leftSideClass = css`
     color: ${theme.colors.navy};
     text-decoration: none;
     line-height: 24px;
+    margin: 30px 0;
   }
 
   @media (max-width: ${theme.breakpoints.large}px) {
@@ -59,7 +59,7 @@ export const pressLinkClass = css`
 `;
 
 export const rightSideClass = css`
-  background: ${theme.colors.cream};
+  background: ${theme.colors.navy};
   width: 50%;
   display: flex;
   flex-drection: column;
@@ -94,4 +94,18 @@ export const bottomPosterClass = css`
       width: 70%;
     }
   }
+`;
+
+export const showMoreClass = css`
+  font-size: 14px;
+  text-transform: uppercase;
+  color: ${theme.colors.pink};
+  width: auto;
+  span {
+    cursor: pointer;
+  }
+`;
+
+export const publisherClass = css`
+  color: ${theme.colors.teal};
 `;

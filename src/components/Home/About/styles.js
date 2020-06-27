@@ -34,6 +34,11 @@ export const textContainerClass = css`
     margin-bottom: 20px;
   }
 
+  a {
+    color:  ${theme.colors.cream};
+    text-decoration: none;
+  }
+
   @media (max-width: ${theme.breakpoints.large}px) {
     padding: 20px;
   }

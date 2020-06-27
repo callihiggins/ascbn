@@ -9,7 +9,7 @@ export const teamContainerClass = css`
 export const peopleContainerClass = css`
   display: flex;
   flex-wrap: wrap;
-  padding: 40px;
+  padding: 40px 40px 0 40px;
   justify-content: space-between;
   width: 80%;
   margin: 0 auto;
@@ -45,4 +45,16 @@ export const teamBannerClass = css`
   position: sticky;
   top: 40px;
   z-index: 5;
+`;
+
+export const imdbClass = css`
+  font-size: 14px;
+  color: ${theme.colors.navy};
+  width: 80%;
+  margin: 0 auto 40px auto;
+  text-align: center;
+
+  a {
+    color: ${theme.colors.teal};
+  }
 `;

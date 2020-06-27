@@ -31,6 +31,11 @@ export const textContainerClass = css`
   line-height: 24px;
   color: ${theme.colors.cream};
 
+  a {
+    color:  ${theme.colors.cream};
+    text-decoration: none;
+  }
+
   p {
     margin-bottom: 20px;
   }
