@@ -13,7 +13,7 @@ export const Vote = ({voteText}) =>
       </div>
       <div css={[styles.halfClass, styles.voteTextBlockClass]}>
         {documentToReactComponents(voteText)}
-        <a href="https://docs.google.com/document/d/1ZMS2BJufTVgTz31JvnRkSSdnF85dkQfIiBCE8u5tp7c/edit" target="_blank">
+        <a href="https://www.andshecouldbenext.com/StepIntoYourPower.pdf" target="_blank">
           <button css={styles.voteButtonClass}>Step into your power action plan</button>
         </a>
       </div>
