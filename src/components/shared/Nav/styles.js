@@ -18,7 +18,7 @@ export const HeaderContainer = styled.div`
   padding: 10px 0;
 
   @media (max-width: ${theme.breakpoints.large}px) {
-    padding: 0;
+    display: none;
   }
 `;
 

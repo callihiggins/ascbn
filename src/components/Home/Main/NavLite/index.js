@@ -23,6 +23,12 @@ const Nav = props => {
           <NavItem>
             <a href="/movement">Join the Movement</a>
           </NavItem>
+          <NavItem>
+            <a href="/events">Events</a>
+          </NavItem>
+          <NavItem>
+            <a href="/store">Store</a>
+          </NavItem>
         </NavUl>
       </NavEl>
       <div css={[styles.socialMediaIconsClass, sharedstyles.hideMobile]}>

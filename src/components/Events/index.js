@@ -7,7 +7,7 @@ import { default as theme } from '../../theme';
 export const Events = () => {
   return (
     <>
-      <Nav />
+      <Nav active="events"/>
       <Query contentType="filmFestival">
         {({data, error, fetched, loading}) => {
           const festivals = data?.items.map(festival => (

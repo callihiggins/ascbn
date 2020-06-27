@@ -107,6 +107,8 @@ export const mainTextContainerClass = css`
   width: 300px;
   @media (max-width: ${theme.breakpoints.large}px) {
     margin: 0 auto;
+    width: calc(100% - 40px);
+    text-align: center;
   }
 `;
 
