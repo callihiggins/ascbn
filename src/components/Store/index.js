@@ -336,6 +336,9 @@ export const Store = () =>
   <div css={styles.containerClass}>
     <Nav active="store"></Nav>
     <div css={styles.storeContainerClass} >
+    <div css={styles.mainTextContainerClass}>
+      <div css={styles.mainTextClass}>Show off your leadership with style</div>
+    </div>
       <InnerHTML html={html} />
     </div>
   </div>
