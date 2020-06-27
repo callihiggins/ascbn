@@ -16,9 +16,7 @@ export const HeaderContainer = styled.div`
   position: relative;
 
   @media (max-width: ${theme.breakpoints.large}px) {
-    background: ${theme.colors.navy};
-    padding-top: 20px;
-    margin-top: 0;
+    display: none;
   }
 `;
 
