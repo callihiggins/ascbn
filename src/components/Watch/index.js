@@ -35,7 +35,7 @@ export const Watch = () => {
                 {data?.items.map((episode, int) => (
                   <EpisodeContainer order={episode.fields.order}>
                     <div css={styles.videoContainerClass}>
-                      <div css={styles.headerClass}>{episode.fields.header} | {episode.fields.title}</div>
+                      {/* <div css={styles.headerClass}>{episode.fields.header} | {episode.fields.title}</div> */}
                       <div css={styles.iFrameWrapperClass}>
                         <div css={styles.iFrameInnerClass}>
                         <Countdown date={new Date(episode.fields.airDate)} renderer={({ days, hours, minutes, seconds, completed }) => {
@@ -62,6 +62,7 @@ export const Watch = () => {
                       </div>
                     </div>
                     <div css={styles.descriptionClass}>
+                      <div css={styles.dateClass}>{episode.fields.header}</div>
                       <div css={styles.headerClass}>{episode.fields.title}</div>
                       {documentToReactComponents(episode.fields.description)}
                     </div>

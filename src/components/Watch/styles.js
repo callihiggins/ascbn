@@ -169,3 +169,9 @@ export const episodesContainerClass = css`
 export const placeholderImageClass = css`
   margin-top: -43px;
 `;
+
+export const dateClass = css`
+  font-sie: 16px;
+  margin-bottom: 7px;
+  text-transform: uppercase;
+`;
