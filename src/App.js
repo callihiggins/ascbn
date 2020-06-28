@@ -75,10 +75,10 @@ class App extends React.Component {
               <Route path="/events">
                 <Events />
               </Route>
-              {/* <Route path="/movement">
+              <Route path="/movement">
                 <Movement />
               </Route>
-              <Route path="/watch">
+              {/* <Route path="/watch">
                 <Watch />
               </Route>
               <Route path="/store">
