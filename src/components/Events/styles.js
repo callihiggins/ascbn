@@ -170,3 +170,17 @@ export const descriptionClass = css`
   font-size: 14px;
   padding: 10px;
 `;
+
+
+export const youTubeLinkClass = css`
+  font-size: 16px;
+  color: ${theme.colors.cream};
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  text-align: center;
+
+  a {
+    color: ${theme.colors.aqua};
+  }
+`;

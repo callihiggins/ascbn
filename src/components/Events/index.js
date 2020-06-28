@@ -44,6 +44,7 @@ export const Events = () => {
                 <div css={styles.festivalsContainerClass}>
                   {festivals}
                 </div>
+                <div css={styles.youTubeLinkClass}>Keep an eye on our <a href="https://www.youtube.com/channel/UC2yVbXsWPtmAmOd7gUHa7_g">YouTube</a> channel for upcoming panel discussions</div>
               </div>
             </>
           )
