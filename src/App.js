@@ -69,13 +69,13 @@ class App extends React.Component {
               <Route exact path="/">
                 <Home />
               </Route>
-              {/* <Route path="/about">
+             <Route path="/about">
                 <About />
               </Route>
               <Route path="/events">
                 <Events />
               </Route>
-              <Route path="/movement">
+              {/* <Route path="/movement">
                 <Movement />
               </Route>
               <Route path="/watch">

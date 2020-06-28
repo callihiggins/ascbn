@@ -44,7 +44,6 @@ const Home = () => {
 	const [activeMenu, updateActive] = useState('home');
 
 	const { data } = useQuery(HOME_DATA);
-	// if (data) debugger;
 
 	const aboutText = data?.homeAboutTextCollection?.items[0]?.about.json;
 	const watchText = data?.homeAboutTextCollection?.items[0]?.viewingInformation.json;

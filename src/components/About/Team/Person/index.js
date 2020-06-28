@@ -1,14 +1,15 @@
 import React from 'react';
 import Modal from 'react-responsive-modal';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+
 import * as styles from './styles';
 import { PersonContainer, Name, ModalName } from './styles';
 import theme from '../../../../theme';
 
 const Person = ({ data }) => {
   const { name, bio, order, title, photo } = data;
-  const url = photo?.fields?.file?.url
-  const photoTitle  = photo?.fields?.title;
+  const url = photo?.url
+  const photoTitle  = photo?.title;
 
   const [modalIsOpen, setIsOpen] = React.useState(false);
 
@@ -51,16 +52,16 @@ const Person = ({ data }) => {
               {title}
             </div>
             <div css={styles.modalPhotoClass}>
-              <img src={`http://${url}`} alt={photoTitle}/>
+              <img src={url} alt={photoTitle}/>
             </div>
           </div>
           <div css={styles.bioClass}>
-            { documentToReactComponents(bio) }
+            { documentToReactComponents(bio.json) }
           </div>
         </div>
       </Modal>
       <div css={styles.photoClass}>
-        <img src={`http://${url}`} alt={photoTitle}/>
+        <img src={url} alt={photoTitle}/>
       </div>
       <div css={styles.bottomBlockClass}>
         <div css={styles.titleClass}>
