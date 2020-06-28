@@ -93,7 +93,6 @@ export const watchInfoClass = css`
   width: 50%;
   color: ${theme.colors.cream};
   margin: 20px auto;
-  line-height: 18px;
 
   a {
     text-decoration: none;
@@ -102,6 +101,7 @@ export const watchInfoClass = css`
 
   p {
     margin: 25px 0;
+    line-height: 18px;
   }
 
   @media (max-width: ${theme.breakpoints.large}px) {
@@ -152,6 +152,7 @@ export const videoContainerClass = css`
 
 export const descriptionClass = css`
   width: 40%;
+  line-height: 18px;
 
   @media (max-width: ${theme.breakpoints.large}px) {
     width: 100%;
