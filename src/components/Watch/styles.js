@@ -175,3 +175,25 @@ export const dateClass = css`
   margin-bottom: 7px;
   text-transform: uppercase;
 `;
+
+export const countdownContainerClass = css`
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.4);
+  height: 105%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
+
+export const countdownTextClass = css`
+  width: 100%;
+  font-size: 18px;
+  line-height: 30px;
+  bottom: 50%;
+  text-align: center;
+  text-transform: uppercase;
+  color: ${theme.colors.cream};
+`;

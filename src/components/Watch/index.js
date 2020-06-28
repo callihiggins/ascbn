@@ -54,6 +54,15 @@ export const Watch = () => {
                             return(
                               <div css={styles.placeholderImageClass}>
                                 <img src={`https:${episode.fields.photo.fields.file.url}`} alt={episode.fields.title} />
+                                <div css={styles.countdownContainerClass}>
+                                  <div css={styles.countdownTextClass}>
+                                    Available to stream in: <br/>
+                                    {days > 0 && `${days} day`}{days > 1 && `s`},&nbsp;
+                                    {hours > 0 && `${hours} hour`}{hours > 1 && `s`},&nbsp;
+                                    {minutes > 0 && `${minutes} minute`}{minutes > 1 && `s`},&nbsp;
+                                    {seconds > 0 && `${seconds} second`}{seconds > 1 && `s`}
+                                  </div>
+                                </div>
                               </div>
                             )
                           }
