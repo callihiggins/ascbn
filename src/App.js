@@ -1,5 +1,6 @@
 import React from 'react';
-import { ContentfulClient, ContentfulProvider } from 'react-contentful';
+import ApolloClient from 'apollo-boost';
+import { ApolloProvider } from '@apollo/react-hooks';
 import { ThemeProvider } from 'styled-components';
 import {
   BrowserRouter as Router,
@@ -27,11 +28,9 @@ import { faSpinner, faPlus, faMinus } from '@fortawesome/free-solid-svg-icons'
 
 library.add(fab, faSpinner, faPlus, faMinus);
 
-const contentfulClient = new ContentfulClient({
-  accessToken: process.env.REACT_APP_CONTENTFUL_TOKEN,
-  space: process.env.REACT_APP_SPACE_ID,
+const client = new ApolloClient({
+  uri: `https://graphql.contentful.com/content/v1/spaces/${process.env.REACT_APP_SPACE_ID}?access_token=${process.env.REACT_APP_CONTENTFUL_TOKEN}`
 });
-
 
 class App extends React.Component {
   
@@ -62,7 +61,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="app">
-        <ContentfulProvider client={contentfulClient}>
+        <ApolloProvider client={client}>
           <ThemeProvider theme={theme}>
             <Router onUpdate={this.hashLinkScroll}>
             { GA.init() && <GA.RouteTracker /> }
@@ -70,7 +69,7 @@ class App extends React.Component {
               <Route exact path="/">
                 <Home />
               </Route>
-              <Route path="/about">
+             <Route path="/about">
                 <About />
               </Route>
               <Route path="/events">
@@ -79,18 +78,18 @@ class App extends React.Component {
               <Route path="/movement">
                 <Movement />
               </Route>
-              <Route path="/watch">
+              {/* <Route path="/watch">
                 <Watch />
               </Route>
               <Route path="/store">
                 <Store />
-              </Route>
+              </Route> */}
             </Switch>
             </Router>
             <Newsletter />
             <Footer />
           </ThemeProvider>
-        </ContentfulProvider>
+        </ApolloProvider>
       </div>
     );
   }

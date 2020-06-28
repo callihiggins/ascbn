@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@apollo/react-hooks": "^3.1.5",
     "@babel/core": "^7.9.0",
     "@contentful/rich-text-react-renderer": "^13.4.0",
     "@emotion/core": "^10.0.28",
@@ -14,8 +15,10 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "@types/smoothscroll-polyfill": "^0.3.1",
+    "apollo-boost": "^0.4.9",
     "customize-cra": "^0.9.1",
     "dangerously-set-html-content": "^1.0.5",
+    "graphql": "^15.1.0",
     "html-loader": "^1.1.0",
     "iframe-resizer-react": "^1.0.4",
     "intersection-observer": "^0.7.0",

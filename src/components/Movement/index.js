@@ -1,6 +1,7 @@
 import React from 'react';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
-import { Query } from 'react-contentful';
+import { useQuery } from '@apollo/react-hooks';
+import gql from 'graphql-tag'
 import Form from './Form';
 import Vote from './Vote';
 import Voice from './Voice';
@@ -9,32 +10,47 @@ import organizerImage from '../../assets/images/OrganizerinAllofUs.png';
 import Nav from '../shared/Nav';
 import * as styles from './styles';
 
-export const Movement = () => 
-  <Query contentType="organizerText">
-    {({data}) => {
-      const text = data?.items[0]?.fields?.description;
-      const virtualScreeningText = data?.items[0]?.fields?.screeningText;
-      const voteText = data?.items[0]?.fields?.voteText;
-      return (
-        <div css={styles.containerClass}>
-          <Nav active="movement"></Nav>
-          <div css={styles.organizerContainerClass} >
-            <div css={[styles.centerClass, styles.halfClass]}>
-              <img src={organizerImage} alt="There's an organizer in all of us" css={styles.organizerImageClass}/>
-            </div>
-            <div css={styles.halfClass}>
-              {documentToReactComponents(text)}
-            </div>
-          </div>
-          <div css={styles.hostingBannerClass} id="screening">Join the Action Squad</div>
-          <div css={styles.screeningTextClass}>{documentToReactComponents(virtualScreeningText)}</div>
-          < Form />
-          <Vote voteText={voteText}/>
-          <Political />
-          <Voice />
+const MOVEMENT_DATA = gql`
+{
+  organizerTextCollection {
+		items {
+			description {
+				json
+			}
+      screeningText {
+        json
+      }
+      voteText {
+        json
+      }
+		}
+	}
+}`
+
+export const Movement = () => {
+  const { data } = useQuery(MOVEMENT_DATA);
+  const text = data?.organizerTextCollection.items[0].description.json;
+  const virtualScreeningText = data?.organizerTextCollection.items[0].screeningText.json;
+  const voteText = data?.organizerTextCollection.items[0].voteText.json;
+  return (
+    <div css={styles.containerClass}>
+      <Nav active="movement"></Nav>
+      <div css={styles.organizerContainerClass} >
+        <div css={[styles.centerClass, styles.halfClass]}>
+          <img src={organizerImage} alt="There's an organizer in all of us" css={styles.organizerImageClass}/>
+        </div>
+        <div css={styles.halfClass}>
+          {documentToReactComponents(text)}
+        </div>
       </div>
-      )
-    }}
-  </Query>
+      <div css={styles.hostingBannerClass} id="screening">Join the Action Squad</div>
+      <div css={styles.screeningTextClass}>{documentToReactComponents(virtualScreeningText)}</div>
+      <Form />
+      <Vote voteText={voteText}/>
+      <Political />
+      <Voice />
+    </div>
+  )
+}
 
 export default Movement;
