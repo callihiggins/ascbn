@@ -25,9 +25,9 @@ export const festivalsContainerClass = css`
   display: flex;
   padding: 40px;
   justify-content: space-between;
-  max-width: 900px;
+  width: 80%;
   margin: 0 auto;
-  background: ${theme.colors.navy};
+  flex-wrap: wrap;
 
   @media (max-width: ${theme.breakpoints.large}px) {
     flex-wrap: wrap;
@@ -39,6 +39,7 @@ export const festivalContainerClass = css`
   display: flex;
   flex-direction: column;
   width: 300px;
+  margin: 30px;
 
   @media (max-width: ${theme.breakpoints.large}px) {
     width: 80%;
@@ -115,18 +116,20 @@ export const mainTextContainerClass = css`
 export const imageClass = css`
   width: 300px;
   height: auto;
-  filter: grayscale(1);
 `;
 
 export const nameClass = css`
   color: ${theme.colors.cream};
   margin: 7px 0;
   font-weight: 900;
+  padding-left: 10px;
 `;
 
 export const datesClass = css`
   color: ${theme.colors.cream};
   font-weight: 900;
+  padding-left: 10px;
+  padding-bottom: 20px;
 `;
 
 export const bottomBlockClass = css`
@@ -134,9 +137,8 @@ export const bottomBlockClass = css`
   flex-direction: column;
   background: ${theme.colors.teal};
   color: ${theme.colors.cream};
-  height: 60px;
-  padding-left: 10px;
-  width: 290px;
+  width: 300px;
+  margin-top: -5px;
 `;
 
 export const buttonClass = css`
@@ -145,7 +147,7 @@ export const buttonClass = css`
   color: ${theme.colors.cream};
   padding: 10px 15px;
   border-color: ${theme.colors.navy};
-  font-size: 18px;
+  font-size: 14px;
   text-transform: uppercase;
   border-style: none;
   font-weight: 900;
@@ -156,4 +158,15 @@ export const buttonClass = css`
 
 export const blueContainerClass = css`
   background: ${theme.colors.navy};
+`;
+
+export const noBreakClass = css`
+  white-space: nowrap;
+`;
+
+export const descriptionClass = css`
+  background: ${theme.colors.cream};
+  color: ${theme.colors.navy};
+  font-size: 14px;
+  padding: 10px;
 `;

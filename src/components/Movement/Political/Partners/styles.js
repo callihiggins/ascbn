@@ -30,11 +30,12 @@ export const partnersContainerClass = css`
   background: ${theme.colors.cream};
   flex-wrap: wrap;
   margin: 0 auto;
+  justify-content: center;
 `;
 
 export const PartnerContainer = styled.div`
   order: ${props => props.order};
-  width: 25%;
+  width: 20%;
   height: 150px;
   display: flex;
   align-items: center;

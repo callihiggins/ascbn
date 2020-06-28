@@ -59,7 +59,7 @@ export const buttonClass = css`
   background-color: ${theme.colors.cream};
   border-radius: 3px;
   color: ${theme.colors.navy};
-  padding: 5px 15px;
+  padding: 10px 15px;
   border-color: ${theme.colors.cream};
   font-size: 14px;
   text-transform: uppercase;
