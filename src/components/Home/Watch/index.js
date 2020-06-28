@@ -20,7 +20,7 @@ const Watch = props => (
         </div>
           { documentToReactComponents(props.text)}
           <div css={styles.buttonGroupClass}>
-            <NavLink smooth to="/movement"><button css={styles.buttonClass}>Join the Action Squad</button></NavLink>
+            <a href="/movement#"><button css={styles.buttonClass}>Join the Action Squad</button></a>
           </div>
         </div>
       </HalfSection>      
