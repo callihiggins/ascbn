@@ -39,6 +39,10 @@ export const votingBannerClass = css`
   position: sticky;
   top: 40px;
   z-index: 5;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    top: 75px;
+  }
 `;
 
 export const voteImageClass = css`
@@ -118,8 +122,9 @@ export const voteImageBlockClass = css`
   justify-content: flex-end;
 
   @media (max-width: ${theme.breakpoints.large}px) {
-    width: 100%;
+    width: calc(100% - 60px);
     padding: 0 15px;
+    justify-content: center;
 
     img {
       margin: 0 auto;

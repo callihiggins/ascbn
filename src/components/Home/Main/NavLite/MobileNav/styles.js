@@ -42,7 +42,7 @@ export const navClass = css`
   position: absolute;
   top: 0;
   z-index: 300;
-  height: 80px;;
+  height: 60px;;
   background: ${theme.colors.navy};
   display: flex;
   flex-direction: column;

@@ -45,6 +45,10 @@ export const teamBannerClass = css`
   position: sticky;
   top: 40px;
   z-index: 5;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    top: 75px;
+  }
 `;
 
 export const imdbClass = css`

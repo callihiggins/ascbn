@@ -21,5 +21,9 @@ export const bannerClass = css`
   position: sticky;
   top: 40px;
   z-index: 5;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    top: 75px;
+  }
 `;
 
