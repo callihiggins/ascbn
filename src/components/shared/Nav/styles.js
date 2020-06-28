@@ -136,8 +136,8 @@ export const socialMediaIconsClass = css`
   justify-content: space-between;
   width: 25%;
   text-align: right;
-  padding-left: 15%;
-  width: calc(10% - 20px);
+  padding-left: 10%;
+  width: calc(15% - 20px);
   padding-right: 20px;
   align-items: center;
 `;

@@ -70,7 +70,8 @@ export const bottomBlockClass = css`
   background: ${theme.colors.pink};
   height: 60px;
   padding-right: 10px;
-  width: 190px;
+  padding-left: 10px;
+  width: 180px;
   margin: 0 auto
 `;
 

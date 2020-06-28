@@ -34,7 +34,7 @@ const Team = () => {
           {teamData}
         </div>
         <div css={styles.imdbClass}>
-          For full team credits, visit <a href="https://www.imdb.com/title/tt12131392" taget="_blank">Episode One</a> and <a href="https://www.imdb.com/title/tt12131394" taget="_blank">Episode One</a> on IMDB.
+          For full team credits, visit <a href="https://www.imdb.com/title/tt12131392" taget="_blank">Episode One</a> and <a href="https://www.imdb.com/title/tt12131394" taget="_blank">Episode Two</a> on IMDB.
         </div>
       </div>
     </div>

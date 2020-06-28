@@ -43,7 +43,7 @@ export const logoClass = css`
 export const rightSideClass = css`
   display: flex;
   flex-wrap: wrap;
-  width: 200px;
+  width: 210px;
 `;
 
 export const leftSideClass = css`
@@ -55,7 +55,7 @@ export const leftSideClass = css`
 export const socialMediaIconsClass = css`
   display: flex;
   justify-content: space-between;
-  width: 80px;
+  width: 120px;
   margin-left: 20px;
 `;
 

@@ -93,6 +93,10 @@ export const introTextClass = css`
     width: 100%;
     padding: 0 15px;
     align-items: center;
+
+    p {
+      text-align: center;
+    }
   }
 `;
 
@@ -120,6 +124,9 @@ export const mainTextContainerClass = css`
 export const imageClass = css`
   width: 300px;
   height: auto;
+  @media (max-width: ${theme.breakpoints.large}px) {
+    width: 100%;
+  }
 `;
 
 export const nameClass = css`
@@ -143,6 +150,10 @@ export const bottomBlockClass = css`
   color: ${theme.colors.cream};
   width: 300px;
   margin-top: -5px;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    width: 100%;
+  }
 `;
 
 export const buttonClass = css`
