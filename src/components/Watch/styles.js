@@ -130,6 +130,7 @@ export const iFrameInnerClass = css`
   position: relative;
   padding-bottom: 56.25%;
   padding-top: 43px;
+  overflow: hidden;
 `;
 
 export const iFrameStyleClass = css`
