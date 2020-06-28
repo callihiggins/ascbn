@@ -14,7 +14,7 @@ const Footer = props => (
         <div css={sharedstyles.hideMobile}>&copy; And She Could Be Next 2020</div>
       </div>
       <div css={styles.rightSideClass}>
-        Follow us:
+        <span css={styles.followClass}>Follow us:</span>
         <div css={styles.socialMediaIconsClass}>
           <a href="https://www.youtube.com/channel/UC2yVbXsWPtmAmOd7gUHa7_g/" target="_blank" rel="noopener noreferrer" css={styles.iconClass}><FontAwesomeIcon icon={['fab', 'youtube']} /></a>
           <a href="https://www.facebook.com/andshecouldbenext/" target="_blank" rel="noopener noreferrer" css={styles.iconClass}><FontAwesomeIcon icon={['fab', 'facebook-f']} /></a>

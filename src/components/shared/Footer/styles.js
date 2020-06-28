@@ -56,11 +56,21 @@ export const socialMediaIconsClass = css`
   display: flex;
   justify-content: space-between;
   width: 120px;
-  margin-left: 20px;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    margin: 10px 0;
+  }
 `;
 
 export const iconClass = css`
   color: ${theme.colors.navy};
   font-size: 18px;
   font-weight: 700;
+`;
+
+export const followClass = css`
+  margin-right: 20px;
+  @media (max-width: ${theme.breakpoints.large}px) {
+    margin: 10px 20px 10px 0;;
+  }
 `;
