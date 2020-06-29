@@ -6,7 +6,7 @@ import { PartnerContainer } from './styles';
 
 const PARTNERS_DATA = gql`
 {
-  partnerCollection {
+  partnerRealCollection {
     items {
       name
       link
@@ -20,7 +20,7 @@ const PARTNERS_DATA = gql`
 
 const Partners = () => {
   const { data } = useQuery(PARTNERS_DATA);
-  const partners = data?.partnerCollection.items.map(
+  const partners = data?.partnerRealCollection.items.map(
     link => 
     <PartnerContainer order={link.order}>
       <a href={link.link} target="_blank" rel="noopener noreferrer">
