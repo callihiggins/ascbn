@@ -22,7 +22,7 @@ const News = () => {
   const { data } = useQuery(PRESS_DATA);
   const items = data?.pressItemCollection?.items.slice().sort((a, b) => new Date(b.publicationDate) - new Date(a.publicationDate))
   const links = items?.map(link => <a css={styles.pressLinkClass} href={link.url} target="_blank" rel="noopener noreferrer"><span css={styles.publisherClass}>{link.publisher}</span> | {link.title}</a> )
-  const firstFive = links?.slice(0, 4);
+  const firstFive = links?.slice(0, 5);
   return (
     <>
       <div css={styles.pressBannerClass}>Press</div>
@@ -30,7 +30,7 @@ const News = () => {
         <div css={styles.leftSideClass}>
           {!showAll && firstFive}
           {showAll && links}
-          {links?.length > 4 && !showAll && <div css={styles.showMoreClass} onClick={()=> setShowAll(true)}><span>See more</span></div>}
+          {links?.length > 5 && !showAll && <div css={styles.showMoreClass} onClick={()=> setShowAll(true)}><span>See more</span></div>}
         </div>
         <div css={styles.rightSideClass}>
           <img src={womanImage} alt="And She Could Be Next Poster" />
