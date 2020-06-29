@@ -31,6 +31,7 @@ export const taglineClass = css`
 
   @media (max-width: ${theme.breakpoints.large}px) {
     font-size: 17px;
+    padding: 0 15px;
   }
 `;
 
@@ -97,11 +98,12 @@ export const watchInfoClass = css`
   a {
     text-decoration: none;
     color: ${theme.colors.cream};
+    border-bottom: 1px solid ${theme.colors.pink};
   }
 
   p {
     margin: 25px 0;
-    line-height: 18px;
+    line-height: 20px;
   }
 
   @media (max-width: ${theme.breakpoints.large}px) {
