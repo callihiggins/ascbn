@@ -8,10 +8,10 @@ export const watchContainerClass = css`
   text-align: center;
 `;
 
-export const dateImageClass = css`
+export const watchImageClass = css`
   text-align: center;
   img {
-    width: 30%;
+    width: 50%;
   }
 
   @media (max-width: ${theme.breakpoints.large}px) {

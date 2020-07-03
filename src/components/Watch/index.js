@@ -7,7 +7,7 @@ import { Query } from 'react-contentful';
 import Nav from '../shared/Nav';
 import * as styles from  './styles';
 import * as sharedstyles from  '../shared/styles';
-import dates from '../../assets/images/dates_wide.png';
+import watchhere from '../../assets/images/watchhere.png';
 import { EpisodeContainer } from './styles';
 import { default as theme } from '../../theme';
 
@@ -43,11 +43,8 @@ export const Watch = () => {
     <>
       <Nav active='watch'/>
       <div css={styles.watchContainerClass}>
-        <div css={styles.taglineClass}>
-          Tune in for the two night premiere on PBS
-        </div>
-        <div css={styles.dateImageClass}>
-          <img src={dates} alt="June 29 and 30" />
+        <div css={styles.watchImageClass}>
+          <img src={watchhere} alt="watch here" />
         </div>
         <div css={styles.watchInfoClass}>
           {documentToReactComponents(data?.watchTextCollection.items[0]?.description.json)}
