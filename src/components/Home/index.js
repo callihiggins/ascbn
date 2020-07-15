@@ -67,7 +67,7 @@ const Home = () => {
 			</CSSTransition>
 			<Main updateActive={updateActiveCallback} />
 			<About updateActive={updateActiveCallback} text={aboutText}/>
-			<Watch updateActive={updateActiveCallback} text={watchText}/>
+			{/* <Watch updateActive={updateActiveCallback} text={watchText}/> */}
 		</>
 	)
 }
