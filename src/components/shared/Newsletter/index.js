@@ -8,7 +8,12 @@ import { default as theme } from '../../../theme';
 
 const Newsletter = props => (
   <div css={styles.containerClass}>
-   < Form />
+    <div
+      css={styles.signupContainerClass}
+    > 
+      <div css={styles.titleClass}>Join our Action Squad</div>
+      <a href="/movement" css={styles.buttonClass}>Learn More</a>
+    </div>
   </div>
 )
 

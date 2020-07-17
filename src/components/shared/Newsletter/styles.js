@@ -40,7 +40,7 @@ export const containerClass = css`
   bottom: 0;
 
   @media (max-width: ${theme.breakpoints.large}px) {
-    height: 180px;
+    height: 125px;
 
   }
 `;
@@ -91,12 +91,10 @@ export const buttonClass = css`
   font-weight: 900;
   cursor: pointer;
   @media (max-width: ${theme.breakpoints.large}px) {
-    margin-left: 20px;
+    margin-top: 20px;
   }
 
-  @media (max-width: 375px) {
-    margin-left: 0px;
-  }
+  text-decoration: none;
 `;
 
 export const emailMessageClass = css`

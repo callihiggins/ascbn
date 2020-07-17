@@ -9,6 +9,7 @@ export const containerClass = css`
   font-size: 14px;
   position: relative;
   z-index: 100;
+  padding-bottom: 40px;
 
   a {
     text-decoration: none;
