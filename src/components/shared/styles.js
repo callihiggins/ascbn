@@ -83,6 +83,6 @@ export const hideDesktop = css`
 
 export const hideMobile = css`
   @media (max-width: ${theme.breakpoints.large}px) {
-    display: none;
+    display: none !important;
   }
 `;

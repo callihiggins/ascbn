@@ -35,7 +35,9 @@ export const containerClass = css`
   flex-direction: column;
   justify-content: center;
   position: relative;
-  z-index: 100;
+  z-index: 500;
+  position: fixed;
+  bottom: 0;
 
   @media (max-width: ${theme.breakpoints.large}px) {
     height: 180px;
