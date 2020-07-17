@@ -24,6 +24,7 @@ class Form extends React.Component {
     role: '',
     socialMedia: true,
     educator: false,
+    screenings: true,
   }
 
   buildRequestBody = () => {
@@ -35,7 +36,7 @@ class Form extends React.Component {
   doSubmit = async (e) => {
     e.preventDefault();
     let hasError = false;
-    const requiredFiends = ['email', 'firstName', 'lastName'];
+    const requiredFiends = ['email'];
 
     requiredFiends.forEach(field => {
       if (!this.state[field]) {
@@ -114,6 +115,10 @@ class Form extends React.Component {
         <label htmlFor="socialMedia" css={styles.checkBoxLabelClass}>
           <input type="checkbox" css={styles.checkBoxClass} name="socialMedia" checked={this.state.socialMedia} onChange={this.handleCheckboxChange}/>
             I'd like to receive social media toolkits on a bi-weekly basis.
+        </label>
+        <label htmlFor="screenings" css={styles.checkBoxLabelClass}>
+          <input type="checkbox" css={styles.checkBoxClass} name="screenings" checked={this.state.screenings} onChange={this.handleCheckboxChange}/>
+          I would like to receive information about events and screenings.
         </label>
         {!loading && !success &&
           <button css={styles.formButtonClass}>Submit</button>
