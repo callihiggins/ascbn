@@ -11,7 +11,7 @@ import { default as theme } from '../../../theme';
 
 
 const Watch = props => (
-  <Page updateActive={props.updateActive} name="watch">
+  <Page shallowZIndex={props.shallowZIndex} updateActive={props.updateActive} name="watch">
     <div css={styles.containerClass}>
       <HalfSection backgroundColor={theme.colors.navy}>
       <div css={styles.textContainerClass}>

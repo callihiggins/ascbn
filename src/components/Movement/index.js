@@ -5,6 +5,7 @@ import gql from 'graphql-tag'
 import Form from './Form';
 import Vote from './Vote';
 import Voice from './Voice';
+import Watch from '../Home/Watch';
 import Political from './Political';
 import organizerImage from '../../assets/images/OrganizerinAllofUs.png';
 import Nav from '../shared/Nav';
@@ -46,6 +47,8 @@ export const Movement = () => {
       <div css={styles.hostingBannerClass} id="screening">Join the Action Squad</div>
       <div css={styles.screeningTextClass}>{documentToReactComponents(virtualScreeningText)}</div>
       <Form />
+      <div css={styles.hostingBannerClass} id="screening">Host a Screening</div>
+      <Watch shallowZIndex={true}/>
       <Vote voteText={voteText}/>
       <Political />
       <Voice />

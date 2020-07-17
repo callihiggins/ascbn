@@ -72,4 +72,5 @@ export const buttonClass = css`
 
 export const mobileImageContainerClass = css`
   text-align: center;
+  margin-bottom: 20px;
 `;
