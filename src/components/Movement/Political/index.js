@@ -4,7 +4,7 @@ import mapImage from '../../../assets/images/map.png';
 import * as styles from './styles';
 
 export const Political = () => 
-  <div css={styles.highZClass}>
+  <div css={styles.highZClass} id="politicalHome">
     <div css={styles.bannerClass}>Find Your Political Home</div>
     <div css={styles.imageBlockClass}>
       <a href="https://movement.vote/#map" target="blank">

@@ -12,7 +12,7 @@ export const HeaderContainer = styled.div`
   z-index: 120;
   width: 100%;
   margin-top: 20px;
-  justify-content: space-around;
+  justify-content: center;
   position: relative;
 
   @media (max-width: ${theme.breakpoints.large}px) {
@@ -22,12 +22,12 @@ export const HeaderContainer = styled.div`
 
 export const NavUl = styled.ul`
   display: flex;
+  flex-direction: column;
   text-transform: uppercase;
   list-style: none;
   align-items: center;
-  height: 30px;
   text-align: center;
-  justify-content: center;
+  justify-content: flex-start;
 
   @media (max-width: ${theme.breakpoints.large}px) {
       width: 100%;
@@ -36,19 +36,49 @@ export const NavUl = styled.ul`
       align-items: center;
     };
   }
+
+  li {
+    width: 120px;
+    padding: 5px 20px;
+    list-decoration: none;
+    font-weight: 900;
+    font-size: 12px;
+    color: ${theme.colors.cream};
+    cursor: pointer;
+    position: relative;
+
+    a {
+      &:hover {
+        color: ${theme.colors.teal};
+      }
+    }
+  
+    a {
+      color: ${theme.colors.cream};
+      text-decoration: none;
+      cursor: pointer;
+      position: relative;
+      width: auto;
+    }
+  }
   
 `;
 
 export const NavEl = styled.nav`
-  width: 50%;
+  width: 60%;
+  display: flex;
+  height: 30px;
   @media (max-width: ${theme.breakpoints.large}px) {
     width: 100%;
   }
 `;
 
 export const NavItem = styled.li`
-  width: 135px;
-  margin: 0 20px;
+  a {
+    &:hover {
+      color: ${theme.colors.cream} !important;
+    }
+  }
   list-decoration: none;
   font-weight: ${props => props.active ? '700' : '600'};
   font-size: 12px;
@@ -119,16 +149,16 @@ export const NavItem = styled.li`
 export const socialMediaIconsClass = css`
   display: inline-flex;
   justify-content: space-between;
-  width: 25%;
   text-align: right;
-  padding-left: 10%;
+  padding-left: 15%;
   width: calc(15% - 20px);
   padding-right: 20px;
+  align-items: center;
 `;
 
 export const iconClass = css`
   color: ${theme.colors.cream};
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
 `;
 
@@ -150,7 +180,8 @@ export const logoClass = css`
 `;
 
 export const emptySpacerClass = css`
-  width: 25%;
+  width: calc(15% - 25px);
+  margin-left: 25px;
 
   @media (max-width: ${theme.breakpoints.large}px) {
     display: none;

@@ -64,7 +64,7 @@ class Main extends React.Component {
 							<img src={logo} alt="And She Could Be Next" css={styles.logoClass}/>
 						</div>
 						<div css={styles.taglineClass}>
-							A two-part documentary from POV <br/>Premiering on PBS over two nights- June 29 & 30
+							A two-part documentary from POV <br/>Watch both episodes here until August 31
 						</div>
 						<button css={styles.trailerCTAClass} onClick={this.openModal}>
 							<div css={styles.playerButtonClass}>

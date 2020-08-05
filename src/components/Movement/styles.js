@@ -8,7 +8,8 @@ export const containerClass = css`
 `;
 
 export const organizerImageClass = css`
-  width: 85%;
+  width: 75%;
+  margin-bottom: 15px;
 `;
 
 export const organizerContainerClass = css`
@@ -83,5 +84,20 @@ export const screeningTextClass = css`
     padding: 20px 15px;
     width: 90%;
   }
+`;
+
+export const voteButtonClass = css`
+  background-color: ${theme.colors.navy};
+  border-radius: 3px;
+  color: ${theme.colors.cream};
+  padding: 10px 15px;
+  border-color: ${theme.colors.navy};
+  font-size: 18px;
+  text-transform: uppercase;
+  border-style: none;
+  font-weight: 900;
+  margin-top: 30px;
+  cursor: pointer;
+  margin: 20px 0;
 `;
 

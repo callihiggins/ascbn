@@ -44,47 +44,33 @@ class App extends React.Component {
     }
   }, 100);
 
-  hashLinkScroll = () => {
-    const { hash } = window.location;
-    if (hash !== '') {
-      // Push onto callback queue so it runs after the DOM is updated,
-      // this is required when navigating from a different page so that
-      // the element is rendered on the page before trying to getElementById.
-      setTimeout(() => {
-        const id = hash.replace('#', '');
-        const element = document.getElementById(id);
-        if (element) element.scrollIntoView();
-      }, 0);
-    }
-  }
-
   render() {
     return (
       <div className="app">
         <ApolloProvider client={client}>
           <ThemeProvider theme={theme}>
-            <Router onUpdate={this.hashLinkScroll}>
-            { GA.init() && <GA.RouteTracker /> }
-            <Switch>
-              <Route exact path="/">
-                <Home />
-              </Route>
-             <Route path="/about">
-                <About />
-              </Route>
-              <Route path="/events">
-                <Events />
-              </Route>
-              <Route path="/movement">
-                <Movement />
-              </Route>
-              <Route path="/watch">
-                <Watch />
-              </Route>
-              <Route path="/store">
-                <Store />
-              </Route>
-            </Switch>
+            <Router>
+              { GA.init() && <GA.RouteTracker /> }
+              <Switch>
+                <Route exact path="/">
+                  <Home />
+                </Route>
+                <Route path="/about">
+                  <About />
+                </Route>
+                <Route path="/events">
+                  <Events />
+                </Route>
+                <Route path="/movement">
+                  <Movement />
+                </Route>
+                <Route path="/watch">
+                  <Watch />
+                </Route>
+                <Route path="/store">
+                  <Store />
+                </Route>
+              </Switch>
             </Router>
             <Newsletter />
             <Footer />

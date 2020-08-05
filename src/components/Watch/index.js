@@ -1,6 +1,5 @@
 import React from 'react';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
-import Countdown from "react-countdown";
 import { useQuery } from '@apollo/react-hooks';
 import gql from 'graphql-tag'
 import { Query } from 'react-contentful';
@@ -40,7 +39,7 @@ const WATCH_DATA = gql`
 export const Watch = () => {
   const { data } = useQuery(WATCH_DATA);
   return (
-    <>
+    <div id="screening">
       <Nav active='watch'/>
       <div css={styles.watchContainerClass}>
         <div css={styles.watchImageClass}>
@@ -56,35 +55,14 @@ export const Watch = () => {
                 {/* <div css={styles.headerClass}>{episode.header} | {episode.title}</div> */}
                 <div css={styles.iFrameWrapperClass}>
                   <div css={styles.iFrameInnerClass}>
-                    <Countdown date={new Date(episode.airDate)} renderer={({ days, hours, minutes, seconds, completed }) => {
-                      if (completed) {
-                        return (
-                          <iframe
-                            src={episode.embedUrl} 
-                            css={styles.iFrameStyleClass}
-                            allowFullScreen
-                            title={episode.title}
-                            scrolling="no"
-                            allow="encrypted-media"
-                        />
-                        )
-                      } else {
-                        return(
-                          <div css={styles.placeholderImageClass}>
-                            <img src={episode.photo.url} alt={episode.title} />
-                            <div css={styles.countdownContainerClass}>
-                              <div css={styles.countdownTextClass}>
-                                Available to stream in: <br/>
-                                {days > 0 && `${days} day`}{days > 1 && `s`}{days > 0 && ', '}
-                                {hours > 0 && `${hours} hour`}{hours > 1 && `s`}{hours > 0 && ', '}
-                                {minutes > 0 && `${minutes} minute`}{minutes > 1 && `s`}{minutes > 0 && ', '}
-                                {seconds > 0 && `${seconds} second`}{seconds > 1 && `s`}
-                              </div>
-                            </div>
-                          </div>
-                        )
-                      }
-                    }}/>
+                    <iframe
+                      src={episode.embedUrl} 
+                      css={styles.iFrameStyleClass}
+                      allowFullScreen
+                      title={episode.title}
+                      scrolling="no"
+                      allow="encrypted-media"
+                    />
                   </div>
                 </div>
               </div>
@@ -97,7 +75,7 @@ export const Watch = () => {
           ))}
         </div>
       </div>
-    </>               
+    </div>               
   )
 }
 

@@ -26,7 +26,7 @@ const News = () => {
   return (
     <>
       <div css={styles.pressBannerClass}>Press</div>
-      <div css={styles.pressContainerClass}>
+      <div css={styles.pressContainerClass} id="pressHighlights">
         <div css={styles.leftSideClass}>
           {!showAll && firstFive}
           {showAll && links}
@@ -36,7 +36,7 @@ const News = () => {
           <img src={womanImage} alt="And She Could Be Next Poster" />
         </div>
       </div>
-      <div css={styles.bottomPosterClass}>
+      <div css={styles.bottomPosterClass} id="pressKit">
         <a href='https://drive.google.com/file/d/1fUe0AG55MiwhrwNAjB1-VK8VWgQtWZJN/view' download target="_blank">
           <img src={pressImage} alt="Download our Press Kit" />
         </a>

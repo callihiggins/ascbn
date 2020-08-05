@@ -53,7 +53,7 @@ export const voteImageClass = css`
 `;
 
 export const voteTextBlockClass = css`
-  background: ${theme.colors.teal};
+  background: ${theme.colors.navy};
   color: ${theme.colors.cream};
   flex-direction: column;
   justify-content: center;
@@ -66,8 +66,6 @@ export const voteTextBlockClass = css`
     line-height: 22px;
   }
   @media (max-width: ${theme.breakpoints.large}px) {
-    background: ${theme.colors.cream};
-    color: ${theme.colors.navy};
     padding: 40px;
   }
 `;
@@ -100,9 +98,8 @@ export const voteButtonClass = css`
   text-transform: uppercase;
   border-style: none;
   font-weight: 900;
-  margin-top: 30px;
   cursor: pointer;
-  margin: 20px 0 40px 0;
+  margin: 0 0 15px 0;
   @media (max-width: ${theme.breakpoints.large}px) {
     background-color: ${theme.colors.navy};
     color: ${theme.colors.cream};

@@ -28,7 +28,7 @@ const MOVEMENT_DATA = gql`
 	}
 }`
 
-export const Movement = () => {
+export const Movement = props => {
   const { data } = useQuery(MOVEMENT_DATA);
   const text = data?.organizerTextCollection.items[0].description.json;
   const virtualScreeningText = data?.organizerTextCollection.items[0].screeningText.json;
@@ -42,16 +42,19 @@ export const Movement = () => {
         </div>
         <div css={styles.halfClass}>
           {documentToReactComponents(text)}
+          <a href="https://www.andshecouldbenext.com/StepIntoYourPower.pdf" target="_blank">
+          <button css={styles.voteButtonClass}>Step into your power action plan</button>
+        </a>
         </div>
       </div>
-      <div css={styles.hostingBannerClass} id="screening">Join the Action Squad</div>
+      <div css={styles.hostingBannerClass}>Join the Action Squad</div>
       <div css={styles.screeningTextClass}>{documentToReactComponents(virtualScreeningText)}</div>
       <Form />
-      <div css={styles.hostingBannerClass} id="screening">Host a Screening</div>
+      <div css={styles.hostingBannerClass}>Host a Screening</div>
       <Watch shallowZIndex={true}/>
       <Vote voteText={voteText}/>
-      <Political />
-      <Voice />
+      <Political/>
+      <Voice></Voice>
     </div>
   )
 }

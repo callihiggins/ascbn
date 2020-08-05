@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { withTheme } from 'styled-components';
+import { HashLink as Link } from 'react-router-hash-link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import MobileNav from './MobileNav';
 import logo from '../../../assets/images/ASCBN-TITLE-HORIZONTAL-LIGHT-TRANSPARENT.png';
@@ -7,7 +8,16 @@ import * as styles from  './styles';
 import * as sharedstyles from  '../../shared/styles';
 import { NavUl, NavItem, NavEl, HeaderContainer } from './styles';
 
+const scrollIntoView = el => {
+  setTimeout(() => {
+    el.scrollIntoView({ behavior: 'smooth' });
+   }, 500);
+}
+
+
 const Nav = props => {
+  const [showAbout, setShowAbout] = useState(false);
+  const [showMovement, setshowMovement] = useState(false);
 	return (
     <>
       <HeaderContainer>
@@ -17,19 +27,62 @@ const Nav = props => {
           </a>
         </div>
         <NavEl>
-          <NavUl >
-            <NavItem active={props.active === 'about'}>
+          <NavUl onMouseEnter={() => setShowAbout(true)} onMouseLeave={() => setShowAbout(false)}>
+            <NavItem active={props.active === 'about'} >
               <a href="/about">About</a>
             </NavItem>
+            {showAbout && (
+              <>
+                <li>
+                  <Link to="/about#filmmakers" scroll={el => scrollIntoView(el)}>Meet the Team</Link>
+                </li>
+                <li>
+                  <Link to="/about#pressHighlights" scroll={el => scrollIntoView(el)}>Press Highlights</Link>
+                </li>
+                <li>
+                <Link to="/about#pressKit" scroll={el => {
+                  setTimeout(() => {
+                    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                  }, 500);
+                }}>
+                  Press Kit
+                </Link>
+                </li>
+              </>
+            )}
+          </NavUl>
+          <NavUl >
             <NavItem active={props.active === 'watch'}>
               <a href="/watch">How to Watch</a>
             </NavItem>
+          </NavUl>
+          <NavUl onMouseEnter={() => setshowMovement(true)} onMouseLeave={() => setshowMovement(false)}>
             <NavItem active={props.active === 'movement'}>
               <a href="/movement">Join the Movement</a>
             </NavItem>
+            {showMovement && (
+              <>
+                <li>
+                  <Link to="/movement#screening" scroll={el => scrollIntoView(el)}>Host a Screening</Link>
+                </li>
+                <li>
+                  <Link to="/movement#vote" scroll={el => scrollIntoView(el)}>Register to Vote</Link>
+                </li>
+                <li>
+                  <Link to="/movement#politicalHome" scroll={el => scrollIntoView(el)}>Find Your Politilcal Home</Link>
+                </li>
+                <li>
+                  <Link to="/movement#voice" scroll={el => scrollIntoView(el)}>Speak Up</Link>
+                </li>
+              </>
+            )}
+          </NavUl>
+          <NavUl>
             <NavItem active={props.active === 'events'}>
               <a href="/events">Events</a>
             </NavItem>
+          </NavUl>
+          <NavUl>
             <NavItem active={props.active === 'store'}>
               <a href="/store">Store</a>
             </NavItem>

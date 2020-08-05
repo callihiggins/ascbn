@@ -103,7 +103,12 @@ export const watchInfoClass = css`
 
   p {
     margin: 25px 0;
-    line-height: 20px;
+    line-height: 22px;
+    white-space: normal;
+
+    @media (max-width: ${theme.breakpoints.large}px) {
+      text-align: left;
+    }
   }
 
   @media (max-width: ${theme.breakpoints.large}px) {
@@ -168,6 +173,10 @@ export const episodesContainerClass = css`
   padding: 50px 0;
   display: flex;
   flex-wrap: wrap;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    padding-top: 10px;
+  }
 `;
 
 export const placeholderImageClass = css`
