@@ -43,7 +43,7 @@ export const NavUl = styled.ul`
 
   li {
     width: 120px;
-    padding: 5px 20px;
+    padding: 5px 20px 8px 20px;
     list-decoration: none;
     font-weight: 900;
     font-size: 12px;
@@ -70,7 +70,8 @@ export const NavUl = styled.ul`
 `;
 
 export const NavEl = styled.nav`
-  width: 60%;
+  width: 70%;
+  justify-content: space-evenly;
   display: flex;
   height: 30px;
   @media (max-width: ${theme.breakpoints.large}px) {
@@ -152,11 +153,10 @@ export const NavItem = styled.li`
 
 export const socialMediaIconsClass = css`
   display: inline-flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   text-align: right;
-  padding-left: 10%;
   width: calc(15% - 20px);
-  padding-right: 20px;
+  padding-right: 10px;
   align-items: center;
 `;
 
@@ -164,6 +164,7 @@ export const iconClass = css`
   color: ${theme.colors.navy};
   font-size: 18px;
   font-weight: 700;
+  margin: 0 10px;
 `;
 
 export const logoClass = css`
@@ -172,7 +173,7 @@ export const logoClass = css`
 `;
 
 export const logoContainerClass = css`
-  width: calc(15% - 60px);
+  width: calc(15% - 25px);
   margin-left: 25px;
 
   @media (max-width: ${theme.breakpoints.large}px) {
