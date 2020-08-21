@@ -16,6 +16,7 @@ import Movement from './components/Movement';
 import Watch from './components/Watch';
 import Events from './components/Events';
 import Store from './components/Store';
+import Georgia from './components/GA';
 import Newsletter from './components/shared/Newsletter';
 import Footer from './components/shared/Footer';
 import './App.css';
@@ -53,26 +54,46 @@ class App extends React.Component {
               { GA.init() && <GA.RouteTracker /> }
               <Switch>
                 <Route exact path="/">
-                  <Home />
+                  <>
+                    <Home />
+                    <Newsletter />
+                  </>
                 </Route>
                 <Route path="/about">
-                  <About />
+                  <>
+                    <About />
+                    <Newsletter />
+                  </>
                 </Route>
                 <Route path="/events">
-                  <Events />
+                  <>
+                    <Events />
+                    <Newsletter />
+                  </>
                 </Route>
                 <Route path="/movement">
-                  <Movement />
+                  <>
+                    <Movement />
+                    <Newsletter />
+                  </>
                 </Route>
                 <Route path="/watch">
-                  <Watch />
+                  <>
+                    <Watch />
+                    <Newsletter />
+                  </>
                 </Route>
                 <Route path="/store">
-                  <Store />
+                  <>
+                    <Store />
+                    <Newsletter />
+                  </>
+                </Route>
+                <Route path="/alleyesongeorgia">
+                  <Georgia />
                 </Route>
               </Switch>
             </Router>
-            <Newsletter />
             <Footer />
           </ThemeProvider>
         </ApolloProvider>
