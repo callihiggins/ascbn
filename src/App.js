@@ -89,7 +89,7 @@ class App extends React.Component {
                     <Newsletter />
                   </>
                 </Route>
-                <Route path="/alleyesongeorgia">
+                <Route path="/alleyesonga">
                   <Georgia />
                 </Route>
               </Switch>
