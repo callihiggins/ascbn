@@ -3,17 +3,15 @@ import * as styles from  './styles';
 import * as sharedstyles from  '../styles';
 import { default as theme } from '../../../theme';
 
-
-
-const Newsletter = props => (
+const VotePlan = props => (
   <div css={styles.containerClass}>
     <div
       css={styles.signupContainerClass}
     > 
-      <div css={styles.titleClass}>#AllEyesOnGA</div>
-      <a href="/alleyesongeorgia" css={styles.buttonClass}>Learn More</a>
+      <div css={styles.titleClass}>Make Your Vote Plan</div>
+      <a href="/https://www.peoplespowergrab.org/" target="_blank" css={styles.buttonClass}>Learn More</a>
     </div>
   </div>
 )
 
-export default Newsletter;
+export default VotePlan;

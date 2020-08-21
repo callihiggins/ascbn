@@ -85,7 +85,6 @@ export const episodeSummaryClass = css`
 
 export const headerClass = css`
   margin-bottom: 20px;
-  text-transform: uppercase;
   font-weight: 900;
   font-size: 24px;
 `;
@@ -225,5 +224,7 @@ export const watchTextClass = css`
   @media (max-width: ${theme.breakpoints.large}px) {
     width: 90%;
     text-align: left;
+    margin: 0;
+    padding-left: 20px;
   }
 `;

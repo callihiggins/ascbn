@@ -74,6 +74,7 @@ export const NavEl = styled.nav`
   justify-content: space-evenly;
   display: flex;
   height: 30px;
+  z-index: -1;
   @media (max-width: ${theme.breakpoints.large}px) {
     width: 100%;
   }

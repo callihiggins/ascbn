@@ -9,7 +9,7 @@ export const textItemClass = css`
 
 export const titleClass = css`
   font-family: 'Changa One';
-  // text-transform: uppercase;
+  text-transform: uppercase;
   color: ${theme.colors.cream};
   letter-spacing: normal;
   font-size: 28px;
@@ -28,7 +28,7 @@ export const titleClass = css`
 
 export const containerClass = css`
   width: 100%;
-  height: 100px;
+  height: 70px;
   background: ${theme.colors.teal};
   color: ${theme.colors.cream};
   display: flex;
@@ -48,6 +48,7 @@ export const containerClass = css`
 export const signupContainerClass = css`
   display: flex;
   justify-content: center;
+  text-transform: uppercase;
   align-items: center;
 
 

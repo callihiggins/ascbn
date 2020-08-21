@@ -5,13 +5,14 @@ import styled from 'styled-components';
 export const bannerImageClass = css`
   text-align: center;
   img {
-    width: 50%;
+    width: 40%;
   }
   margin: 20px auto;
 
   @media (max-width: ${theme.breakpoints.large}px) {
     img {
-      width: 100%;
+      width: 80%;
+      max-widdth: 500px;
     }
   }
 `;
@@ -62,9 +63,11 @@ export const organizationContainerClass = css`
   justify-content: space-between;
   width: 35%;
   margin-bottom: 20px;
+  align-items: center;
 
   @media (max-width: ${theme.breakpoints.large}px) {
     width: 90%;
+    max-width: 500px;
   }
 `;
 
@@ -86,12 +89,8 @@ export const infoClass = css`
 
 export const imageContainerClass = css`
   margin-right: 15px;
-  padding: 10px;
-  border: 1px solid ${theme.colors.navy};
-  // background: ${theme.colors.aqua};
-  border-radius: 3px;
 `;
 
 export const imageClass = css`
-  width: 100px;
+  width: 125px;
 `;

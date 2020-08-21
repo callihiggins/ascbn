@@ -4,6 +4,7 @@ import { useQuery } from '@apollo/react-hooks';
 import gql from 'graphql-tag'
 import Nav from '../shared/Nav';
 import Support from './Support';
+import VotePlan from './VotePlan';
 import * as styles from  './styles';
 import * as sharedstyles from  '../shared/styles';
 import alleyesongeorgia from '../../assets/images/alleyesongeorgia.png';
@@ -61,11 +62,11 @@ export const Georgia = () => {
           ))}
         </div>
         <div css={styles.watchTextClass}>
-          <p>Step into your power and complete the And She Could Be Next experience. Watch Episode One: Building the Movement.</p> 
-          <p>Both episodes of And She Could Be Next are available for free streaming at <a href="https://www.andshecouldbenext.com/watch">www.andshecouldbenext.com/watch</a> and <a href="https://www.pbs.org/pov/watch/shecouldbenext/" target="_blank">https://www.pbs.org/pov/watch/shecouldbenext</a> until August 31. </p>
+          <p>Complete the And She Could Be Next experience with Episode One: Building the Movement. Both episodes are available for free streaming at <a href="https://www.andshecouldbenext.com/watch">www.andshecouldbenext.com/watch</a> and <a href="https://www.pbs.org/pov/watch/shecouldbenext/" target="_blank">PBS</a> until August 31. </p>
         </div>
       </div>
       <Support />
+      <VotePlan />
     </div>               
   )
 }
