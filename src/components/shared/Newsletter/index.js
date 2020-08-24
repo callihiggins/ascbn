@@ -11,7 +11,7 @@ const Newsletter = props => (
       css={styles.signupContainerClass}
     > 
       <div css={styles.titleClass}>#AllEyesOnGA</div>
-      <a href="/alleyesongeorgia" css={styles.buttonClass}>Learn More</a>
+      <a href="/AllEyesOnGA" css={styles.buttonClass}>Learn More</a>
     </div>
   </div>
 )
