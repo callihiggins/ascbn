@@ -9,7 +9,7 @@ const VotePlan = props => (
       css={styles.signupContainerClass}
     > 
       <div css={styles.titleClass}>Make Your Vote Plan</div>
-      <a href="/https://www.peoplespowergrab.org/" target="_blank" css={styles.buttonClass}>Learn More</a>
+      <a href="https://peoplespowergrab.org/?o=ASCBN" target="_blank" css={styles.buttonClass}>Learn More</a>
     </div>
   </div>
 )
