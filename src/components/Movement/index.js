@@ -42,8 +42,8 @@ export const Movement = props => {
         </div>
         <div css={styles.halfClass}>
           {documentToReactComponents(text)}
-          <a href="https://www.andshecouldbenext.com/StepIntoYourPower.pdf" target="_blank">
-          <button css={styles.voteButtonClass}>Step into your power action plan</button>
+          <a href="https://peoplespowergrab.org/?o=ASCBN" target="_blank">
+          <button css={styles.voteButtonClass}>Make Your Vote Plan</button>
         </a>
         </div>
       </div>
