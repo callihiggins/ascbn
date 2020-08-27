@@ -56,7 +56,7 @@ export const voteTextBlockClass = css`
   background: ${theme.colors.navy};
   color: ${theme.colors.cream};
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   padding: 0 40px;
   width: calc(50% - 80px);
@@ -124,5 +124,95 @@ export const voteImageBlockClass = css`
     img {
       margin: 0 auto;
     }
+  }
+`;
+
+export const votePlanClass = css`
+  font-family: 'Changa One';
+  font-size: 60px;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: -4px;
+  line-height: 72px;
+  color: ${theme.colors.pink};
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  letter-spacing: .7px;
+  text-align: center;
+  margin-top: 25px;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    margin: 0 auto 20px auto;
+    line-height: 50px;
+  }
+`;
+
+export const votePlanSubClass = css`
+  font-size: 18px;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    text-align: center;
+  }
+`;
+
+export const votePlanButtonClass = css`
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 3px;
+  padding: 15px 20px;
+  display: flex;
+  aign-items: center;
+  font-size: 18px;
+  background: ${theme.colors.cream};
+  color: ${theme.colors.navy};
+  margin-top: 40px;
+`;
+
+export const poweredByClass = css`
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-top: 15px;
+  justify-content: center;
+
+  img {
+    width: 100px;
+    margin-left: 10px;
+  }
+`;
+
+export const buttonGroupClass = css`
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+  margin-top: 40px;
+
+
+  a {
+    background: ${theme.colors.cream};
+    color: ${theme.colors.navy};
+    font-size: 14px;
+    padding: 10px 15px;
+    border-radius: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    flex-wrap: wrap;
+
+    a {
+      margin-top: 20px;
+    }
+  }
+`;
+
+export const questionsBlockClass = css`
+  margin-top: 40px;
+  font-size: 14px;
+  p {
+    line-height: 16px;
   }
 `;

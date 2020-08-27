@@ -1,7 +1,7 @@
 import React from 'react';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
-import IframeResizer from 'iframe-resizer-react'
 import voteImage from '../../../assets/images/vote.png';
+import PPGlogo from '../../../assets/images/PPGlogo.png';
 import * as styles from './styles';
 
 export const Vote = ({voteText}) => 
@@ -12,11 +12,29 @@ export const Vote = ({voteText}) =>
         <img src={voteImage} alt="Vote" css={styles.voteImageClass} />
       </div>
       <div css={[styles.halfClass, styles.voteTextBlockClass]}>
-      <IframeResizer
-          log
-          src="https://register.rockthevote.com/registrants/new?partner=38527"
-          style={{ width: '1px', minWidth: '100%'}}
-        />
+        <div>
+          <div css={styles.votePlanClass}>Make a Vote Plan</div>
+          <div css={styles.votePlanSubClass}>Know when, where and how you’ll cast your ballot this fall.</div>
+        </div>
+        <div>
+          <a href="https://www.peoplespowergrab.org/?o=ASCBN" css={styles.votePlanButtonClass} target="_blank">Make Your Vote Plan</a>
+          <div css={styles.poweredByClass}>Powered by <img src={PPGlogo} alt="Peoples Power Grap" /></div>
+        </div>
+        <div css={styles.buttonGroupClass}>
+          <a href="https://www.aclu.org/know-your-rights/voting-rights/" target="_blank" >Know Your Voting Rights</a>
+          <a href="https://866ourvote.org/" target="_blank" >Protect Your Vote</a>
+        </div>
+        <div css={styles.questionsBlockClass}>
+            <p>Have a question about how to vote in your state? Are you experiencing difficulties voting in person? Call the free Election Protection hotline to talk to an expert who can help you.</p>
+            <p><strong>English: 1-866-OUR VOTE | Spanish: 1-888-VE-Y-VOTA | Arabic: 1-844-YALLA-US</strong></p>
+            <p>For Bengali, Cantonese, Hindi, Urdu, Korean, Mandarin, Tagalog, or Vietnamese: 1-888-274-8683</p>
+        </div>
+
+
+
+
+
+
       </div>
     </div>
   </div>
