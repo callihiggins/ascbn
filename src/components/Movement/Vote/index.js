@@ -29,12 +29,6 @@ export const Vote = ({voteText}) =>
             <p><strong>English: 1-866-OUR VOTE | Spanish: 1-888-VE-Y-VOTA | Arabic: 1-844-YALLA-US</strong></p>
             <p>For Bengali, Cantonese, Hindi, Urdu, Korean, Mandarin, Tagalog, or Vietnamese: 1-888-274-8683</p>
         </div>
-
-
-
-
-
-
       </div>
     </div>
   </div>

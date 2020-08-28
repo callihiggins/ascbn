@@ -53,7 +53,12 @@ export const textBlockClass = css`
   padding: 0 40px;
   width: 70%;
   margin: 40px auto;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    font-size: 18px;
+  }
 `;
 

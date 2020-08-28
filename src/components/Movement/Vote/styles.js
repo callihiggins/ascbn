@@ -173,12 +173,12 @@ export const votePlanButtonClass = css`
 export const poweredByClass = css`
   display: flex;
   align-items: center;
-  font-size: 14px;
+  font-size: 12px;
   margin-top: 15px;
   justify-content: center;
 
   img {
-    width: 100px;
+    width: 75px;
     margin-left: 10px;
   }
 `;
@@ -188,7 +188,7 @@ export const buttonGroupClass = css`
   width: 80%;
   justify-content: space-around;
   margin-top: 40px;
-
+  flex-wrap: wrap;
 
   a {
     background: ${theme.colors.cream};
@@ -198,14 +198,7 @@ export const buttonGroupClass = css`
     border-radius: 3px;
     text-decoration: none;
     text-transform: uppercase;
-  }
-
-  @media (max-width: ${theme.breakpoints.large}px) {
-    flex-wrap: wrap;
-
-    a {
-      margin-top: 20px;
-    }
+    margin-top: 20px;
   }
 `;
 

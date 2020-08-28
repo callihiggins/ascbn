@@ -1594,6 +1594,13 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.0.14.tgz#24a0b5959f16ac141aeb0c5b3cd7a15b7c64cbce"
   integrity sha512-syUgf67ZQpaJj01/tRTknkMNoBBLWJOBODF0Zm4NrXmiSuxjymFrxnTu1QVYRubhVkRcZLYZG8STTwJRdVm/WQ==
 
+"@types/papaparse@^5.0.4":
+  version "5.0.6"
+  resolved "https://registry.yarnpkg.com/@types/papaparse/-/papaparse-5.0.6.tgz#4fee1a17dc24fed839d276c807f875bd653abbb4"
+  integrity sha512-fCQnycsOSviVLtxuydQ82IhTAv1lSPIA8zY3sYaRHI00lERsa7QSA616HsQZixqEF2asGXZag3hM13N8bm/jAw==
+  dependencies:
+    "@types/node" "*"
+
 "@types/parse-json@^4.0.0":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@types/parse-json/-/parse-json-4.0.0.tgz#2f8bb441434d163b35fb8ffdccd7138927ffb8c0"
@@ -8214,6 +8221,11 @@ pako@~1.0.5:
   resolved "https://registry.yarnpkg.com/pako/-/pako-1.0.11.tgz#6c9599d340d54dfd3946380252a35705a6b992bf"
   integrity sha512-4hLB8Py4zZce5s4yd9XzopqwVv/yGNhV1Bl8NTmCq1763HeK2+EwVTv+leGeL13Dnh2wfbqowVPXCIO0z4taYw==
 
+papaparse@^5.2.0:
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/papaparse/-/papaparse-5.2.0.tgz#97976a1b135c46612773029153dc64995caa3b7b"
+  integrity sha512-ylq1wgUSnagU+MKQtNeVqrPhZuMYBvOSL00DHycFTCxownF95gpLAk1HiHdUW77N8yxRq1qHXLdlIPyBSG9NSA==
+
 parallel-transform@^1.1.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/parallel-transform/-/parallel-transform-1.2.0.tgz#9049ca37d6cb2182c3b1d2c720be94d14a5814fc"
@@ -9567,6 +9579,14 @@ react-mailchimp-subscribe@^2.1.0:
     prop-types "^15.5.10"
     to-querystring "^1.0.4"
 
+react-papaparse@^3.7.3:
+  version "3.7.3"
+  resolved "https://registry.yarnpkg.com/react-papaparse/-/react-papaparse-3.7.3.tgz#dba989871c5d1283d5635ee02f16a60cfef49730"
+  integrity sha512-9cHQtWNEXiqX7hrfmAhMvd3fELz7amMz5YDheWsEEsowtdB7pmr8BW8D1FuZMOk44dbtHrDCNjXUHwhMkdZ8yw==
+  dependencies:
+    "@types/papaparse" "^5.0.4"
+    papaparse "^5.2.0"
+
 react-player@^1.15.3:
   version "1.15.3"
   resolved "https://registry.yarnpkg.com/react-player/-/react-player-1.15.3.tgz#d00cf145f9c86184cb0a071a1fbf8ecb7b68987f"
@@ -9683,6 +9703,14 @@ react-scripts@3.4.1:
   optionalDependencies:
     fsevents "2.1.2"
 
+react-tooltip@^4.2.8:
+  version "4.2.8"
+  resolved "https://registry.yarnpkg.com/react-tooltip/-/react-tooltip-4.2.8.tgz#270858fee46fab73b66de316271aa94145f7446b"
+  integrity sha512-pDWa0/khTAgIfldp95tHgyuYyBhWNlfaU2LF9ubAKxpoqNe15uyf+uLlnhK/Lstb6FU8E8/SL28Wp6oEO9xw3g==
+  dependencies:
+    prop-types "^15.7.2"
+    uuid "^7.0.3"
+
 react-transition-group@^4.0.0, react-transition-group@^4.3.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-4.3.0.tgz#fea832e386cf8796c58b61874a3319704f5ce683"
@@ -9692,6 +9720,13 @@ react-transition-group@^4.0.0, react-transition-group@^4.3.0:
     dom-helpers "^5.0.1"
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
+
+react-usa-map@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/react-usa-map/-/react-usa-map-1.5.0.tgz#b290860a066520631ff9b9b14ecb93f6c3b1c298"
+  integrity sha512-Czs74kGMi3vWr4/alTQc34I5+PdCTIzmbfKJyxPE1eW9VfdC5jfkgr1LpCEHhtFxO03e3Z9+P7s6BT/ps4UNIA==
+  dependencies:
+    babel-runtime "^6.26.0"
 
 react-youtube@^7.11.2:
   version "7.11.2"
@@ -11553,6 +11588,11 @@ uuid@^3.0.1, uuid@^3.3.2:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
   integrity sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
+
+uuid@^7.0.3:
+  version "7.0.3"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-7.0.3.tgz#c5c9f2c8cf25dc0a372c4df1441c41f5bd0c680b"
+  integrity sha512-DPSke0pXhTZgoF/d+WSt2QaKMCFSfx7QegxEWT+JOuHF5aWrKEn0G+ztjuJg/gG8/ItK+rbPCD/yNv8yyih6Cg==
 
 v8-compile-cache@^2.0.3:
   version "2.1.0"
