@@ -6,7 +6,7 @@ import { Query } from 'react-contentful';
 import Nav from '../shared/Nav';
 import * as styles from  './styles';
 import * as sharedstyles from  '../shared/styles';
-import watchhere from '../../assets/images/watchhere.png';
+import nowstreaming from '../../assets/images/nowstreaming.png';
 import { EpisodeContainer } from './styles';
 import { default as theme } from '../../theme';
 
@@ -43,8 +43,8 @@ export const Watch = () => {
       <Nav active='watch'/>
       <div css={styles.watchContainerClass}>
         <div css={styles.watchImageClass}>
-          <img src={watchhere} alt="watch here" />
-        </div>
+          <img src={nowstreaming} alt="now streaming" />
+        </div>  
         <div css={styles.watchInfoClass}>
           {documentToReactComponents(data?.watchTextCollection.items[0]?.description.json)}
         </div>
@@ -53,18 +53,7 @@ export const Watch = () => {
             <EpisodeContainer order={episode.order}>
               <div css={styles.videoContainerClass}>
                 {/* <div css={styles.headerClass}>{episode.header} | {episode.title}</div> */}
-                <div css={styles.iFrameWrapperClass}>
-                  <div css={styles.iFrameInnerClass}>
-                    <iframe
-                      src={episode.embedUrl} 
-                      css={styles.iFrameStyleClass}
-                      allowFullScreen
-                      title={episode.title}
-                      scrolling="no"
-                      allow="encrypted-media"
-                    />
-                  </div>
-                </div>
+                <img src={episode.photo.url} alt={episode.title}/>
               </div>
               <div css={styles.descriptionClass}>
                 <div css={styles.dateClass}>{episode.header}</div>
