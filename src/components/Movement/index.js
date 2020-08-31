@@ -2,6 +2,7 @@ import React from 'react';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import { useQuery } from '@apollo/react-hooks';
 import gql from 'graphql-tag'
+import { NavHashLink as NavLink } from 'react-router-hash-link';
 import Form from './Form';
 import Vote from './Vote';
 import Voice from './Voice';
@@ -42,9 +43,9 @@ export const Movement = props => {
         </div>
         <div css={styles.halfClass}>
           {documentToReactComponents(text)}
-          <a href="https://peoplespowergrab.org/?o=ASCBN" target="_blank">
-          <button css={styles.voteButtonClass}>Make Your Vote Plan</button>
-        </a>
+          <NavLink smooth to="#vote">
+            <button css={styles.voteButtonClass}>Make Your Vote Plan</button>
+          </NavLink>
         </div>
       </div>
       <div css={styles.hostingBannerClass}>Join the Action Squad</div>
@@ -52,7 +53,7 @@ export const Movement = props => {
       <Form />
       <div css={styles.hostingBannerClass}>Host a Screening</div>
       <Watch shallowZIndex={true}/>
-      <Vote voteText={voteText}/>
+      <Vote id="vote" voteText={voteText}/>
       <Political/>
       <Voice></Voice>
     </div>

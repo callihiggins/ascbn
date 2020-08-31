@@ -158,27 +158,21 @@ export const votePlanSubClass = css`
 `;
 
 export const votePlanButtonClass = css`
-  text-decoration: none;
-  text-transform: uppercase;
-  border-radius: 3px;
-  padding: 15px 20px;
-  display: flex;
-  aign-items: center;
-  font-size: 18px;
-  background: ${theme.colors.cream};
-  color: ${theme.colors.navy};
-  margin-top: 40px;
+
+  a {
+    display: block;
+  }
 `;
 
 export const poweredByClass = css`
   display: flex;
   align-items: center;
   font-size: 12px;
-  margin-top: 15px;
+  margin-top: 8px;
   justify-content: center;
 
   img {
-    width: 75px;
+    width: 50px;
     margin-left: 10px;
   }
 `;
@@ -186,9 +180,12 @@ export const poweredByClass = css`
 export const buttonGroupClass = css`
   display: flex;
   width: 80%;
+  align-items: center;
   justify-content: space-around;
   margin-top: 40px;
   flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
 
   a {
     background: ${theme.colors.cream};
@@ -199,6 +196,7 @@ export const buttonGroupClass = css`
     text-decoration: none;
     text-transform: uppercase;
     margin-top: 20px;
+    width: 250px;
   }
 `;
 

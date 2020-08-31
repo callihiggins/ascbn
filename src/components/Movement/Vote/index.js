@@ -16,11 +16,11 @@ export const Vote = ({voteText}) =>
           <div css={styles.votePlanClass}>Make a Vote Plan</div>
           <div css={styles.votePlanSubClass}>Know when, where and how you’ll cast your ballot this fall.</div>
         </div>
-        <div>
-          <a href="https://www.peoplespowergrab.org/?o=ASCBN" css={styles.votePlanButtonClass} target="_blank">Make Your Vote Plan</a>
-          <div css={styles.poweredByClass}>Powered by <img src={PPGlogo} alt="Peoples Power Grap" /></div>
-        </div>
         <div css={styles.buttonGroupClass}>
+          <div css={styles.votePlanButtonClass}>
+            <a href="https://www.peoplespowergrab.org/?o=ASCBN" target="_blank">Make Your Vote Plan</a>
+            <div css={styles.poweredByClass}>Powered by <img src={PPGlogo} alt="Peoples Power Grap" /></div>
+          </div>
           <a href="https://www.aclu.org/know-your-rights/voting-rights/" target="_blank" >Know Your Voting Rights</a>
           <a href="https://866ourvote.org/" target="_blank" >Protect Your Vote</a>
         </div>
