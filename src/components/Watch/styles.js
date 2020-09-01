@@ -63,6 +63,7 @@ export const EpisodeContainer = styled.div`
     flex-wrap: wrap;
     width: 90%;
     padding-bottom: 40px;
+    margin: 0 auto;
   }
 `;
 
@@ -111,7 +112,7 @@ export const watchInfoClass = css`
   }
 
   @media (max-width: ${theme.breakpoints.large}px) {
-    width: 80%;
+    width: 90%;
   }
 `;
 
@@ -174,6 +175,7 @@ export const episodesContainerClass = css`
 
   @media (max-width: ${theme.breakpoints.large}px) {
     padding-top: 10px;
+    padding-bottom: 0;
   }
 `;
 
@@ -212,9 +214,10 @@ export const countdownTextClass = css`
 export const watchLinksClass = css`
   display: flex;
   flex-wrap: wrap;
-  padding-top: 20px;
+  padding: 20px 0;
   width: 90%;
   margin: 0 auto;
+  max-width: 1200px;
 `;
 
 export const sectionClass = css`
@@ -235,6 +238,10 @@ export const sectionClass = css`
     font-size: 20px;
     margin-top: 10px;
   }
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    width: 100%;
+  }
 `;
 
 export const titleClass = css`
@@ -242,7 +249,7 @@ export const titleClass = css`
   text-transform: uppercase;
   color: ${theme.colors.pink};
   letter-spacing: 1.5px;
-  font-size: 40px;
+  font-size: 35px;
 `;
 
 export const streamingLinks = css`
