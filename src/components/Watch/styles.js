@@ -46,16 +46,15 @@ export const linkClass = css`
 export const EpisodeContainer = styled.div`
   order: ${props => props.order};
   padding: 0 20px;
-  width: calc(100% - 40px);
+  width: calc(50% - 40px);
   text-align: left;
   color: ${theme.colors.cream};
-  margin-bottom: 60px;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   
   img {
-    width: 100%;
+    width: 90%;
     height: auto;
     margin-bottom: 20px;
   }
@@ -150,7 +149,7 @@ export const iFrameStyleClass = css`
 `;
 
 export const videoContainerClass = css`
-  width: 50%;
+  width: 80%;
 
   @media (max-width: ${theme.breakpoints.large}px) {
     margin-bottom: 40px;
@@ -159,7 +158,6 @@ export const videoContainerClass = css`
 `;
 
 export const descriptionClass = css`
-  width: 40%;
   line-height: 18px;
 
   @media (max-width: ${theme.breakpoints.large}px) {
@@ -170,7 +168,7 @@ export const descriptionClass = css`
 export const episodesContainerClass = css`
   max-width: 1200px;
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 20px 0 40px 0;
   display: flex;
   flex-wrap: wrap;
 
@@ -209,4 +207,88 @@ export const countdownTextClass = css`
   text-align: center;
   text-transform: uppercase;
   color: ${theme.colors.cream};
+`;
+
+export const watchLinksClass = css`
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  width: 90%;
+  margin: 0 auto;
+`;
+
+export const sectionClass = css`
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+  color: ${theme.colors.cream};
+
+  a {
+    color: ${theme.colors.cream};
+    padding: 10px 0;
+    font-size: 20px;
+  }
+
+  p {
+    color: ${theme.colors.cream};
+    font-size: 20px;
+    margin-top: 10px;
+  }
+`;
+
+export const titleClass = css`
+  font-family: 'Changa One';
+  text-transform: uppercase;
+  color: ${theme.colors.pink};
+  letter-spacing: 1.5px;
+  font-size: 40px;
+`;
+
+export const streamingLinks = css`
+  display: flex;
+  justify-content: space-around;
+  width: 300px;
+  margin: 0 auto;
+`;
+
+export const screeningClass = css`
+  width: 60%;
+  margin: 0 auto;
+  color: ${theme.colors.cream};
+
+  img {
+    max-width: 300px;
+  }
+
+  p {
+    margin-top: 10px;
+  }
+`;
+
+export const buttonGroupClass = css`
+  display: flex;
+  @media (max-width: ${theme.breakpoints.large}px) {
+    width: 100%;
+    justify-content: center;
+
+  }
+
+  a {
+    margin: 0 auto;
+  }
+`;
+
+export const buttonClass = css`
+  background-color: ${theme.colors.cream};
+  border-radius: 3px;
+  color: ${theme.colors.navy};
+  padding: 10px 15px;
+  border-color: ${theme.colors.cream};
+  font-size: 14px;
+  text-transform: uppercase;
+  border-style: none;
+  font-weight: 900;
+  margin-top: 10px;
+  cursor: pointer;
 `;
