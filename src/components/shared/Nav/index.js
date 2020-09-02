@@ -66,7 +66,7 @@ const Nav = props => {
                   <Link to="/movement#screening" scroll={el => scrollIntoView(el)}>Host a Screening</Link>
                 </li>
                 <li>
-                  <Link to="/movement#vote" scroll={el => scrollIntoView(el)}>Register to Vote</Link>
+                  <Link to="/movement#vote" scroll={el => scrollIntoView(el)}>Make a Vote Plan</Link>
                 </li>
                 <li>
                   <Link to="/movement#politicalHome" scroll={el => scrollIntoView(el)}>Find Your Political Home</Link>

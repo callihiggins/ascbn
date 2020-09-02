@@ -10,8 +10,8 @@ const Newsletter = props => (
     <div
       css={styles.signupContainerClass}
     > 
-      <div css={styles.titleClass}>#AllEyesOnGA</div>
-      <a href="/AllEyesOnGA" css={styles.buttonClass}>Learn More</a>
+      {/* <div css={styles.titleClass}>#AllEyesOnGA</div> */}
+      <a href="https://www.peoplespowergrab.org/?o=ASCBN" css={styles.buttonClass}>Make a Vote Plan</a>
     </div>
   </div>
 )
