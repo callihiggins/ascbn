@@ -75,7 +75,7 @@ export const Watch = () => {
             </div>
           </div>
           <div css={styles.sectionClass}>
-            <div css={styles.titleClass}>Buy</div>
+            <div css={styles.titleClass}>Buy DVD</div>
             <a href="https://shop.pbs.org/WA5732.html" target="_blank">Shop at PBS</a>
           </div>
           <div css={styles.sectionClass}>
