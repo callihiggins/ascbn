@@ -126,6 +126,7 @@ export const imageClass = css`
   height: auto;
   @media (max-width: ${theme.breakpoints.large}px) {
     width: 100%;
+    
   }
 `;
 
@@ -183,7 +184,11 @@ export const descriptionClass = css`
   background: ${theme.colors.cream};
   color: ${theme.colors.navy};
   font-size: 14px;
-  padding: 10px;
+  padding: 10px; 
+  a {
+    text-decoration: none;
+  }
+ 
 `;
 
 
