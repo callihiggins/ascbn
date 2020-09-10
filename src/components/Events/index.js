@@ -1,5 +1,6 @@
 import React from 'react';
 import Nav from '../shared/Nav';
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import * as styles from  './styles';
 import { useQuery } from '@apollo/react-hooks';
 import gql from 'graphql-tag'
@@ -14,6 +15,9 @@ const EVENTS_DATA = gql`
         url
       }
       description
+      descriptionRich {
+        json
+      }
       link
       order
     }
@@ -23,7 +27,8 @@ const EVENTS_DATA = gql`
 export const Events = () => {
   const { data } = useQuery(EVENTS_DATA);
 
-  const festivals = data?.filmFestivalCollection.items.map(festival => (
+
+  const festivals = data?.filmFestivalCollection?.items?.map(festival => (
     <div css={styles.festivalContainerClass}>
       <a href={festival.link} target="_blank">
         <img src={festival.image.url} alt={festival.festivalName} css={styles.imageClass}/>
@@ -34,9 +39,11 @@ export const Events = () => {
           <div css={styles.datesClass}>
             {festival.dates}
           </div>
-          {/* <div css={styles.descriptionClass}>
-            {festival.description}
-          </div> */}
+          {festival.descriptionRich && 
+            <div css={styles.descriptionClass}>
+              { documentToReactComponents(festival.descriptionRich.json) }
+            </div>
+          }
         </div>
       </a>
    </div>
