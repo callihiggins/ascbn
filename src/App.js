@@ -25,9 +25,9 @@ import { debounce } from 'lodash';
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faSpinner, faPlus, faMinus } from '@fortawesome/free-solid-svg-icons'
+import { faSpinner, faPlus, faMinus, faEnvelope, faTimes } from '@fortawesome/free-solid-svg-icons'
 
-library.add(fab, faSpinner, faPlus, faMinus);
+library.add(fab, faSpinner, faPlus, faMinus, faEnvelope, faTimes);
 
 const client = new ApolloClient({
   uri: `https://graphql.contentful.com/content/v1/spaces/${process.env.REACT_APP_SPACE_ID}?access_token=${process.env.REACT_APP_CONTENTFUL_TOKEN}`

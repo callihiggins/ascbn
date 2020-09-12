@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
+import Modal from 'react-modal';
 import { withTheme } from 'styled-components';
 import { HashLink as Link } from 'react-router-hash-link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import MobileNav from './MobileNav';
+import Form from '../../../shared/Nav/Form';
 import * as styles from  './styles';
 import * as sharedstyles from  '../../../shared/styles';
-import { NavUl, NavItem, NavEl, HeaderContainer } from './styles';
+import { NavUl, NavItem, NavEl, HeaderContainer, StyledModal } from './styles';
 
 const scrollIntoView = el => {
   setTimeout(() => {
@@ -17,6 +19,18 @@ const scrollIntoView = el => {
 const Nav = props => {
   const [showAbout, setShowAbout] = useState(false);
   const [showMovement, setshowMovement] = useState(false);
+  const [modalIsOpen, setIsOpen] = React.useState(false);
+
+  Modal.setAppElement('#root')
+  
+  function openModal() {
+    console.log('open')
+    setIsOpen(true);
+  }
+
+  function closeModal(){
+    setIsOpen(false);
+  }
 	return (
     <>
       <HeaderContainer>
@@ -84,12 +98,20 @@ const Nav = props => {
           </NavUl>
         </NavEl>
         <div css={[styles.socialMediaIconsClass, sharedstyles.hideMobile]}>
+          <button onClick={openModal} css={styles.iconClass}><FontAwesomeIcon icon={['fas', 'envelope']} /></button>
           <a href="https://www.youtube.com/channel/UC2yVbXsWPtmAmOd7gUHa7_g/" target="_blank" rel="noopener noreferrer" css={styles.iconClass}><FontAwesomeIcon icon={['fab', 'youtube']} /></a>
           <a href="https://www.facebook.com/andshecouldbenext/" target="_blank" rel="noopener noreferrer" css={styles.iconClass}><FontAwesomeIcon icon={['fab', 'facebook-f']} /></a>
           <a href="https://twitter.com/shecouldbenext" target="_blank" rel="noopener noreferrer" css={styles.iconClass}><FontAwesomeIcon icon={['fab', 'twitter']} /></a>
           <a href="https://www.instagram.com/andshecouldbenext/" target="_blank" rel="noopener noreferrer" css={styles.iconClass}><FontAwesomeIcon icon={['fab', 'instagram']} /></a>
         </div>
       </HeaderContainer>
+      <StyledModal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        overlayClassName={'overlayClass'}
+      >
+        <Form closeModal={closeModal}/>
+      </StyledModal>
       <MobileNav active={props.active}/>
     </>
   )}

@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
+import { css } from '@emotion/core';
+import Modal from 'react-modal';
 import { withTheme } from 'styled-components';
 import { HashLink as Link } from 'react-router-hash-link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import MobileNav from './MobileNav';
+import Form from './Form';
 import logo from '../../../assets/images/ASCBN-TITLE-HORIZONTAL-LIGHT-TRANSPARENT.png';
 import * as styles from  './styles';
 import * as sharedstyles from  '../../shared/styles';
-import { NavUl, NavItem, NavEl, HeaderContainer } from './styles';
+import { NavUl, NavItem, NavEl, HeaderContainer, StyledModal } from './styles';
 
 const scrollIntoView = el => {
   setTimeout(() => {
@@ -18,6 +21,19 @@ const scrollIntoView = el => {
 const Nav = props => {
   const [showAbout, setShowAbout] = useState(false);
   const [showMovement, setshowMovement] = useState(false);
+  const [modalIsOpen, setIsOpen] = React.useState(false);
+
+  Modal.setAppElement('#root')
+  
+  function openModal() {
+    console.log('open')
+    setIsOpen(true);
+  }
+
+  function closeModal(){
+    setIsOpen(false);
+  }
+
 	return (
     <>
       <HeaderContainer>
@@ -89,6 +105,7 @@ const Nav = props => {
           </NavUl>
         </NavEl>
         <div css={[styles.socialMediaIconsClass, sharedstyles.hideMobile]}>
+          <button onClick={openModal} css={styles.iconClass}><FontAwesomeIcon icon={['fas', 'envelope']} /></button>
           <a href="https://www.youtube.com/channel/UC2yVbXsWPtmAmOd7gUHa7_g/" target="_blank" rel="noopener noreferrer" css={styles.iconClass}><FontAwesomeIcon icon={['fab', 'youtube']} /></a>
           <a href="https://www.facebook.com/andshecouldbenext/" target="_blank" rel="noopener noreferrer" css={styles.iconClass}><FontAwesomeIcon icon={['fab', 'facebook-f']} /></a>
           <a href="https://twitter.com/shecouldbenext" target="_blank" rel="noopener noreferrer" css={styles.iconClass}><FontAwesomeIcon icon={['fab', 'twitter']} /></a>
@@ -96,6 +113,13 @@ const Nav = props => {
         </div>
       </HeaderContainer>
       <MobileNav active={props.active}/>
+      <StyledModal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        overlayClassName={'overlayClass'}
+      >
+        <Form closeModal={closeModal}/>
+      </StyledModal>
     </>
   )}
 

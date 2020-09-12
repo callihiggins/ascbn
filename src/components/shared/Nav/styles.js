@@ -1,4 +1,5 @@
 import { css } from '@emotion/core';
+import Modal from 'react-modal';
 import { default as theme } from '../../../theme';
 import styled from 'styled-components';
 
@@ -42,7 +43,7 @@ export const NavUl = styled.ul`
   }
 
   li {
-    width: 120px;
+    width: 100px;
     padding: 5px 20px 8px 20px;
     list-decoration: none;
     font-weight: 900;
@@ -159,6 +160,10 @@ export const socialMediaIconsClass = css`
   width: calc(15% - 20px);
   padding-right: 10px;
   align-items: center;
+
+  button {
+    cursor: pointer;
+  }
 `;
 
 export const iconClass = css`
@@ -180,4 +185,19 @@ export const logoContainerClass = css`
   @media (max-width: ${theme.breakpoints.large}px) {
     display: none;
   } 
+`;
+
+export const StyledModal = styled(Modal)`
+  z-index: 30000;
+  position: absolute;
+  background: ${theme.colors.cream};
+  border: 1px solid ${theme.colors.navy};
+  width: 80%;
+  max-width: 500px;
+  left: 20%;
+  top: 25vh;
+
+  @media (min-width: 1015px) {
+    left: calc(50% - 250px);
+  }
 `;
