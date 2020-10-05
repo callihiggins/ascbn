@@ -11,7 +11,7 @@ const Newsletter = props => (
       css={styles.signupContainerClass}
     > 
       {/* <div css={styles.titleClass}>#AllEyesOnGA</div> */}
-      <a href="https://www.peoplespowergrab.org/?o=ASCBN" css={styles.buttonClass}>Make a Vote Plan</a>
+      <a href="https://www.bymaskormail.org/?utm_source=ascbn&utm_medium=direct&utm_campaign=maskormail" css={styles.buttonClass}>Make a Vote Plan</a>
     </div>
   </div>
 )
