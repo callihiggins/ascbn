@@ -18,8 +18,8 @@ export const Vote = ({voteText}) =>
         </div>
         <div css={styles.buttonGroupClass}>
           <div css={styles.votePlanButtonClass}>
-            <a href="https://www.peoplespowergrab.org/?o=ASCBN" target="_blank">Make Your Vote Plan</a>
-            <div css={styles.poweredByClass}>Powered by <img src={PPGlogo} alt="Peoples Power Grap" /></div>
+            <a href="https://www.bymaskormail.org/?utm_source=ascbn&utm_medium=direct&utm_campaign=maskormail" target="_blank">Make Your Vote Plan</a>
+            <div css={styles.poweredByClass}>Powered by Culture Surge</div>
           </div>
           <a href="https://www.aclu.org/know-your-rights/voting-rights/" target="_blank" >Know Your Voting Rights</a>
           <a href="https://866ourvote.org/" target="_blank" >Protect Your Vote</a>
