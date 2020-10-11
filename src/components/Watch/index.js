@@ -50,19 +50,6 @@ export const Watch = () => {
         <div css={styles.watchInfoClass}>
           {documentToReactComponents(data?.watchTextCollection.items[0]?.description.json)}
         </div>
-        <div css={styles.episodesContainerClass}>
-          {data?.episodeCollection.items.map(episode => (
-            <EpisodeContainer order={episode.order}>
-              <div css={styles.videoContainerClass}>
-                {/* <div css={styles.headerClass}>{episode.header} | {episode.title}</div> */}
-                <img src={episode.photo.url} alt={episode.title}/>
-                <div css={styles.descriptionClass}>
-                {documentToReactComponents(episode.description.json)}
-              </div>
-              </div>
-            </EpisodeContainer>
-          ))}
-        </div>
         <div css={styles.watchLinksClass}>
           <div css={styles.sectionClass}>
             <div css={styles.titleClass}>Stream</div>
@@ -98,9 +85,22 @@ export const Watch = () => {
           <div css={styles.sectionClass}>
             <div css={styles.titleClass}>Get the PowerPack</div>
             <a href="https://andshecouldbenext.us19.list-manage.com/track/click?u=6451bb053a61584a94aa81331&id=8810010860&e=42e3ebe84a" target="_blank">And She Could Be Next digital PowerPack</a>
-
           </div>
         </div>
+        <div css={styles.episodesContainerClass}>
+          {data?.episodeCollection.items.map(episode => (
+            <EpisodeContainer order={episode.order}>
+              <div css={styles.videoContainerClass}>
+                {/* <div css={styles.headerClass}>{episode.header} | {episode.title}</div> */}
+                <img src={episode.photo.url} alt={episode.title}/>
+                <div css={styles.descriptionClass}>
+                {documentToReactComponents(episode.description.json)}
+              </div>
+              </div>
+            </EpisodeContainer>
+          ))}
+        </div>
+
       </div>
     </div>               
   )
