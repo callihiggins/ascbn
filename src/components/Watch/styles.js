@@ -67,6 +67,30 @@ export const EpisodeContainer = styled.div`
   }
 `;
 
+export const BonusEpisodeContainer = styled.div`
+  order: ${props => props.order};
+  padding: 0 20px;
+  width: calc(50% - 40px);
+  text-align: left;
+  color: ${theme.colors.cream};
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  
+  img {
+    width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    flex-wrap: wrap;
+    width: 90%;
+    padding: 20px;
+    margin: 0 auto;
+  }
+`;
+
 
 export const episodeSummaryClass = css`
   display: flex;
@@ -158,6 +182,15 @@ export const videoContainerClass = css`
   } 
 `;
 
+
+export const bonusVideoContainerClass = css`
+  width: 80%;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    width: 100%;
+  } 
+`;
+
 export const descriptionClass = css`
   line-height: 18px;
 
@@ -166,12 +199,28 @@ export const descriptionClass = css`
   } 
 `;
 
+export const containerClass = css`
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 60vh;
+  align-items: center;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
+`;
+
 export const episodesContainerClass = css`
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px 0 40px 0;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 
   @media (max-width: ${theme.breakpoints.large}px) {
     padding-top: 10px;
@@ -214,7 +263,7 @@ export const countdownTextClass = css`
 export const watchLinksClass = css`
   display: flex;
   flex-wrap: wrap;
-  padding: 20px 0;
+  padding: 60px 0;
   width: 90%;
   margin: 0 auto;
   max-width: 1200px;
@@ -298,4 +347,28 @@ export const buttonClass = css`
   font-weight: 900;
   margin-top: 10px;
   cursor: pointer;
+`;
+
+export const bannerClass = css`
+  height: 50px;
+  background: ${theme.colors.teal};
+  text-align: center;
+  font-family: 'Changa One';
+  text-transform: uppercase;
+  color: ${theme.colors.cream};
+  letter-spacing: normal;
+  font-size: 22px;
+  margin-right: 20px;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  position: sticky;
+  top: 40px;
+  z-index: 5;
+  @media (max-width: ${theme.breakpoints.large}px) {
+    top: 75px;
+  }
 `;
