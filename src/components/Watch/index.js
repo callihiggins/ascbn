@@ -96,6 +96,17 @@ export const Watch = () => {
             {/* <a href="https://shop.pbs.org/WA5732AV.html" target="_blank">Sign up to get notified</a> */}
             {/* <Form /> */}
           </div>
+          <div css={styles.sectionClass}>
+            <div css={styles.titleClass}>Host a screening or<br/> Request a Speaker</div>
+              {/* <p>Sign up to host a screening or discussion of And She Could Be Next for your friends, neighbors, or community! After signing up, our team will follow-up to share resources and details with you on how to make it happen or help you spread the word. <br /></p> */}
+            <div css={styles.buttonGroupClass}>
+              <a href="https://airtable.com/shrPwxSFaSKYrKPq5" target="_blank">Screening Request Form</a>
+            </div>
+          </div>
+          <div css={styles.sectionClass}>
+            <div css={styles.titleClass}>Get the PowerPack</div>
+            <a href="https://andshecouldbenext.us19.list-manage.com/track/click?u=6451bb053a61584a94aa81331&id=8810010860&e=42e3ebe84a" target="_blank">And She Could Be Next digital PowerPack</a>
+          </div>
         </div>
         <div css={styles.bannerClass}>Bonus Content</div>
         <div css={styles.containerClass}>
@@ -120,20 +131,6 @@ export const Watch = () => {
               In 2018, Congresswoman Deb Haaland, a 35th generation New Mexican who is an enrolled member of the Pueblo of Laguna, and also has Jemez Pueblo heritage, became one of the first two Native American women ever elected to Congress, along with Sharice Davids. This short film, directed by Navajo filmmaker Ramona Emerson, follows Deb Halaand in her history-making 2018 run as she builds a diverse, multi-racial coalition that would elect her to power. With close-up access at home and as she visits To'hajiilee, Congresswoman Halaand shares the formative experiences that shaped her, and uniquely position her to be a champion for the people of New Mexico, as we look forward to the next class of Native women being elected in November. 
             </div>
           </BonusEpisodeContainer>
-        </div>
-        <div css={styles.bannerClass}>Get Involved</div>
-        <div css={styles.watchLinksClass}>
-          <div css={styles.sectionClass}>
-            <div css={styles.titleClass}>Host a screening or<br/> Request a Speaker</div>
-              {/* <p>Sign up to host a screening or discussion of And She Could Be Next for your friends, neighbors, or community! After signing up, our team will follow-up to share resources and details with you on how to make it happen or help you spread the word. <br /></p> */}
-            <div css={styles.buttonGroupClass}>
-              <a href="https://airtable.com/shrPwxSFaSKYrKPq5" target="_blank">Screening Request Form</a>
-            </div>
-          </div>
-          <div css={styles.sectionClass}>
-            <div css={styles.titleClass}>Get the PowerPack</div>
-            <a href="https://andshecouldbenext.us19.list-manage.com/track/click?u=6451bb053a61584a94aa81331&id=8810010860&e=42e3ebe84a" target="_blank">And She Could Be Next digital PowerPack</a>
-          </div>
         </div>
       </div>
     </div>               
