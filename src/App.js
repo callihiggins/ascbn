@@ -17,6 +17,7 @@ import Watch from './components/Watch';
 import Events from './components/Events';
 import Store from './components/Store';
 import Georgia from './components/GA';
+import TrickOrText from './components/TrickOrText';
 import Newsletter from './components/shared/Newsletter';
 import Footer from './components/shared/Footer';
 import './App.css';
@@ -91,6 +92,9 @@ class App extends React.Component {
                 </Route>
                 <Route path="/alleyesonga">
                   <Georgia />
+                </Route>
+                <Route path="/trickortext">
+                  <TrickOrText />
                 </Route>
               </Switch>
             </Router>
