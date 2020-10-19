@@ -89,6 +89,7 @@ export const Watch = () => {
           <div css={styles.sectionClass}>
             <div css={styles.titleClass}>Educational</div>
             <a href="https://shop.pbs.org/WA5732AV.html" target="_blank">Buy the Educational DVD</a>
+            <a href="https://cptv.pbslearningmedia.org/collection/and-she-could-be-next-collection/" target="_blank">PBS Learning Media: Education Collection</a>
           </div>
           <div css={styles.sectionClass}>
             <div css={styles.titleClass}>Outside the US?</div>
