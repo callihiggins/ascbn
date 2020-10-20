@@ -9,7 +9,7 @@ import * as styles from  './styles';
 import * as sharedstyles from  '../shared/styles';
 import howtowatch from '../../assets/images/howtowatch.png';
 import hostScreening from '../../assets/images/hostscreening.png';
-import { EpisodeContainer } from './styles';
+import { EpisodeContainer, BonusEpisodeContainer } from './styles';
 import { default as theme } from '../../theme';
 
 const WATCH_DATA = gql`
@@ -50,6 +50,27 @@ export const Watch = () => {
         <div css={styles.watchInfoClass}>
           {documentToReactComponents(data?.watchTextCollection.items[0]?.description.json)}
         </div>
+        <div css={styles.episodesContainerClass}>
+          {data?.episodeCollection.items.map(episode => (
+            <EpisodeContainer order={episode.order}>
+              <div css={styles.videoContainerClass}>
+                <div css={styles.iFrameWrapperClass}>
+                  <div css={styles.iFrameInnerClass}>
+                    <iframe
+                      src={episode.embedUrl} 
+                      css={styles.iFrameStyleClass}
+                      allowFullScreen
+                      title={episode.title}
+                      scrolling="no"
+                      allow="encrypted-media"
+                    />
+                  </div>
+                </div>
+              </div>
+            </EpisodeContainer>
+          ))}
+        </div>
+        <div css={styles.bannerClass}>Other Ways to Watch</div>
         <div css={styles.watchLinksClass}>
           <div css={styles.sectionClass}>
             <div css={styles.titleClass}>Stream</div>
@@ -68,6 +89,7 @@ export const Watch = () => {
           <div css={styles.sectionClass}>
             <div css={styles.titleClass}>Educational</div>
             <a href="https://shop.pbs.org/WA5732AV.html" target="_blank">Buy the Educational DVD</a>
+            <a href="https://cptv.pbslearningmedia.org/collection/and-she-could-be-next-collection/" target="_blank">PBS Learning Media: Education Collection</a>
           </div>
           <div css={styles.sectionClass}>
             <div css={styles.titleClass}>Outside the US?</div>
@@ -87,20 +109,30 @@ export const Watch = () => {
             <a href="https://andshecouldbenext.us19.list-manage.com/track/click?u=6451bb053a61584a94aa81331&id=8810010860&e=42e3ebe84a" target="_blank">And She Could Be Next digital PowerPack</a>
           </div>
         </div>
-        <div css={styles.episodesContainerClass}>
-          {data?.episodeCollection.items.map(episode => (
-            <EpisodeContainer order={episode.order}>
-              <div css={styles.videoContainerClass}>
-                {/* <div css={styles.headerClass}>{episode.header} | {episode.title}</div> */}
-                <img src={episode.photo.url} alt={episode.title}/>
-                <div css={styles.descriptionClass}>
-                {documentToReactComponents(episode.description.json)}
+        <div css={styles.bannerClass}>Bonus Content</div>
+        <div css={styles.containerClass}>
+          <BonusEpisodeContainer>
+            <div css={styles.bonusVideoContainerClass}>
+              <div css={styles.iFrameWrapperClass}>
+                <div css={styles.iFrameInnerClass}>
+                  <iframe
+                    src="https://www.youtube.com/embed/gx4ge2Hiv9Q"
+                    css={styles.iFrameStyleClass}
+                    allowFullScreen
+                    title="And She Could Be Next Exclusive"
+                    scrolling="no"
+                    allow="encrypted-media"
+                  />
+                </div>
               </div>
-              </div>
-            </EpisodeContainer>
-          ))}
+            </div>
+          </BonusEpisodeContainer>
+          <BonusEpisodeContainer>
+            <div css={styles.descriptionClass}>
+              In 2018, Congresswoman Deb Haaland, a 35th generation New Mexican who is an enrolled member of the Pueblo of Laguna, and also has Jemez Pueblo heritage, became one of the first two Native American women ever elected to Congress, along with Sharice Davids. This short film, directed by Navajo filmmaker Ramona Emerson, follows Deb Halaand in her history-making 2018 run as she builds a diverse, multi-racial coalition that would elect her to power. With close-up access at home and as she visits To'hajiilee, Congresswoman Halaand shares the formative experiences that shaped her, and uniquely position her to be a champion for the people of New Mexico, as we look forward to the next class of Native women being elected in November. 
+            </div>
+          </BonusEpisodeContainer>
         </div>
-
       </div>
     </div>               
   )
