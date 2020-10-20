@@ -115,7 +115,7 @@ export const headerClass = css`
 `;
 
 export const watchInfoClass = css`
-  width: 50%;
+  width: 80%;
   color: ${theme.colors.cream};
   margin: 20px auto;
 
