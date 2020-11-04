@@ -263,7 +263,7 @@ export const countdownTextClass = css`
 export const watchLinksClass = css`
   display: flex;
   flex-wrap: wrap;
-  padding: 60px 0;
+  padding: 20px 0 60px 0;
   width: 90%;
   margin: 0 auto;
   max-width: 1200px;
