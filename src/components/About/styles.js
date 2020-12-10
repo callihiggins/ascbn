@@ -50,4 +50,8 @@ export const aboutTextClass = css`
   p {
     margin-bottom: 20px;
   }
+
+  a {
+    color: ${theme.colors.navy};
+  }
 `;

@@ -41,19 +41,16 @@ export const Movement = props => {
         <div css={[styles.centerClass, styles.halfClass]}>
           <img src={organizerImage} alt="There's an organizer in all of us" css={styles.organizerImageClass}/>
         </div>
-        <div css={styles.halfClass}>
+        <div css={[styles.halfClass, styles.alignLeft]}>
           {documentToReactComponents(text)}
-          <NavLink smooth to="#vote">
-            <button css={styles.voteButtonClass}>Make Your Vote Plan</button>
-          </NavLink>
         </div>
       </div>
-      <div css={styles.hostingBannerClass}>Join the Action Squad</div>
+      {/* <div css={styles.hostingBannerClass}>Join the Action Squad</div>
       <div css={styles.screeningTextClass}>{documentToReactComponents(virtualScreeningText)}</div>
-      <Form />
+      <Form /> */}
       <div css={styles.hostingBannerClass}>Host a Screening</div>
       <Watch shallowZIndex={true}/>
-      <Vote id="vote" voteText={voteText}/>
+      {/* <Vote id="vote" voteText={voteText}/> */}
       <Political/>
       <Voice></Voice>
     </div>

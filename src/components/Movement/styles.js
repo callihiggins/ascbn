@@ -101,3 +101,6 @@ export const voteButtonClass = css`
   margin: 20px 0;
 `;
 
+export const alignLeft = css`
+  align-items: flex-start;
+`;
