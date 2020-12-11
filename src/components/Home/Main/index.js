@@ -6,6 +6,9 @@ import * as sharedstyles from  '../../shared/styles';
 import Page from '../../shared/Page';
 import logo from '../../../assets/images/ASCBN-TITLE-HORIZONTAL-DARK-TRANSPARENT.png';
 import { ReactComponent as PlayIcon } from '../../../assets/playIcon.svg';
+import AFI from '../../../assets/images/afi.png';
+import CAM from '../../../assets/images/cam.png';
+import TFF from '../../../assets/images/tff.png';
 import introVideo from '../../../assets/introVideo.mp4';
 import ReactPlayer from 'react-player'
 
@@ -72,6 +75,11 @@ class Main extends React.Component {
 							</div>
 							Watch the full trailer
 						</button>
+						<div css={styles.laurelsClass}>
+							<img src={AFI} alt="AFI" />
+							<img src={CAM} alt="CAM" />
+							<img src={TFF} alt="Tribecca Film Festival" />
+						</div>
 					</div>
 					<div css={styles.arrowUpClass} />
 					<div css={styles.bottomBarClass} />
