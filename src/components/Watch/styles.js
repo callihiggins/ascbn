@@ -192,7 +192,7 @@ export const bonusVideoContainerClass = css`
 `;
 
 export const descriptionClass = css`
-  line-height: 18px;
+  line-height: 22px;
 
   @media (max-width: ${theme.breakpoints.large}px) {
     width: 100%;
@@ -267,13 +267,14 @@ export const watchLinksClass = css`
   width: 90%;
   margin: 0 auto;
   max-width: 1200px;
+  justify-content: center;
 `;
 
 export const sectionClass = css`
   width: 50%;
   display: flex;
   flex-direction: column;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
   color: ${theme.colors.cream};
 
   a {
@@ -290,6 +291,10 @@ export const sectionClass = css`
 
   @media (max-width: ${theme.breakpoints.large}px) {
     width: 100%;
+  }
+
+  :last-child {
+    margin-bottom: 25px;
   }
 `;
 

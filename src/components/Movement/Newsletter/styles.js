@@ -20,7 +20,7 @@ export const halfClass = css`
   }
 `;
 
-export const votingBannerClass = css`
+export const newsletterBannerClass = css`
   height: 50px;
   background: ${theme.colors.teal};
   text-align: center;
@@ -43,7 +43,7 @@ export const votingBannerClass = css`
   }
 `;
 
-export const voteImageClass = css`
+export const newsletterImageClass = css`
   height: 75vh;
   width: auto;
 
@@ -52,7 +52,7 @@ export const voteImageClass = css`
   }
 `;
 
-export const voteTextBlockClass = css`
+export const newsletterTextBlockClass = css`
   background: ${theme.colors.navy};
   color: ${theme.colors.cream};
   flex-direction: column;
@@ -70,7 +70,7 @@ export const voteTextBlockClass = css`
   }
 `;
 
-export const voteReigstrationBlockClass = css`
+export const newsletterReigstrationBlockClass = css`
   background: ${theme.colors.navy};
   color: ${theme.colors.cream};
   flex-direction: column;
@@ -88,7 +88,7 @@ export const voteReigstrationBlockClass = css`
   }
 `;
 
-export const voteButtonClass = css`
+export const newsletterButtonClass = css`
   background-color: ${theme.colors.cream};
   border-radius: 3px;
   color: ${theme.colors.teal};
@@ -106,12 +106,12 @@ export const voteButtonClass = css`
   }
 `;
 
-export const voteBlockClass = css`
+export const newsletterBlockClass = css`
   display: flex;
   flex-wrap: wrap;
 `;
 
-export const voteImageBlockClass = css`
+export const newsletterImageBlockClass = css`
   width: 50%;
   display: flex;
   justify-content: flex-end;
@@ -127,13 +127,13 @@ export const voteImageBlockClass = css`
   }
 `;
 
-export const votePlanClass = css`
+export const headerClass = css`
   font-family: 'Changa One';
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 100;
   text-transform: uppercase;
   letter-spacing: -4px;
-  line-height: 72px;
+  line-height: 52px;
   color: ${theme.colors.pink};
   display: flex;
   align-items: center;
@@ -149,7 +149,7 @@ export const votePlanClass = css`
   }
 `;
 
-export const votePlanSubClass = css`
+export const newsletterPlanSubClass = css`
   font-size: 18px;
 
   @media (max-width: ${theme.breakpoints.large}px) {
@@ -157,7 +157,7 @@ export const votePlanSubClass = css`
   }
 `;
 
-export const votePlanButtonClass = css`
+export const newsletterPlanButtonClass = css`
 
   a {
     display: block;

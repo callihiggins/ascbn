@@ -12,6 +12,7 @@ export const containerClass = css`
 
 export const logoBlockClass = css`
   z-index: 5;
+  width: 100%;
 
   @media (max-width: ${theme.breakpoints.large}px) {
     padding: 0 15px;
@@ -30,12 +31,13 @@ export const trailerBlockClass = css`
 
 export const logoContainerClass = css`
   text-align: center;
-  margin-top: 20vh;
+  margin-top: 15vh;
   position: relative;
 `;
 
 export const logoClass = css`
  width: 60%;
+ max-width: 900px;
  @media (max-width: ${theme.breakpoints.large}px) {
   width: 90%;
  }
@@ -80,7 +82,7 @@ export const trailerCTAClass = css`
   border: 0;
   z-index: 10;
   outline: 0;
-  margin-top: 7vh; 
+  margin-top: 3vh; 
   font-size: 16px;
 `;
 
@@ -158,4 +160,17 @@ export const bottomBarClass = css`
   bottom: 0px;
   z-index: 5;
   width: 100%;
+`;
+
+export const laurelsClass = css`
+  display: flex;
+  width: 60%;
+  max-width: 800px;
+  justify-content: space-around;
+  margin: 15vh auto 0 auto;
+
+  img {
+    height: 50px;
+    width: auto;
+  }
 `;

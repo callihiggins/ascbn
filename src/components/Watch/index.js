@@ -84,29 +84,25 @@ export const Watch = () => {
           </div>
           <div css={styles.sectionClass}>
             <div css={styles.titleClass}>Buy DVD</div>
-            <a href="https://shop.pbs.org/WA5732.html" target="_blank">Shop at PBS</a>
+            <a href="https://www.andshecouldbenext.com/store" target="_blank">Visit our Online Store</a>
           </div>
           <div css={styles.sectionClass}>
             <div css={styles.titleClass}>Educational</div>
             <a href="https://shop.pbs.org/WA5732AV.html" target="_blank">Buy the Educational DVD</a>
             <a href="https://cptv.pbslearningmedia.org/collection/and-she-could-be-next-collection/" target="_blank">PBS Learning Media: Education Collection</a>
+            <a href="#">ASCBN Exclusive Clips & Materials (Coming Soon)</a>
+          </div>
+          <div css={styles.sectionClass}>
+            <div css={styles.titleClass}>Host a screening or<br/> Request a Speaker</div>
+              {/* <p>Sign up to host a screening or discussion of And She Could Be Next for your friends, neighbors, or community! After signing up, our team will follow-up to share resources and details with you on how to make it happen or help you spread the word. <br /></p> */}
+              <a href="https://airtable.com/shrPwxSFaSKYrKPq5" target="_blank">Screening Request Form</a>
+              <a href="https://andshecouldbenext.us19.list-manage.com/track/click?u=6451bb053a61584a94aa81331&id=8810010860&e=42e3ebe84a" target="_blank">And She Could Be Next digital PowerPack</a>
           </div>
           <div css={styles.sectionClass}>
             <div css={styles.titleClass}>Outside the US?</div>
             <p>Coming soon!</p>
             {/* <a href="https://shop.pbs.org/WA5732AV.html" target="_blank">Sign up to get notified</a> */}
             {/* <Form /> */}
-          </div>
-          <div css={styles.sectionClass}>
-            <div css={styles.titleClass}>Host a screening or<br/> Request a Speaker</div>
-              {/* <p>Sign up to host a screening or discussion of And She Could Be Next for your friends, neighbors, or community! After signing up, our team will follow-up to share resources and details with you on how to make it happen or help you spread the word. <br /></p> */}
-            <div css={styles.buttonGroupClass}>
-              <a href="https://airtable.com/shrPwxSFaSKYrKPq5" target="_blank">Screening Request Form</a>
-            </div>
-          </div>
-          <div css={styles.sectionClass}>
-            <div css={styles.titleClass}>Get the PowerPack</div>
-            <a href="https://andshecouldbenext.us19.list-manage.com/track/click?u=6451bb053a61584a94aa81331&id=8810010860&e=42e3ebe84a" target="_blank">And She Could Be Next digital PowerPack</a>
           </div>
         </div>
         <div css={styles.bannerClass}>Bonus Content</div>

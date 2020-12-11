@@ -20,7 +20,7 @@ const Watch = props => (
         </div>
         <p>Sign up to host a screening or discussion of And She Could Be Next for your friends, neighbors, or community! After signing up, our team will follow-up to share resources and details with you on how to make it happen or help you spread the word. <br /><br />Questions? Email <a href="mailto:stepintopower@andshecouldbenext.com">stepintopower@andshecouldbenext.com</a>.</p>
         <div css={styles.buttonGroupClass}>
-          <a href="https://airtable.com/shrPwxSFaSKYrKPq5"><button css={styles.buttonClass}>Sign Up</button></a>
+          <a href="https://airtable.com/shrPwxSFaSKYrKPq5" target="_blank"><button css={styles.buttonClass}>Sign Up</button></a>
         </div>
       </div>
       </HalfSection>      

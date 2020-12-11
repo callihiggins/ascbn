@@ -28,7 +28,7 @@ export const titleClass = css`
 
 export const containerClass = css`
   width: 100%;
-  height: 100px;
+  height: 80px;
   background: ${theme.colors.teal};
   color: ${theme.colors.cream};
   display: flex;
@@ -38,11 +38,6 @@ export const containerClass = css`
   z-index: 500;
   position: fixed;
   bottom: 0;
-
-  @media (max-width: ${theme.breakpoints.large}px) {
-    height: 125px;
-
-  }
 `;
 
 export const signupContainerClass = css`
@@ -89,10 +84,6 @@ export const buttonClass = css`
   border-style: none;
   font-weight: 900;
   cursor: pointer;
-  @media (max-width: ${theme.breakpoints.large}px) {
-    margin-top: 20px;
-  }
-
   text-decoration: none;
 `;
 
