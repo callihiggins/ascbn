@@ -4,7 +4,7 @@ import { useQuery } from '@apollo/react-hooks';
 import gql from 'graphql-tag'
 import { NavHashLink as NavLink } from 'react-router-hash-link';
 import Form from './Form';
-import Vote from './Vote';
+import Newsletter from './Newsletter';
 import Voice from './Voice';
 import Watch from '../Home/Watch';
 import Political from './Political';
@@ -50,7 +50,7 @@ export const Movement = props => {
       <Form /> */}
       <div css={styles.hostingBannerClass}>Host a Screening</div>
       <Watch shallowZIndex={true}/>
-      {/* <Vote id="vote" voteText={voteText}/> */}
+      <Newsletter />
       <Political/>
       <Voice></Voice>
     </div>

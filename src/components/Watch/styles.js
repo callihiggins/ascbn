@@ -192,7 +192,7 @@ export const bonusVideoContainerClass = css`
 `;
 
 export const descriptionClass = css`
-  line-height: 18px;
+  line-height: 22px;
 
   @media (max-width: ${theme.breakpoints.large}px) {
     width: 100%;
