@@ -12,6 +12,7 @@ export const containerClass = css`
 
 export const logoBlockClass = css`
   z-index: 5;
+  width: 100%;
 
   @media (max-width: ${theme.breakpoints.large}px) {
     padding: 0 15px;
@@ -36,6 +37,7 @@ export const logoContainerClass = css`
 
 export const logoClass = css`
  width: 60%;
+ max-width: 900px;
  @media (max-width: ${theme.breakpoints.large}px) {
   width: 90%;
  }
