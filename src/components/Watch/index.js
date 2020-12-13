@@ -50,7 +50,7 @@ export const Watch = () => {
         <div css={styles.watchInfoClass}>
           {documentToReactComponents(data?.watchTextCollection.items[0]?.description.json)}
         </div>
-        {/* <div css={styles.episodesContainerClass}>
+        <div css={styles.episodesContainerClass}>
           {data?.episodeCollection.items.map(episode => (
             <EpisodeContainer order={episode.order}>
               <div css={styles.videoContainerClass}>
@@ -70,7 +70,7 @@ export const Watch = () => {
             </EpisodeContainer>
           ))}
         </div>
-        <div css={styles.bannerClass}>Other Ways to Watch</div> */}
+        <div css={styles.bannerClass}>Other Ways to Watch</div>
         <div css={styles.watchLinksClass}>
           <div css={styles.sectionClass}>
             <div css={styles.titleClass}>Stream</div>
