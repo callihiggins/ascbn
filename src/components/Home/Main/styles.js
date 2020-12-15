@@ -173,4 +173,8 @@ export const laurelsClass = css`
     height: 50px;
     width: auto;
   }
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    width: 90%;
+  }
 `;
