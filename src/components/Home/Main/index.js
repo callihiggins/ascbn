@@ -53,7 +53,7 @@ class Main extends React.Component {
 						center
 					>
 						<ReactPlayer
-							url='https://www.youtube.com/watch?v=YC3xiv1CbYM'
+							url='https://www.youtube.com/watch?v=96rI5KyLEvg'
 							playing
 							controls
 							style={{'margin': '0 auto'}}
