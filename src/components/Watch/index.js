@@ -125,7 +125,7 @@ export const Watch = () => {
           </BonusEpisodeContainer>
           <BonusEpisodeContainer>
             <div css={styles.descriptionClass}>
-              In 2018, Congresswoman Deb Haaland, a 35th generation New Mexican who is an enrolled member of the Pueblo of Laguna, and also has Jemez Pueblo heritage, became one of the first two Native American women ever elected to Congress, along with Sharice Davids. This short film, directed by Navajo filmmaker Ramona Emerson, follows Deb Halaand in her history-making 2018 run as she builds a diverse, multi-racial coalition that would elect her to power. With close-up access at home and as she visits To'hajiilee, Congresswoman Halaand shares the formative experiences that shaped her, and uniquely position her to be a champion for the people of New Mexico, as we look forward to the next class of Native women being elected in November. 
+              In 2018, Congresswoman Deb Haaland, a 35th generation New Mexican who is an enrolled member of the Pueblo of Laguna, and also has Jemez Pueblo heritage, became one of the first two Native American women ever elected to Congress, along with Sharice Davids. This short film, directed by Navajo filmmaker Ramona Emerson, follows Deb Haaland in her history-making 2018 run as she builds a diverse, multi-racial coalition that would elect her to power. With close-up access at home and as she visits To'hajiilee, Congresswoman Haaland shares the formative experiences that shaped her, and uniquely position her to be a champion for the people of New Mexico, as we look forward to the next class of Native women being elected in November. 
             </div>
           </BonusEpisodeContainer>
         </div>
