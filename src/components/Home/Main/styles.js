@@ -167,7 +167,7 @@ export const laurelsClass = css`
   width: 60%;
   max-width: 800px;
   justify-content: space-around;
-  margin: 15vh auto 0 auto;
+  margin: 10vh auto 0 auto;
 
   img {
     height: 50px;
