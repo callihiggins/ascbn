@@ -93,10 +93,9 @@ export const Watch = () => {
             <a href="#">ASCBN Exclusive Clips & Materials (Coming Soon)</a>
           </div>
           <div css={styles.sectionClass}>
-            <div css={styles.titleClass}>Host a screening or<br/> Request a Speaker</div>
+            <div css={styles.titleClass}>Host a screening or<br/> during Women's History Month</div>
               {/* <p>Sign up to host a screening or discussion of And She Could Be Next for your friends, neighbors, or community! After signing up, our team will follow-up to share resources and details with you on how to make it happen or help you spread the word. <br /></p> */}
               <a href="https://airtable.com/shrPwxSFaSKYrKPq5" target="_blank">Screening Request Form</a>
-              <a href="https://andshecouldbenext.us19.list-manage.com/track/click?u=6451bb053a61584a94aa81331&id=8810010860&e=42e3ebe84a" target="_blank">And She Could Be Next digital PowerPack</a>
           </div>
           <div css={styles.sectionClass}>
             <div css={styles.titleClass}>Outside the US?</div>

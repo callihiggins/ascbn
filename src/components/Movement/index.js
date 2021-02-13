@@ -37,17 +37,6 @@ export const Movement = props => {
   return (
     <div css={styles.containerClass}>
       <Nav active="movement"></Nav>
-      <div css={styles.organizerContainerClass} >
-        <div css={[styles.centerClass, styles.halfClass]}>
-          <img src={organizerImage} alt="There's an organizer in all of us" css={styles.organizerImageClass}/>
-        </div>
-        <div css={[styles.halfClass, styles.alignLeft]}>
-          {documentToReactComponents(text)}
-        </div>
-      </div>
-      {/* <div css={styles.hostingBannerClass}>Join the Action Squad</div>
-      <div css={styles.screeningTextClass}>{documentToReactComponents(virtualScreeningText)}</div>
-      <Form /> */}
       <div css={styles.hostingBannerClass}>Host a Screening</div>
       <Watch shallowZIndex={true}/>
       <Newsletter />

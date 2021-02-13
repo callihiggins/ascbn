@@ -8,7 +8,7 @@ export const containerClass = css`
 `;
 
 export const organizerImageClass = css`
-  width: 75%;
+  width: 60%;
   margin-bottom: 15px;
 `;
 
@@ -44,6 +44,7 @@ export const halfClass = css`
 
 export const centerClass = css`
   text-align: center;
+  margin: 0 auto;
 `;
 
 export const hostingBannerClass = css`
