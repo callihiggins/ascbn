@@ -168,10 +168,15 @@ export const laurelsClass = css`
   max-width: 800px;
   justify-content: space-around;
   margin: 10vh auto 0 auto;
+  align-items: flex-end;
 
   img {
     height: 50px;
     width: auto;
+
+    &:last-child {
+      height: 60px;
+    }
   }
 
   @media (max-width: ${theme.breakpoints.large}px) {

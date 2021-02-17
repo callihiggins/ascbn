@@ -9,6 +9,7 @@ import { ReactComponent as PlayIcon } from '../../../assets/playIcon.svg';
 import AFI from '../../../assets/images/afi.png';
 import CAM from '../../../assets/images/cam.png';
 import TFF from '../../../assets/images/tff.png';
+import NAACP from '../../../assets/images/naacp.png';
 import introVideo from '../../../assets/introVideo.mp4';
 import ReactPlayer from 'react-player'
 
@@ -79,6 +80,7 @@ class Main extends React.Component {
 							<img src={AFI} alt="AFI" />
 							<img src={CAM} alt="CAM" />
 							<img src={TFF} alt="Tribecca Film Festival" />
+							<img src={NAACP} alt="NAACP" />
 						</div>
 					</div>
 					<div css={styles.arrowUpClass} />
