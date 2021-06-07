@@ -13,7 +13,7 @@ export const HalfSection = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-
+  margin-top: -50px;
   img {
     width: 80%;
   }
@@ -34,6 +34,7 @@ export const textContainerClass = css`
   a {
     color:  ${theme.colors.cream};
     text-decoration: none;
+    word-break: break-all;
   }
 
   p {
@@ -42,6 +43,9 @@ export const textContainerClass = css`
 
   @media (max-width: ${theme.breakpoints.large}px) {
     padding: 20px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
   }
 `;
 

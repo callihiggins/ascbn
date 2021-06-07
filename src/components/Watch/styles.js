@@ -306,6 +306,15 @@ export const titleClass = css`
   font-size: 35px;
 `;
 
+export const titleClassWithMargin= css`
+font-family: 'Changa One';
+text-transform: uppercase;
+color: ${theme.colors.pink};
+letter-spacing: 1.5px;
+font-size: 35px;
+margin-top: 50px;
+`;
+
 export const streamingLinks = css`
   display: flex;
   justify-content: space-around;

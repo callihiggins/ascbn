@@ -5,7 +5,7 @@ import voteImage from '../../../assets/images/vote.png';
 import PPGlogo from '../../../assets/images/PPGlogo.png';
 import * as styles from './styles';
 
-export const Newsletter = ({voteText}) => 
+export const Newsletter = () => 
   <div >
     <div css={styles.newsletterBannerClass}>NEWSLETTER</div>
     <div css={styles.newsletterBlockClass}>

@@ -90,15 +90,15 @@ export const Watch = () => {
             <div css={styles.titleClass}>Educational</div>
             <a href="https://shop.pbs.org/WA5732AV.html" target="_blank">Buy the Educational DVD</a>
             <a href="https://cptv.pbslearningmedia.org/collection/and-she-could-be-next-collection/" target="_blank">PBS Learning Media: Education Collection</a>
+            <a href="https://www.kanopy.com/product/and-she-could-be-next" target="_blank">Kanopy</a>
+            <a href="https://search.alexanderstreet.com/search?ff[0]=video_series_facet:And%20She%20Could%20Be%20Next,%20Season%201&sort_by=real_title_sort&sort_order=ASC" target="_blank">Alexander Street Press</a>
             <a href="#">ASCBN Exclusive Clips & Materials (Coming Soon)</a>
           </div>
           <div css={styles.sectionClass}>
-            <div css={styles.titleClass}>Host a screening<br/> during Women's History Month</div>
+            <div css={styles.titleClass}>Host a screening</div>
               {/* <p>Sign up to host a screening or discussion of And She Could Be Next for your friends, neighbors, or community! After signing up, our team will follow-up to share resources and details with you on how to make it happen or help you spread the word. <br /></p> */}
               <a href="https://airtable.com/shrPwxSFaSKYrKPq5" target="_blank">Screening Request Form</a>
-          </div>
-          <div css={styles.sectionClass}>
-            <div css={styles.titleClass}>Outside the US?</div>
+            <div css={styles.titleClassWithMargin}>Outside the US?</div>
             <p>Coming soon!</p>
             {/* <a href="https://shop.pbs.org/WA5732AV.html" target="_blank">Sign up to get notified</a> */}
             {/* <Form /> */}
