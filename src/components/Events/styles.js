@@ -25,6 +25,66 @@ export const festivalBannerClass = css`
   }
 `;
 
+export const screeningsContainerClass = css`
+  display: flex;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  color: ${theme.colors.navy};
+  padding: 40px;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    padding: 20px;
+  }
+`;
+
+export const ScreeningContainer = styled.div`
+  display: flex;
+  max-width: 500px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  @media (max-width: ${theme.breakpoints.large}px) {
+    padding: 12px 0;
+  }
+`;
+
+export const locationContainerClass = css`
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+`;
+
+export const marchScreeningsContainer = css`
+  text-align: center;
+`;
+
+export const screeningDateClass = css`
+  font-size: 18px;
+`;
+export const locationNameClass = css`
+  font-size: 18px;
+`;
+export const locationCityClass = css`
+  font-size: 14px;
+  line-height: 22px;
+`;
+export const moreInfoClass = css`
+  font-size: 14px;
+  line-height: 22px;
+  a {
+    color: ${theme.colors.navy}
+  }
+`;
+
+export const screeningsImageClass = css`
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px 0;
+`;
+
+
 export const festivalsContainerClass = css`
   display: flex;
   padding: 40px;
@@ -176,6 +236,10 @@ export const blueContainerClass = css`
   background: ${theme.colors.navy};
 `;
 
+export const creamContainerClass = css`
+  background: ${theme.colors.cream};
+`;
+
 export const noBreakClass = css`
   white-space: nowrap;
 `;
@@ -187,8 +251,28 @@ export const descriptionClass = css`
   padding: 10px; 
   a {
     text-decoration: none;
+    color: ${theme.colors.navy};
   }
  
+`;
+
+export const halfClass = css`
+  width: 50%;
+  color: ${theme.colors.navy};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  p {
+    margin-bottom: 20px;
+    line-height: 22px;
+  }
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    width: 100%;
+    padding: 0 15px;
+  }
 `;
 
 
