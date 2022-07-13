@@ -65,6 +65,16 @@ export const NavUl = styled.ul`
   
 `;
 
+export const movementDropdownClass = css`
+  width: 100px;
+  position: relative;
+`;
+
+export const wideLiClass = css`
+  width: 200px !important;
+  margin-left: -70px;
+`;
+
 export const NavEl = styled.nav`
   width: 70%;
   justify-content: space-evenly;

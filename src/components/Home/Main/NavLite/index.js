@@ -70,20 +70,20 @@ const Nav = props => {
               <a href="/movement">Join the Movement</a>
             </NavItem>
             {showMovement && (
-              <>
-                <li>
+              <div css={styles.movementDropdownClass}>
+                <li css={styles.wideLiClass}>
                   <Link to="/movement#screening" scroll={el => scrollIntoView(el)}>Host a Screening</Link>
                 </li>
-                <li>
+                <li css={styles.wideLiClass}>
                   <Link to="/movement#vote" scroll={el => scrollIntoView(el)}>Make a Vote Plan</Link>
                 </li>
-                <li>
+                <li css={styles.wideLiClass}>
                   <Link to="/movement#politicalHome" scroll={el => scrollIntoView(el)}>Find Your Political Home</Link>
                 </li>
-                <li>
+                <li css={styles.wideLiClass}>
                   <Link to="/movement#voice" scroll={el => scrollIntoView(el)}>Speak Up</Link>
                 </li>
-              </>
+              </div>
             )}
           </NavUl>
           <NavUl>

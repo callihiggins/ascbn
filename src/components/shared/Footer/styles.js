@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 export const containerClass = css`
   background: ${theme.colors.cream};
-  height: 300px;
+  height: 215px;
   color: ${theme.colors.navy};
   font-size: 14px;
   position: relative;
@@ -19,7 +19,7 @@ export const containerClass = css`
 
 export const horizontalLineClass = css`
   width: 95%;
-  height: 100px;
+  height: 40px;
   margin: 0 auto;
   border-bottom: 1px solid ${theme.colors.navy};
 `;
