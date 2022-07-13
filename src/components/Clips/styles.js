@@ -8,7 +8,7 @@ export const containerClass = css`
 `;
 
 export const mainTextClass = css`
-  padding-top: 40px;
+  padding: 40px 0;
   font-family: 'Changa One';
   font-size: 60px;
   font-weight: 100;
@@ -25,7 +25,7 @@ export const mainTextClass = css`
   text-align: center;
 
   @media (max-width: ${theme.breakpoints.large}px) {
-    margin: 0 auto 20px auto;
+    margin: 0 auto;
     max-width: 80%;
   }
 `;
@@ -70,7 +70,7 @@ export const clipsContainerClass = css`
   gap: 40px;
   width: 80%;
   margin: 0 auto;
-  padding: 40px 40px 0 40px;
+  padding: 40px 0 0 40px;
 
   a {
     text-decoration: none;
@@ -80,6 +80,10 @@ export const clipsContainerClass = css`
 export const clipClass = css`
   width: 30%;
   background: ${theme.colors.navy};
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    width: 100%;
+  }
 `;
 
 export const clipDescription = css`
@@ -113,7 +117,8 @@ export const clipDetailsClass = css`
 export const dropdownContainerClass = css`
   width: 80%;
   color: ${theme.colors.navy};
-  margin: 20px auto 0 auto;
+  margin: 0 auto;
+  padding-left: 40px;
   select {
     color: ${theme.colors.navy};
     margin-left: 7px;
@@ -121,5 +126,3 @@ export const dropdownContainerClass = css`
     background: ${theme.colors.cream};
   }
 `;
-
-export const dropdownClass = css``;

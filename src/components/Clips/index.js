@@ -85,9 +85,9 @@ export const Clips = () => {
     <div id="clips">
       <Nav active='clips'/>
       <div css={styles.containerClass}>
-        <div css={styles.mainTextClass}>Clips</div>
+        <div css={styles.mainTextClass}>Impact Videos</div>
         <div css={styles.dropdownContainerClass}>Filter by:
-         <select css={styles.dropdownClass} onChange={e => setSelectedOption(e.target.value)}>
+         <select onChange={e => setSelectedOption(e.target.value)}>
           <option disabled selected>Choose Topic</option>
           <option value="showAll" >Show All</option>
           {tagSelections}
