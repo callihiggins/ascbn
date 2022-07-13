@@ -18,6 +18,7 @@ import Events from './components/Events';
 import Store from './components/Store';
 import Georgia from './components/GA';
 import TrickOrText from './components/TrickOrText';
+import Clips from './components/Clips';
 import Newsletter from './components/shared/Newsletter';
 import Footer from './components/shared/Footer';
 import './App.css';
@@ -95,6 +96,9 @@ class App extends React.Component {
                 </Route>
                 <Route path="/trickortext">
                   <TrickOrText />
+                </Route>
+                <Route path="/clips">
+                  <Clips />
                 </Route>
               </Switch>
             </Router>
