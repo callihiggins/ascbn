@@ -107,7 +107,7 @@ export const NavItem = styled.li`
       content: '';
       position: absolute;
       bottom: -3px;
-      left: 0; right: 0;
+      left: -7px; right: 0;
       height: 2px;
       background-color: ${theme.colors.navy};
     }
@@ -144,7 +144,7 @@ export const NavItem = styled.li`
         content: '';
         position: absolute;
         bottom: -3px;
-        left: 0; right: 0;
+        left: -7px; right: 0;
         height: 2px;
         background-color: ${theme.colors.navy};
         opacity: 1;

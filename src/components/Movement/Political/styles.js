@@ -23,7 +23,7 @@ export const bannerClass = css`
   justify-content: center;
   margin: 0;
   position: sticky;
-  top: 40px;
+  top: 50px;
   z-index: 5;
 
   @media (max-width: ${theme.breakpoints.large}px) {

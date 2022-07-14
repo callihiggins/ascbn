@@ -64,7 +64,7 @@ export const hostingBannerClass = css`
   justify-content: center;
   margin: 40px 0 0 0;
   position: sticky;
-  top: 40px;
+  top: 50px;
   z-index: 5;
 
   @media (max-width: ${theme.breakpoints.large}px) {

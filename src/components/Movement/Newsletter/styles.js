@@ -35,7 +35,7 @@ export const newsletterBannerClass = css`
   flex-direction: column;
   justify-content: center;
   position: sticky;
-  top: 40px;
+  top: 50px;
   z-index: 5;
 
   @media (max-width: ${theme.breakpoints.large}px) {
@@ -56,7 +56,7 @@ export const newsletterTextBlockClass = css`
   background: ${theme.colors.navy};
   color: ${theme.colors.cream};
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   padding: 0 40px;
   width: calc(50% - 80px);
