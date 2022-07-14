@@ -109,6 +109,7 @@ export const newsletterButtonClass = css`
 export const newsletterBlockClass = css`
   display: flex;
   flex-wrap: wrap;
+  height: calc(100vh - 175px);
 `;
 
 export const newsletterImageBlockClass = css`

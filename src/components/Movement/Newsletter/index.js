@@ -7,7 +7,7 @@ import * as styles from './styles';
 
 export const Newsletter = () => 
   <div >
-    <div css={styles.newsletterBannerClass}>NEWSLETTER</div>
+    <div css={styles.newsletterBannerClass} id="newsletter">NEWSLETTER</div>
     <div css={styles.newsletterBlockClass}>
       <div css={styles.newsletterImageBlockClass}>
         <img src={voteImage} alt="Vote" css={styles.newsletterImageClass} />

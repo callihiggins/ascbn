@@ -75,7 +75,7 @@ const Nav = props => {
                   <Link to="/movement#screening" scroll={el => scrollIntoView(el)}>Host a Screening</Link>
                 </li>
                 <li css={styles.wideLiClass}>
-                  <Link to="/movement#vote" scroll={el => scrollIntoView(el)}>Make a Vote Plan</Link>
+                  <Link to="/movement#newsletter" scroll={el => scrollIntoView(el)}>Get Our Newsletter</Link>
                 </li>
                 <li css={styles.wideLiClass}>
                   <Link to="/movement#politicalHome" scroll={el => scrollIntoView(el)}>Find Your Political Home</Link>
