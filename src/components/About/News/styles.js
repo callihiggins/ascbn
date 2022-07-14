@@ -87,6 +87,7 @@ export const bottomPosterClass = css`
   background: ${theme.colors.aqua};
   text-align: center;
   padding: 40px 0;
+  margin: 40px;
   img {
     width: 40%;
     cursor: pointer;

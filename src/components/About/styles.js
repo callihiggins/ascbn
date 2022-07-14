@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 export const aboutContainerClass = css`
   width: 100%;
-  background: ${theme.colors.teal};
+  background: ${theme.colors.navy};
   padding-top: 80px;
 
   @media (min-width: ${theme.breakpoints.extraLarge}px) {
