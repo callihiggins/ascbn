@@ -86,6 +86,9 @@ export const Clips = () => {
       <Nav active='clips'/>
       <div css={styles.containerClass}>
         <div css={styles.mainTextClass}>Impact Videos</div>
+        <div css={styles.introTextClass}>
+          We welcome you to use our free library of clips in your own organizing, trainings, community building, and education work around elections. Using the dropdown menu, you can find clips grouped by category. All the clips are under 5 minutes, and we hope they will help spark engaged discussions in your communities.
+        </div> 
         <div css={styles.dropdownContainerClass}>Filter by:
          <select onChange={e => setSelectedOption(e.target.value)}>
           <option disabled selected>Choose Topic</option>

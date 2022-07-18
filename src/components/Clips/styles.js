@@ -8,7 +8,7 @@ export const containerClass = css`
 `;
 
 export const mainTextClass = css`
-  padding: 40px 0;
+  padding: 40px 0 40px 0;
   font-family: 'Changa One';
   font-size: 60px;
   font-weight: 100;
@@ -27,6 +27,32 @@ export const mainTextClass = css`
   @media (max-width: ${theme.breakpoints.large}px) {
     margin: 0 auto;
     max-width: 80%;
+  }
+`;
+
+export const introTextClass = css`
+  color: ${theme.colors.navy};
+  padding: 0 0 40px 20px;
+  box-sizing: border-box;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 20px;
+  line-height: 24px;
+  justify-content: center;
+
+  a {
+    color: ${theme.colors.navy};
+    text-decoration: none;
+  }
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    width: 80%;
+    padding: 0 0 40px 0;
+    align-items: center;
+
+    p {
+      text-align: center;
+    }
   }
 `;
 
@@ -74,6 +100,11 @@ export const clipsContainerClass = css`
 
   a {
     text-decoration: none;
+  }
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    padding: 40px 0 0 0;
+
   }
 `;
 
@@ -124,5 +155,9 @@ export const dropdownContainerClass = css`
     margin-left: 7px;
     border: 1px solid ${theme.colors.navy};
     background: ${theme.colors.cream};
+  }
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    padding-left: 0;
   }
 `;
