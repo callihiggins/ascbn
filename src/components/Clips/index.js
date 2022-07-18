@@ -10,7 +10,7 @@ import { default as theme } from '../../theme';
 
 const CLIPS_DATA = gql`
   {
-    clipCollection {
+    clipCollection(order: [sys_firstPublishedAt_ASC]) {
       items {
         vimeoUrl
         name
@@ -26,12 +26,6 @@ const CLIPS_DATA = gql`
   }`
 
 export const Clips = () => {
-  const spring = {
-    type: "tween",
-    stiffness: 700,
-    damping: 30
-  };
-
   const [selectedOption, setSelectedOption] = useState();
   const { data } = useQuery(CLIPS_DATA);
   const uniqueTags = [];
