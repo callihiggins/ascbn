@@ -56,13 +56,11 @@ export const hostingBannerClass = css`
   color: ${theme.colors.cream};
   letter-spacing: normal;
   font-size: 22px;
-  margin-right: 20px;
   letter-spacing: 1.5px;
   font-weight: 400;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 40px 0 0 0;
   position: sticky;
   top: 50px;
   z-index: 5;

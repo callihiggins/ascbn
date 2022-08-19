@@ -5,6 +5,7 @@ import gql from 'graphql-tag'
 import { NavHashLink as NavLink } from 'react-router-hash-link';
 import Form from './Form';
 import Newsletter from './Newsletter';
+import ImpactClips from './ImpactClips';
 import Voice from './Voice';
 import Watch from '../Home/Watch';
 import Political from './Political';
@@ -37,6 +38,7 @@ export const Movement = props => {
   return (
     <div css={styles.containerClass}>
       <Nav active="movement"></Nav>
+      <ImpactClips />
       <div css={styles.hostingBannerClass}>Host a Screening</div>
       <Watch shallowZIndex={true}/>
       <Newsletter />

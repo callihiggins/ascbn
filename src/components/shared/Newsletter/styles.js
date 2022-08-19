@@ -44,7 +44,7 @@ export const signupContainerClass = css`
   display: flex;
   justify-content: center;
   align-items: center;
-
+  gap: 40px;
 
   @media (max-width: ${theme.breakpoints.large}px) {
     flex-wrap: wrap;

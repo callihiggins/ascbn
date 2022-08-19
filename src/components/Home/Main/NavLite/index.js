@@ -72,6 +72,9 @@ const Nav = props => {
             {showMovement && (
               <div css={styles.movementDropdownClass}>
                 <li css={styles.wideLiClass}>
+                  <Link to="/movement#impactclips" scroll={el => scrollIntoView(el)}>Use Our Impact Clips</Link>
+                </li>
+                <li css={styles.wideLiClass}>
                   <Link to="/movement#screening" scroll={el => scrollIntoView(el)}>Host a Screening</Link>
                 </li>
                 <li css={styles.wideLiClass}>

@@ -31,7 +31,7 @@ export const trailerBlockClass = css`
 
 export const logoContainerClass = css`
   text-align: center;
-  margin-top: 18vh;
+  margin-top: 19vh;
   position: relative;
 `;
 
@@ -167,7 +167,7 @@ export const laurelsClass = css`
   width: 60%;
   max-width: 800px;
   justify-content: space-around;
-  margin: 10vh auto 0 auto;
+  margin: 8vh auto 0 auto;
   align-items: flex-end;
 
   img {

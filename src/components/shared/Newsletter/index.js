@@ -12,6 +12,7 @@ const Newsletter = props => (
     > 
       {/* <div css={styles.titleClass}>#AllEyesOnGA</div> */}
       <a href="https://airtable.com/shrPwxSFaSKYrKPq5" target="_blank" css={styles.buttonClass}>Host a Screening</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScTVojSHuqwZc1XY6V-ywlWttKWMyS2NFvJxo6Q_xA_uoRMIQ/viewform" target="_blank" css={styles.buttonClass}>Use our Impact Clips</a>
     </div>
   </div>
 )

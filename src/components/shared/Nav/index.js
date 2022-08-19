@@ -78,6 +78,9 @@ const Nav = props => {
             </NavItem>
             {showMovement && (
               <>
+              <li>
+                  <Link to="/movement#impactclips" scroll={el => scrollIntoView(el)}>Use Our Impact Clips</Link>
+                </li>
                 <li>
                   <Link to="/movement#screening" scroll={el => scrollIntoView(el)}>Host a Screening</Link>
                 </li>
