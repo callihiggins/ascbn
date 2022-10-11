@@ -85,6 +85,11 @@ export const buttonClass = css`
   font-weight: 900;
   cursor: pointer;
   text-decoration: none;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    max-width: 100px;
+    text-align: center;
+  }
 `;
 
 export const emailMessageClass = css`

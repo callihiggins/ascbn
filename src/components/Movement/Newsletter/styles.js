@@ -110,6 +110,10 @@ export const newsletterBlockClass = css`
   display: flex;
   flex-wrap: wrap;
   height: calc(100vh - 175px);
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    height: auto;
+  }
 `;
 
 export const newsletterImageBlockClass = css`
