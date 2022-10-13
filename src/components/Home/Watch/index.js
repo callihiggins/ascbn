@@ -12,7 +12,7 @@ import { default as theme } from '../../../theme';
 
 const Watch = props => (
   <Page shallowZIndex={props.shallowZIndex} updateActive={props.updateActive} name="watch">
-    <div css={styles.containerClass}>
+    <div css={styles.containerClass} id="screening">
       <HalfSection backgroundColor={theme.colors.navy}>
       <div css={styles.textContainerClass}>
         <div css={[sharedstyles.hideDesktop, styles.mobileImageContainerClass]}>
