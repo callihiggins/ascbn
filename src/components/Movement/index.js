@@ -1,5 +1,6 @@
 import React from 'react';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import useScrollToHash from '../shared/hooks/useScrollToHash';
 import { useQuery } from '@apollo/react-hooks';
 import gql from 'graphql-tag'
 import { NavHashLink as NavLink } from 'react-router-hash-link';
@@ -31,6 +32,7 @@ const MOVEMENT_DATA = gql`
 }`
 
 export const Movement = props => {
+  useScrollToHash();
   const { data } = useQuery(MOVEMENT_DATA);
   const text = data?.organizerTextCollection.items[0].description.json;
   const virtualScreeningText = data?.organizerTextCollection.items[0].screeningText.json;

@@ -7,8 +7,8 @@ import * as sharedstyles from  '../../shared/styles';
 
 export const ImpactClips = () => 
   <div >
-    <div css={styles.impactBannerClass} id="newsletter">USE OUR IMPACT CLIPS</div>
-    <div css={styles.containerClass}>
+    <div css={styles.impactBannerClass}>USE OUR IMPACT CLIPS</div>
+    <div css={styles.containerClass} id="impactclips">
       <HalfSection css={sharedstyles.hideMobile}>
         <img src={hostScreeningImage} alt="Use Our Impact Clips" />
       </HalfSection>
