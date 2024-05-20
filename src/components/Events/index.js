@@ -82,8 +82,7 @@ export const Events = () => {
           <div css={styles.mainTextClass}>Find or host an event</div>
         </div>
         <div css={styles.introTextClass}>
-          <p>Sign up to host a screening or discussion of And She Could Be Next for your friends, neighbors, or community! After signing up, our team will follow-up to share resources and details with you on how to make it happen or help you spread the word. <br /><br />Questions? Email <a href="mailto:info@andshecouldbenext.com">info@andshecouldbenext.com</a>.</p>
-          <a href="https://airtable.com/shrPwxSFaSKYrKPq5" target="_blank"><button css={styles.buttonClass}>Sign Up</button></a>
+          <p>Drop up an email to sign up to host a screening or discussion of And She Could Be Next for your friends, neighbors, or community! Our team will follow-up to share resources and details with you on how to make it happen or help you spread the word. <br /><br /> Email <a href="mailto:info@andshecouldbenext.com">info@andshecouldbenext.com</a>.</p>
         </div>                
       </div>
       {screenings?.length > 0 && (

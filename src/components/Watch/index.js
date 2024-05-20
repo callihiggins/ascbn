@@ -97,7 +97,7 @@ export const Watch = () => {
           <div css={styles.sectionClass}>
             <div css={styles.titleClass}>Host a screening</div>
               {/* <p>Sign up to host a screening or discussion of And She Could Be Next for your friends, neighbors, or community! After signing up, our team will follow-up to share resources and details with you on how to make it happen or help you spread the word. <br /></p> */}
-              <a href="https://airtable.com/shrPwxSFaSKYrKPq5" target="_blank">Screening Request Form</a>
+              <a href="mailto:info@andshecouldbenext.com">Email us to request a screening</a>
             <div css={styles.titleClassWithMargin}>Outside the US?</div>
             <p>Coming soon!</p>
             {/* <a href="https://shop.pbs.org/WA5732AV.html" target="_blank">Sign up to get notified</a> */}

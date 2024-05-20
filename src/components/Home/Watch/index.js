@@ -18,10 +18,7 @@ const Watch = props => (
         <div css={[sharedstyles.hideDesktop, styles.mobileImageContainerClass]}>
           <img src={hostScreeningImage} alt="Host a Screening" />
         </div>
-        <p>Sign up to host a screening or discussion of And She Could Be Next for your friends, neighbors, or community! After signing up, our team will follow-up to share resources and details with you on how to make it happen or help you spread the word. <br /><br />Questions? Email <a href="mailto:info@andshecouldbenext.com">info@andshecouldbenext.com</a>.</p>
-        <div css={styles.buttonGroupClass}>
-          <a href="https://airtable.com/shrPwxSFaSKYrKPq5" target="_blank"><button css={styles.buttonClass}>Sign Up</button></a>
-        </div>
+        <p>Drop up an email to sign up to host a screening or discussion of And She Could Be Next for your friends, neighbors, or community! Our team will follow-up to share resources and details with you on how to make it happen or help you spread the word. <br /><br /> Email <a href="mailto:info@andshecouldbenext.com">info@andshecouldbenext.com</a>.</p>   
       </div>
       </HalfSection>      
       <HalfSection css={sharedstyles.hideMobile}>
