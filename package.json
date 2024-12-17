@@ -24,7 +24,7 @@
     "iframe-resizer-react": "^1.0.4",
     "intersection-observer": "^0.7.0",
     "lodash": "^4.17.15",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "normalize.css": "^8.0.1",
     "papaparse": "^5.2.0",
     "react": "^16.13.1",
