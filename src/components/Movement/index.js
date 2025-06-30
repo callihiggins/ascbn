@@ -14,9 +14,7 @@ export const Movement = props => {
     <div css={styles.containerClass}>
       <Nav active="movement"></Nav>
       <ImpactClips />
-      <Watch shallowZIndex={true}/>
       <Political/>
-      <Voice></Voice>
     </div>
   )
 }

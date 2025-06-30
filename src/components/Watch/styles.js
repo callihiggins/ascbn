@@ -317,6 +317,7 @@ margin-top: 50px;
 
 export const streamingLinks = css`
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   width: 300px;
   margin: 0 auto;
