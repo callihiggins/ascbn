@@ -75,29 +75,10 @@ const Nav = props => {
                   <Link to="/movement#impactclips" scroll={el => scrollIntoView(el)}>Use Our Impact Clips</Link>
                 </li>
                 <li css={styles.wideLiClass}>
-                  <Link to="/movement#screening" scroll={el => scrollIntoView(el)}>Host a Screening</Link>
-                </li>
-                <li css={styles.wideLiClass}>
-                  <Link to="/movement#newsletter" scroll={el => scrollIntoView(el)}>Get Our Newsletter</Link>
-                </li>
-                <li css={styles.wideLiClass}>
                   <Link to="/movement#politicalHome" scroll={el => scrollIntoView(el)}>Find Your Political Home</Link>
-                </li>
-                <li css={styles.wideLiClass}>
-                  <Link to="/movement#voice" scroll={el => scrollIntoView(el)}>Speak Up</Link>
                 </li>
               </div>
             )}
-          </NavUl>
-          <NavUl>
-            <NavItem active={props.active === 'events'}>
-              <a href="/events">Events</a>
-            </NavItem>
-          </NavUl>
-          <NavUl>
-            <NavItem active={props.active === 'store'}>
-              <a href="/store">Store</a>
-            </NavItem>
           </NavUl>
         </NavEl>
         <div css={[styles.socialMediaIconsClass, sharedstyles.hideMobile]}>

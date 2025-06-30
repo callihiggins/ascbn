@@ -30,12 +30,6 @@ const Nav = props => {
             <NavItem onClick={closeMenu} active={props.active === 'movement'}>
               <a href="/movement">Join the Movement</a>
             </NavItem>
-            <NavItem onClick={closeMenu} active={props.active === 'events'}>
-              <a href="/events">Events</a>
-            </NavItem>
-            <NavItem onClick={closeMenu} active={props.active === 'store'}>
-              <a href="/store">Store</a>
-            </NavItem>
           </ul>
         </nav>
         <div css={styles.socialMediaIconsClass}>
