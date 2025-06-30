@@ -77,14 +77,10 @@ export const Watch = () => {
             {/* <div css={styles.subTitleClass}>Download to rent or own</div> */}
             <div css={styles.streamingLinks}>
               <a href="https://www.amazon.com/She-Could-Be-Next-Season/dp/B08BX8DQX5" target="_blank">Amazon</a>
-              <a href="https://itunes.apple.com/us/tv-season/and-she-could-be-next-season-1/id1512456795" target="_blank">iTunes</a>
+              <a href="https://itunes.apple.com/us/tv-season/and-she-could-be-next-season-1/id1512456795" target="_blank">Apple</a>
               <a href="https://www.xfinity.com/learn/digital-cable-tv" target="_blank">Comcast</a>
               {/* <a href="https://www.amazon.com/She-Could-Be-Next-Season/dp/B08BX8DQX5" target="_blank">PBS Documentaries on Amazon</a> */}
             </div>
-          </div>
-          <div css={styles.sectionClass}>
-            <div css={styles.titleClass}>Buy DVD</div>
-            <a href="https://www.andshecouldbenext.com/store" target="_blank">Visit our Online Store</a>
           </div>
           <div css={styles.sectionClass}>
             <div css={styles.titleClass}>Educational</div>
@@ -92,16 +88,6 @@ export const Watch = () => {
             <a href="https://cptv.pbslearningmedia.org/collection/and-she-could-be-next-collection/" target="_blank">PBS Learning Media: Education Collection</a>
             <a href="https://www.kanopy.com/product/and-she-could-be-next" target="_blank">Kanopy</a>
             <a href="https://search.alexanderstreet.com/search?ff[0]=video_series_facet:And%20She%20Could%20Be%20Next,%20Season%201&sort_by=real_title_sort&sort_order=ASC" target="_blank">Alexander Street Press</a>
-            <a href="#">ASCBN Exclusive Clips & Materials (Coming Soon)</a>
-          </div>
-          <div css={styles.sectionClass}>
-            <div css={styles.titleClass}>Host a screening</div>
-              {/* <p>Sign up to host a screening or discussion of And She Could Be Next for your friends, neighbors, or community! After signing up, our team will follow-up to share resources and details with you on how to make it happen or help you spread the word. <br /></p> */}
-              <a href="mailto:info@andshecouldbenext.com">Email us to request a screening</a>
-            <div css={styles.titleClassWithMargin}>Outside the US?</div>
-            <p>Coming soon!</p>
-            {/* <a href="https://shop.pbs.org/WA5732AV.html" target="_blank">Sign up to get notified</a> */}
-            {/* <Form /> */}
           </div>
         </div>
         <div css={styles.bannerClass}>Bonus Content</div>

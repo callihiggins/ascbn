@@ -82,36 +82,16 @@ const Nav = props => {
                   <Link to="/movement#impactclips" scroll={el => scrollIntoView(el)}>Use Our Impact Clips</Link>
                 </li>
                 <li>
-                  <Link to="/movement#screening" scroll={el => scrollIntoView(el)}>Host a Screening</Link>
-                </li>
-                <li>
-                  <Link to="/movement#newsletter" scroll={el => scrollIntoView(el)}>Get Our Newsletter</Link>
-                </li>
-                <li>
                   <Link to="/movement#politicalHome" scroll={el => scrollIntoView(el)}>Find Your Political Home</Link>
-                </li>
-                <li>
-                  <Link to="/movement#voice" scroll={el => scrollIntoView(el)}>Speak Up</Link>
                 </li>
               </>
             )}
-          </NavUl>
-          <NavUl>
-            <NavItem active={props.active === 'events'}>
-              <a href="/events">Events</a>
-            </NavItem>
-          </NavUl>
-          <NavUl>
-            <NavItem active={props.active === 'store'}>
-              <a href="/store">Store</a>
-            </NavItem>
           </NavUl>
         </NavEl>
         <div css={[styles.socialMediaIconsClass, sharedstyles.hideMobile]}>
           <button onClick={openModal} css={styles.iconClass}><FontAwesomeIcon icon={['fas', 'envelope']} /></button>
           <a href="https://www.youtube.com/channel/UC2yVbXsWPtmAmOd7gUHa7_g/" target="_blank" rel="noopener noreferrer" css={styles.iconClass}><FontAwesomeIcon icon={['fab', 'youtube']} /></a>
           <a href="https://www.facebook.com/andshecouldbenext/" target="_blank" rel="noopener noreferrer" css={styles.iconClass}><FontAwesomeIcon icon={['fab', 'facebook-f']} /></a>
-          <a href="https://twitter.com/shecouldbenext" target="_blank" rel="noopener noreferrer" css={styles.iconClass}><FontAwesomeIcon icon={['fab', 'twitter']} /></a>
           <a href="https://www.instagram.com/andshecouldbenext/" target="_blank" rel="noopener noreferrer" css={styles.iconClass}><FontAwesomeIcon icon={['fab', 'instagram']} /></a>
         </div>
       </HeaderContainer>
